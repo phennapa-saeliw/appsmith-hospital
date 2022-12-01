@@ -3,6 +3,10 @@
     {
       "id": "Page1",
       "isDefault": true
+    },
+    {
+      "id": "Main Menu",
+      "isDefault": false
     }
   ],
   "viewMode": false,
