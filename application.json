@@ -1,11 +1,23 @@
 {
   "pages": [
     {
-      "id": "Page1",
+      "id": "Login",
       "isDefault": true
     },
     {
       "id": "Main Menu",
+      "isDefault": false
+    },
+    {
+      "id": "Menu",
+      "isDefault": false
+    },
+    {
+      "id": "List employee",
+      "isDefault": false
+    },
+    {
+      "id": "Workshift",
       "isDefault": false
     }
   ],
@@ -15,7 +27,7 @@
   "color": "#FFDEDE",
   "icon": "alien",
   "unpublishedAppLayout": {
-    "type": "DESKTOP"
+    "type": "FLUID"
   },
   "publishedAppLayout": {
     "type": "DESKTOP"
