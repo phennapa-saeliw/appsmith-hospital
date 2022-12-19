@@ -5,15 +5,31 @@
       "isDefault": true
     },
     {
-      "id": "Menu",
+      "id": "Menu_senior",
       "isDefault": false
     },
     {
-      "id": "List employee",
+      "id": "Menu_staff",
+      "isDefault": false
+    },
+    {
+      "id": "employee_infomation",
       "isDefault": false
     },
     {
       "id": "Workshift",
+      "isDefault": false
+    },
+    {
+      "id": "manageprofile",
+      "isDefault": false
+    },
+    {
+      "id": "Random",
+      "isDefault": false
+    },
+    {
+      "id": "Page2",
       "isDefault": false
     }
   ],
@@ -23,7 +39,7 @@
   "color": "#FFDEDE",
   "icon": "alien",
   "unpublishedAppLayout": {
-    "type": "FLUID"
+    "type": "DESKTOP"
   },
   "publishedAppLayout": {
     "type": "FLUID"

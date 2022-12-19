@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "Select_Roles",
+    "name": "Select_Employee",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
@@ -17,11 +17,11 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "List employee",
+    "pageId": "employee_infomation",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/rest/v1/Roles",
+      "path": "/rest/v1/Employee",
       "headers": [
         {
           "key": "apikey",
@@ -29,16 +29,21 @@
         },
         {
           "key": "Authorization",
-          "value": " Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRlamdzdHlscnRib3ZlcXVzamF2Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY2OTg4MjYzNCwiZXhwIjoxOTg1NDU4NjM0fQ.Yj42-P79k0l1nhwKnBHXk2Z-JBQWIUTdfEeJm2Ck5Kc"
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRlamdzdHlscnRib3ZlcXVzamF2Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY2OTg4MjYzNCwiZXhwIjoxOTg1NDU4NjM0fQ.Yj42-P79k0l1nhwKnBHXk2Z-JBQWIUTdfEeJm2Ck5Kc"
+        },
+        {
+          "key": "content-type",
+          "value": "application/json"
         }
       ],
       "encodeParamsToggle": true,
       "queryParameters": [
         {
           "key": "select",
-          "value": "*"
+          "value": "E_id,E_name,Position"
         }
       ],
+      "body": "",
       "bodyFormData": [],
       "httpMethod": "GET",
       "selfReferencingDataPaths": [],
@@ -48,7 +53,7 @@
         }
       ],
       "formData": {
-        "apiContentType": "none"
+        "apiContentType": "application/json"
       }
     },
     "executeOnLoad": false,
@@ -62,7 +67,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "List employee_Select_Roles",
+  "id": "employee_infomation_Select_Employee",
   "deleted": false,
-  "gitSyncId": "638835132913ba43778b3c2e_638f04409956db2c13d1252a"
+  "gitSyncId": "638835132913ba43778b3c2e_638ef7062913ba43778ba75e"
 }
