@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "GetCheck_Email",
+    "name": "GetSelect_Workshift_Morning",
     "datasource": {
       "name": "work",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Login",
+    "pageId": "Workshift",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select \"E\".\"E_name\",\"U\".\"Email\",\"U\".\"Password\",\"U\".\"Position\" \nfrom \"Employee\" as \"E\"\ninner join \"Users\" as \"U\" on \"E\".\"U_Id\" = \"U\".\"U_Id\"\nwhere \"U\".\"Email\" = '{{Input1.text}}'",
+      "body": "SELECT TO_CHAR(DATE, 'dd-mm-yyyy') as date,\"staff_total\" FROM PUBLIC.\"Workshift\" WHERE TO_CHAR(DATE, 'dd-mm-yyyy') = {{moment(first_date.text).add(12 - parseInt(first_day.text), \"days\").format(\"DD-MM-YYYY\")}} AND \"S_id\" = '1';",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -36,14 +36,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Input1.text"
+      "moment(first_date.text).add(12 - parseInt(first_day.text), \"days\").format(\"DD-MM-YYYY\")"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Login_GetCheck_Email",
+  "id": "Workshift_GetSelect_Workshift_Morning",
   "deleted": false,
-  "gitSyncId": "638835132913ba43778b3c2e_639aeec85b4b533c8eaa8405"
+  "gitSyncId": "638835132913ba43778b3c2e_639fd31a465a9d1762354f81"
 }

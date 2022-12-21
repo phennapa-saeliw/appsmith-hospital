@@ -1,0 +1,25 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Login",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tencodePassword: (password) => {\n\t\t//write code here\n\t\tvar md = forge.md.md5.create();\n\t\tmd.update(password);\n\t\tconsole.log(md.digest().toHex());\n\t\treturn md.digest().toHex();\n\t\t// output: 9e107d9d372bb6826bd81d3542a419d6\n\t},\n\tmyFun2: async () => {\n\t\t//use async-await or promises\n\t\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Login_JSObject1",
+  "deleted": false,
+  "gitSyncId": "638835132913ba43778b3c2e_63a16a38465a9d1762356b9d"
+}

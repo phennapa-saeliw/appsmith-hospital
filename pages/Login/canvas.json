@@ -2,6 +2,7 @@
   "unpublishedPage": {
     "name": "Login",
     "slug": "login",
+    "customSlug": "",
     "layouts": [
       {
         "viewMode": false,
@@ -109,6 +110,40 @@
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
                           "children": [
+                            {
+                              "widgetName": "Divider1Copy",
+                              "thickness": 2,
+                              "displayName": "Divider",
+                              "iconSVG": "/static/media/icon.cbe8f608ca868e1eb44607e5fbd4a9e5.svg",
+                              "searchTags": [
+                                "line"
+                              ],
+                              "topRow": 44,
+                              "bottomRow": 48,
+                              "parentRowSpace": 10,
+                              "type": "DIVIDER_WIDGET",
+                              "capType": "nc",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 6.53125,
+                              "leftColumn": 37,
+                              "dynamicBindingPathList": [],
+                              "key": "frkend0wee",
+                              "dividerColor": "#858282",
+                              "orientation": "horizontal",
+                              "strokeStyle": "solid",
+                              "isDeprecated": false,
+                              "rightColumn": 57,
+                              "widgetId": "sp8cmoza3l",
+                              "capSide": 0,
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "x72yfbwrua",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "originalTopRow": 44,
+                              "originalBottomRow": 48
+                            },
                             {
                               "boxShadow": "none",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
@@ -356,7 +391,7 @@
                               "resetFormOnClick": false,
                               "boxShadow": "none",
                               "widgetName": "Button1",
-                              "onClick": "{{GetCheck_Email.run(() => {\nif(GetCheck_Email.data[0].Password == Input2.text){\n\tif(GetCheck_Email.data[0].Position == 'Senior Staff'){\n\tnavigateTo('Menu_senior', {});\n  }else{\n\tnavigateTo('Menu_staff', {});\n\t}\n  }else{\n\tshowAlert('Invalid Password', 'error');\n}\n\n} )}}",
+                              "onClick": "{{GetCheck_Email.run(() => {\n\tlet result = GetCheck_Email.data;\n\tif(result.length == 0){\n\t\tshowAlert('Invaild Email','error');\n\t}\n\telse\n\t{\nif(GetCheck_Email.data[0].Email == Input1.text){\n\tconsole.log('DB pass = '+GetCheck_Email.data[0].Password);\n\tconsole.log('Input pass = '+JSObject1.encodePassword(Input2.text));\n\t\nif(GetCheck_Email.data[0].Password == JSObject1.encodePassword(Input2.text)){\n\tif(GetCheck_Email.data[0].Position == 'Senior Staff'){\n\tnavigateTo('Menu_senior', {});\n  }else{\n\tnavigateTo('Menu_staff', {});\n\t}\n  }else{\n\tshowAlert('Invalid Password', 'error');\n}\n}\t\n\t}\n} )}}",
                               "buttonColor": "#86efac",
                               "dynamicPropertyPathList": [
                                 {

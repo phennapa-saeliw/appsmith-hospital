@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "GetCheck_Email",
+    "name": "Get_all_users",
     "datasource": {
       "name": "work",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select \"E\".\"E_name\",\"U\".\"Email\",\"U\".\"Password\",\"U\".\"Position\" \nfrom \"Employee\" as \"E\"\ninner join \"Users\" as \"U\" on \"E\".\"U_Id\" = \"U\".\"U_Id\"\nwhere \"U\".\"Email\" = '{{Input1.text}}'",
+      "body": "SELECT * FROM Public.\"Users\";",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,23 +27,17 @@
       ]
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "Input1.text"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Login_GetCheck_Email",
+  "id": "Login_Get_all_users",
   "deleted": false,
-  "gitSyncId": "638835132913ba43778b3c2e_639aeec85b4b533c8eaa8405"
+  "gitSyncId": "638835132913ba43778b3c2e_63a16fdb749a014ec6e57ddb"
 }

@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT \"E_id\" as \"รหัสพนักงาน\",\"E_name\" as \"ชื่อพนักงาน\",\"Position\" as \"ตำแหน่ง\" FROM Public.\"Employee\"\nOrder by \"รหัสพนักงาน\" ASC;",
+      "body": "SELECT \"E\".\"E_id\",\"E\".\"E_name\",\"U\".\"Position\" from \"Employee\" as \"E\"\nINNER JOIN Public.\"Users\" as \"U\" \nOn \"E\".\"U_Id\" = \"U\".\"U_Id\"\nOrder by \"E\".\"E_id\" ASC;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
