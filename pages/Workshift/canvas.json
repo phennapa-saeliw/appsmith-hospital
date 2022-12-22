@@ -3914,7 +3914,7 @@
                                           "widgetId": "izt5auzbtp",
                                           "containerStyle": "none",
                                           "topRow": 0,
-                                          "bottomRow": 180,
+                                          "bottomRow": 170,
                                           "parentRowSpace": 1,
                                           "isVisible": true,
                                           "canExtend": false,
@@ -3929,6 +3929,64 @@
                                           "dynamicBindingPathList": [],
                                           "borderRadius": "0px",
                                           "children": [
+                                            {
+                                              "resetFormOnClick": false,
+                                              "boxShadow": "none",
+                                              "widgetName": "Buttonwork1Copy3",
+                                              "onClick": "{{showModal('Modal1')}}",
+                                              "buttonColor": "{{appsmith.store.box5}}",
+                                              "dynamicPropertyPathList": [
+                                                {
+                                                  "key": "onClick"
+                                                },
+                                                {
+                                                  "key": "buttonColor"
+                                                }
+                                              ],
+                                              "displayName": "Button",
+                                              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                                              "searchTags": [
+                                                "click",
+                                                "submit"
+                                              ],
+                                              "topRow": 4,
+                                              "bottomRow": 8,
+                                              "parentRowSpace": 10,
+                                              "type": "BUTTON_WIDGET",
+                                              "hideCard": false,
+                                              "animateLoading": false,
+                                              "parentColumnSpace": 16.3125,
+                                              "dynamicTriggerPathList": [
+                                                {
+                                                  "key": "onClick"
+                                                }
+                                              ],
+                                              "leftColumn": 0,
+                                              "dynamicBindingPathList": [
+                                                {
+                                                  "key": "buttonColor"
+                                                }
+                                              ],
+                                              "text": "กะเช้า",
+                                              "isDisabled": false,
+                                              "key": "j0oogzqgyd",
+                                              "isDeprecated": false,
+                                              "rightColumn": 64,
+                                              "isDefaultClickDisabled": true,
+                                              "iconName": "time",
+                                              "widgetId": "3jq03zlwnm",
+                                              "isVisible": true,
+                                              "recaptchaType": "V3",
+                                              "version": 1,
+                                              "parentId": "izt5auzbtp",
+                                              "renderMode": "CANVAS",
+                                              "isLoading": false,
+                                              "disabledWhenInvalid": false,
+                                              "borderRadius": "1.5rem",
+                                              "buttonVariant": "PRIMARY",
+                                              "iconAlign": "left",
+                                              "placement": "CENTER"
+                                            },
                                             {
                                               "boxShadow": "none",
                                               "widgetName": "Text1CopyCopyCopy4",
@@ -4010,7 +4068,7 @@
                                           "widgetId": "ie46qslodd",
                                           "containerStyle": "none",
                                           "topRow": 0,
-                                          "bottomRow": 180,
+                                          "bottomRow": 170,
                                           "parentRowSpace": 1,
                                           "isVisible": true,
                                           "canExtend": false,
@@ -4025,6 +4083,64 @@
                                           "dynamicBindingPathList": [],
                                           "borderRadius": "0px",
                                           "children": [
+                                            {
+                                              "resetFormOnClick": false,
+                                              "boxShadow": "none",
+                                              "widgetName": "Buttonwork1Copy2",
+                                              "onClick": "{{showModal('Modal1')}}",
+                                              "buttonColor": "{{appsmith.store.box4}}",
+                                              "dynamicPropertyPathList": [
+                                                {
+                                                  "key": "onClick"
+                                                },
+                                                {
+                                                  "key": "buttonColor"
+                                                }
+                                              ],
+                                              "displayName": "Button",
+                                              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                                              "searchTags": [
+                                                "click",
+                                                "submit"
+                                              ],
+                                              "topRow": 4,
+                                              "bottomRow": 8,
+                                              "parentRowSpace": 10,
+                                              "type": "BUTTON_WIDGET",
+                                              "hideCard": false,
+                                              "animateLoading": false,
+                                              "parentColumnSpace": 16.3125,
+                                              "dynamicTriggerPathList": [
+                                                {
+                                                  "key": "onClick"
+                                                }
+                                              ],
+                                              "leftColumn": 0,
+                                              "dynamicBindingPathList": [
+                                                {
+                                                  "key": "buttonColor"
+                                                }
+                                              ],
+                                              "text": "กะเช้า",
+                                              "isDisabled": false,
+                                              "key": "j0oogzqgyd",
+                                              "isDeprecated": false,
+                                              "rightColumn": 64,
+                                              "isDefaultClickDisabled": true,
+                                              "iconName": "time",
+                                              "widgetId": "878wo97o2z",
+                                              "isVisible": true,
+                                              "recaptchaType": "V3",
+                                              "version": 1,
+                                              "parentId": "ie46qslodd",
+                                              "renderMode": "CANVAS",
+                                              "isLoading": false,
+                                              "disabledWhenInvalid": false,
+                                              "borderRadius": "1.5rem",
+                                              "buttonVariant": "PRIMARY",
+                                              "iconAlign": "left",
+                                              "placement": "CENTER"
+                                            },
                                             {
                                               "boxShadow": "none",
                                               "widgetName": "Text1CopyCopy1",
@@ -4270,7 +4386,7 @@
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1",
                                               "onClick": "{{showModal('Modal1')}}",
-                                              "buttonColor": "{{(GetSelect_Workshift_Morning.data == 0)?'#fef08a':(GetSelect_Workshift_Morning.data[0].staff_total >= 9)?'#bbf7d0':'#fef08a'\n}}",
+                                              "buttonColor": "{{appsmith.store.box3}}",
                                               "dynamicPropertyPathList": [
                                                 {
                                                   "key": "onClick"
@@ -4370,7 +4486,7 @@
                                           "widgetId": "cytwvdf7ob",
                                           "containerStyle": "none",
                                           "topRow": 0,
-                                          "bottomRow": 180,
+                                          "bottomRow": 170,
                                           "parentRowSpace": 1,
                                           "isVisible": true,
                                           "canExtend": false,
@@ -4385,6 +4501,64 @@
                                           "dynamicBindingPathList": [],
                                           "borderRadius": "0px",
                                           "children": [
+                                            {
+                                              "resetFormOnClick": false,
+                                              "boxShadow": "none",
+                                              "widgetName": "Buttonwork1Copy4",
+                                              "onClick": "{{showModal('Modal1')}}",
+                                              "buttonColor": "{{appsmith.store.box2}}",
+                                              "dynamicPropertyPathList": [
+                                                {
+                                                  "key": "onClick"
+                                                },
+                                                {
+                                                  "key": "buttonColor"
+                                                }
+                                              ],
+                                              "displayName": "Button",
+                                              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                                              "searchTags": [
+                                                "click",
+                                                "submit"
+                                              ],
+                                              "topRow": 4,
+                                              "bottomRow": 8,
+                                              "parentRowSpace": 10,
+                                              "type": "BUTTON_WIDGET",
+                                              "hideCard": false,
+                                              "animateLoading": false,
+                                              "parentColumnSpace": 16.3125,
+                                              "dynamicTriggerPathList": [
+                                                {
+                                                  "key": "onClick"
+                                                }
+                                              ],
+                                              "leftColumn": 0,
+                                              "dynamicBindingPathList": [
+                                                {
+                                                  "key": "buttonColor"
+                                                }
+                                              ],
+                                              "text": "กะเช้า",
+                                              "isDisabled": false,
+                                              "key": "j0oogzqgyd",
+                                              "isDeprecated": false,
+                                              "rightColumn": 64,
+                                              "isDefaultClickDisabled": true,
+                                              "iconName": "time",
+                                              "widgetId": "1gdik7uz43",
+                                              "isVisible": true,
+                                              "recaptchaType": "V3",
+                                              "version": 1,
+                                              "parentId": "cytwvdf7ob",
+                                              "renderMode": "CANVAS",
+                                              "isLoading": false,
+                                              "disabledWhenInvalid": false,
+                                              "borderRadius": "1.5rem",
+                                              "buttonVariant": "PRIMARY",
+                                              "iconAlign": "left",
+                                              "placement": "CENTER"
+                                            },
                                             {
                                               "boxShadow": "none",
                                               "widgetName": "Text1CopyCopy5",
@@ -4899,7 +5073,6 @@
                                     {
                                       "boxShadow": "none",
                                       "widgetName": "DatePicker1",
-                                      "minDate": "1920-12-31T18:30:00.000Z",
                                       "dateFormat": "MMMM YYYY",
                                       "dynamicPropertyPathList": [
                                         {
@@ -4907,6 +5080,9 @@
                                         },
                                         {
                                           "key": "onDateSelected"
+                                        },
+                                        {
+                                          "key": "defaultDate"
                                         }
                                       ],
                                       "topRow": 0,
@@ -4924,13 +5100,16 @@
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "accentColor"
+                                        },
+                                        {
+                                          "key": "defaultDate"
                                         }
                                       ],
                                       "isDisabled": false,
-                                      "onDateSelected": "{{GetSelect_Workshift_Morning.run()}}",
+                                      "onDateSelected": "{{datework.date()}}",
                                       "labelTextSize": "0.875rem",
                                       "isRequired": false,
-                                      "defaultDate": "2022-11-01T00:00:00.000+07:00",
+                                      "defaultDate": "{{Date()}}",
                                       "rightColumn": 41,
                                       "dynamicHeight": "FIXED",
                                       "widgetId": "ocok0570ti",
@@ -4941,8 +5120,10 @@
                                       "version": 2,
                                       "parentId": "1z7iply2n2",
                                       "isLoading": false,
+                                      "timePrecision": "None",
                                       "borderRadius": "0px",
                                       "maxDynamicHeight": 9000,
+                                      "firstDayOfWeek": "",
                                       "closeOnSelection": true,
                                       "maxDate": "2121-12-31T18:29:00.000Z",
                                       "minDynamicHeight": 4
@@ -6114,7 +6295,7 @@
                       },
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                       "widgetName": "List1",
-                      "listData": "[\n  {\n    \"id\": \"08:00 - 16:00 น.\",\n    \"name\": \"นาย Blue\",\n\t\t\"Positon\" : \"Senior\"\n    \n  },\n  {\n    \"id\": \"08:00 - 16:00 น.\",\n    \"name\": \"นาย Green\",\n\t\t\t\t\"Positon\" : \"Junior\"\n\n  },\n  {\n    \"id\": \"08:00 - 16:00 น.\",\n    \"name\": \"นาย Red\",\n\t\t\t\t\"Positon\" : \"Junior\"\n\n  }\n]",
+                      "listData": "[\n  {\n    \"id\": \"08:00 - 16:00 น.\",\n    \"name\": \"นาย Blue\",\n\t\t\"Positon\" : \"Senior\"\n    \n  },\n  {\n    \"id\": \"08:00 - 16:00 น.\",\n    \"name\": \"นาย Green\",\n\t\t\t\t\"Positon\" : \"Junior\"\n\n  },\n\t  {\n    \"id\": \"08:00 - 16:00 น.\",\n    \"name\": \"นาย Green\",\n\t\t\t\t\"Positon\" : \"Junior\"\n\n  },  {\n    \"id\": \"08:00 - 16:00 น.\",\n    \"name\": \"นาย Green\",\n\t\t\t\t\"Positon\" : \"Junior\"\n\n  },  {\n    \"id\": \"08:00 - 16:00 น.\",\n    \"name\": \"นาย Green\",\n\t\t\t\t\"Positon\" : \"Junior\"\n\n  },  {\n    \"id\": \"08:00 - 16:00 น.\",\n    \"name\": \"นาย Green\",\n\t\t\t\t\"Positon\" : \"Junior\"\n\n  },  {\n    \"id\": \"08:00 - 16:00 น.\",\n    \"name\": \"นาย Green\",\n\t\t\t\t\"Positon\" : \"Junior\"\n\n  },  {\n    \"id\": \"08:00 - 16:00 น.\",\n    \"name\": \"นาย Green\",\n\t\t\t\t\"Positon\" : \"Junior\"\n\n  },  {\n    \"id\": \"08:00 - 16:00 น.\",\n    \"name\": \"นาย Green\",\n\t\t\t\t\"Positon\" : \"Junior\"\n\n  },\n  {\n    \"id\": \"08:00 - 16:00 น.\",\n    \"name\": \"นาย Red\",\n\t\t\t\t\"Positon\" : \"Junior\"\n\n  }\n]",
                       "isCanvas": true,
                       "displayName": "List",
                       "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
@@ -6577,6 +6758,7 @@
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
                       "parentId": "9i0j364v99",
+                      "serverSidePaginationEnabled": false,
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
@@ -6771,20 +6953,7 @@
             }
           ]
         },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Workshift_GetSelect_Workshift_Morning",
-              "name": "GetSelect_Workshift_Morning",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "moment(first_date.text).add(12 - parseInt(first_day.text), \"days\").format(\"DD-MM-YYYY\")"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
+        "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Workshift",

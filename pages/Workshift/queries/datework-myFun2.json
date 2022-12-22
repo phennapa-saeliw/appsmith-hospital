@@ -3,7 +3,7 @@
   "pluginId": "js-plugin",
   "unpublishedAction": {
     "name": "myFun2",
-    "fullyQualifiedName": "JSObject1.myFun2",
+    "fullyQualifiedName": "datework.myFun2",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "Workshift",
-    "collectionId": "Workshift_JSObject1",
+    "collectionId": "Workshift_datework",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -42,7 +42,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Workshift_JSObject1.myFun2",
+  "id": "Workshift_datework.myFun2",
   "deleted": false,
   "gitSyncId": "638835132913ba43778b3c2e_63a2b8654f35af560dc15ee9"
 }
