@@ -10776,7 +10776,20 @@
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Workshift_get_workshift_morning",
+              "name": "get_workshift_morning",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "moment(first_date.text).add(7 - parseInt(first_day.text), \"days\").format(\"MM-YYYY\")"
+              ],
+              "timeoutInMillisecond": 100000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Workshift",
