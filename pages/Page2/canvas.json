@@ -3577,7 +3577,12 @@
                               "resetFormOnClick": false,
                               "boxShadow": "none",
                               "widgetName": "Button1",
-                              "buttonColor": "#fef08a",
+                              "buttonColor": "#bbf7d0",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "buttonColor"
+                                }
+                              ],
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                               "searchTags": [
