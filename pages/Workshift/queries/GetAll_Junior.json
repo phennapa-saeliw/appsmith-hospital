@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "GetSelect_Workshift_Morning",
+    "name": "GetAll_Junior",
     "datasource": {
       "name": "work",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT DATE as date,\"staff_total\" FROM PUBLIC.\"Workshift\" WHERE TO_CHAR(DATE, 'mm-yyyy') = {{moment(first_date.text).add(7 - parseInt(first_day.text), \"days\").format(\"MM-YYYY\")}} AND\"S_id\" = '1' order by date;",
+      "body": "SELECT \"E\".\"E_name\",\"U\".\"Position\" From Public.\"Users\" as \"U\"\nINNER JOIN Public.\"Employee\" as \"E\" ON \"U\".\"U_Id\" = \"E\".\"U_Id\"\nWHERE \"U\".\"Position\" LIKE 'Junior%'",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,23 +27,17 @@
       ]
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "moment(first_date.text).add(7 - parseInt(first_day.text), \"days\").format(\"MM-YYYY\")"
-    ],
-    "userSetOnLoad": true,
+    "jsonPathKeys": [],
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Workshift_GetSelect_Workshift_Morning",
+  "id": "Workshift_GetAll_Junior",
   "deleted": false,
-  "gitSyncId": "638835132913ba43778b3c2e_639fd31a465a9d1762354f81"
+  "gitSyncId": "638835132913ba43778b3c2e_63a8240cbc0e8334c729b17b"
 }
