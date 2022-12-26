@@ -890,7 +890,7 @@
                           "index": 1,
                           "iconName": "log-out",
                           "iconAlign": "left",
-                          "onClick": "{{navigateTo('Login', {}, 'SAME_WINDOW')}}"
+                          "onClick": "{{JSObject1.Logout()}}"
                         }
                       },
                       "isVisible": true,
@@ -1075,7 +1075,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "IconButton2Copy1Copy",
-                              "onClick": "{{navigateTo('Login',{undefined}, 'SAME_WINDOW')}}",
+                              "onClick": "{{JSObject1.Logout()}}",
                               "buttonColor": "#fef08a",
                               "dynamicPropertyPathList": [],
                               "displayName": "Icon Button",

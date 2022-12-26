@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Menu_senior",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tLogout: () => {\n\t\tstoreValue('E_id',null),\n\t\t\tstoreValue('E_email',null),\n\t\t\tstoreValue('name',null),\n\t\t\tstoreValue('Position',null)\n\t\t\tnavigateTo('Login')\n\t},\n\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Menu_senior_JSObject1",
+  "deleted": false,
+  "gitSyncId": "638835132913ba43778b3c2e_63a946d1bc0e8334c729ba10"
+}

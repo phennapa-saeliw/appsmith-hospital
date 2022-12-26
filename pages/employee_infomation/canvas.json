@@ -403,7 +403,14 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 14.7255859375,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "menuItems.menuItem1.onClick"
+                        },
+                        {
+                          "key": "menuItems.menuItem3.onClick"
+                        }
+                      ],
                       "leftColumn": 59,
                       "dynamicBindingPathList": [
                         {
@@ -425,7 +432,8 @@
                           "widgetId": "",
                           "isVisible": true,
                           "isDisabled": false,
-                          "index": 0
+                          "index": 0,
+                          "onClick": "{{navigateTo('manageprofile', {}, 'SAME_WINDOW')}}"
                         },
                         "menuItem3": {
                           "label": "Logout",
@@ -433,7 +441,8 @@
                           "widgetId": "",
                           "isVisible": true,
                           "isDisabled": false,
-                          "index": 1
+                          "index": 1,
+                          "onClick": "{{JSObject1.Logout()}}"
                         }
                       },
                       "isVisible": true,
