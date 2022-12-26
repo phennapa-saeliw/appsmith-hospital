@@ -1075,6 +1075,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "IconButton2Copy1Copy",
+                              "onClick": "{{navigateTo('Login',{undefined}, 'SAME_WINDOW')}}",
                               "buttonColor": "#fef08a",
                               "dynamicPropertyPathList": [],
                               "displayName": "Icon Button",
@@ -1090,7 +1091,11 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 16.3125,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "leftColumn": 0,
                               "dynamicBindingPathList": [
                                 {
@@ -1114,9 +1119,13 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "IconButton2Copy1CopyCopy",
-                              "onClick": "{{navigateTo('Menu', {}, 'SAME_WINDOW')}}",
+                              "onClick": "{{}}",
                               "buttonColor": "#fef08a",
-                              "dynamicPropertyPathList": [],
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "displayName": "Icon Button",
                               "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
                               "searchTags": [
@@ -1400,7 +1409,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "{{appsmith.store.name}}",
+                      "text": "{{appsmith.store.name}}   ",
                       "key": "f2h9rvrad0",
                       "isDeprecated": false,
                       "rightColumn": 59,
