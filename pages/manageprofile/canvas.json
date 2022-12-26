@@ -690,13 +690,9 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "IconButton2Copy1Copy3",
-                              "onClick": "{{navigateTo('Login', {}, 'SAME_WINDOW')}}",
+                              "onClick": "{{navigateTo('Login',{clearStore()}, 'SAME_WINDOW')}}",
                               "buttonColor": "#fef08a",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "onClick"
-                                }
-                              ],
+                              "dynamicPropertyPathList": [],
                               "displayName": "Icon Button",
                               "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
                               "searchTags": [
