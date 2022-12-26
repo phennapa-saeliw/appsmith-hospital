@@ -137,11 +137,14 @@
                                 },
                                 {
                                   "key": "borderRadius"
+                                },
+                                {
+                                  "key": "text"
                                 }
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "Email :",
+                              "text": "Email : {{appsmith.store.E_email}}",
                               "key": "9a72hk0o05",
                               "isDeprecated": false,
                               "rightColumn": 46,
@@ -191,11 +194,14 @@
                                 },
                                 {
                                   "key": "borderRadius"
+                                },
+                                {
+                                  "key": "text"
                                 }
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "ชื่อ :",
+                              "text": "ชื่อ : {{appsmith.store.name}}",
                               "key": "9a72hk0o05",
                               "isDeprecated": false,
                               "rightColumn": 46,
@@ -245,11 +251,14 @@
                                 },
                                 {
                                   "key": "borderRadius"
+                                },
+                                {
+                                  "key": "text"
                                 }
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "ตำแหน่ง : ",
+                              "text": "ตำแหน่ง : {{appsmith.store.Position}}",
                               "key": "9a72hk0o05",
                               "isDeprecated": false,
                               "rightColumn": 46,
@@ -338,11 +347,14 @@
                                 },
                                 {
                                   "key": "borderRadius"
+                                },
+                                {
+                                  "key": "text"
                                 }
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "รหัสพนักงาน : ",
+                              "text": "รหัสพนักงาน : {{appsmith.store.E_id}}",
                               "key": "9a72hk0o05",
                               "isDeprecated": false,
                               "rightColumn": 46,
@@ -678,8 +690,13 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "IconButton2Copy1Copy3",
+                              "onClick": "{{navigateTo('Login', {}, 'SAME_WINDOW')}}",
                               "buttonColor": "#fef08a",
-                              "dynamicPropertyPathList": [],
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "displayName": "Icon Button",
                               "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
                               "searchTags": [
@@ -693,7 +710,11 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 16.3125,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "leftColumn": 0,
                               "dynamicBindingPathList": [
                                 {
@@ -996,11 +1017,14 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "text"
                         }
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "name",
+                      "text": "{{appsmith.store.name}}",
                       "key": "f2h9rvrad0",
                       "isDeprecated": false,
                       "rightColumn": 59,
