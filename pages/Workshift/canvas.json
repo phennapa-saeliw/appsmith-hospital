@@ -7300,7 +7300,7 @@
                                         }
                                       ],
                                       "isDisabled": false,
-                                      "onDateSelected": "{{Calendarwork.getAllWorkshift()}}",
+                                      "onDateSelected": "{{testcheckwork.checkworkshift()}}",
                                       "labelTextSize": "0.875rem",
                                       "isRequired": false,
                                       "defaultDate": "{{Date()}}",
@@ -11174,34 +11174,12 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Workshift_GetSelect_Workshift_afternoon",
-              "name": "GetSelect_Workshift_afternoon",
+              "id": "Workshift_GetAll_work",
+              "name": "GetAll_work",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
-              "jsonPathKeys": [
-                "moment(first_date.text).add(7 - parseInt(first_day.text), \"days\").format(\"MM-YYYY\")"
-              ],
-              "timeoutInMillisecond": 10000000
-            },
-            {
-              "id": "Workshift_GetSelect_Workshift_night",
-              "name": "GetSelect_Workshift_night",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "moment(first_date.text).add(7 - parseInt(first_day.text), \"days\").format(\"MM-YYYY\")"
-              ],
-              "timeoutInMillisecond": 10000000
-            },
-            {
-              "id": "Workshift_get_workshift_morning",
-              "name": "get_workshift_morning",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "moment(first_date.text).add(7 - parseInt(first_day.text), \"days\").format(\"MM-YYYY\")"
-              ],
-              "timeoutInMillisecond": 10000000
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 1000000
             }
           ]
         ],
