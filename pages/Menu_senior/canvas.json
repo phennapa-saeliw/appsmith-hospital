@@ -890,7 +890,7 @@
                           "index": 1,
                           "iconName": "log-out",
                           "iconAlign": "left",
-                          "onClick": "{{JSObject1.Logout()}}"
+                          "onClick": "{{Logout.Logout()}}"
                         }
                       },
                       "isVisible": true,
@@ -1075,7 +1075,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "IconButton2Copy1Copy",
-                              "onClick": "{{JSObject1.Logout()}}",
+                              "onClick": "{{Logout.Logout()}}",
                               "buttonColor": "#fef08a",
                               "dynamicPropertyPathList": [],
                               "displayName": "Icon Button",
@@ -1448,7 +1448,7 @@
               "key": "ghy2ycetsk",
               "backgroundColor": "#dbeafe",
               "isDeprecated": false,
-              "rightColumn": 62,
+              "rightColumn": 64,
               "dynamicHeight": "FIXED",
               "widgetId": "sqn8v11hbt",
               "containerStyle": "card",

@@ -3,7 +3,7 @@
   "pluginId": "js-plugin",
   "unpublishedAction": {
     "name": "Logout",
-    "fullyQualifiedName": "JSObject1.Logout",
+    "fullyQualifiedName": "Logout.Logout",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "Menu_senior",
-    "collectionId": "Menu_senior_JSObject1",
+    "collectionId": "Menu_senior_Logout",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -42,7 +42,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Menu_senior_JSObject1.Logout",
+  "id": "Menu_senior_Logout.Logout",
   "deleted": false,
   "gitSyncId": "638835132913ba43778b3c2e_63a946d1bc0e8334c729ba0c"
 }
