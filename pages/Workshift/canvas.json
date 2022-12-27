@@ -7509,7 +7509,11 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 14.7255859375,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "menuItems.menuItem1.onClick"
+                        }
+                      ],
                       "leftColumn": 59,
                       "dynamicBindingPathList": [
                         {
@@ -7531,7 +7535,8 @@
                           "widgetId": "",
                           "isVisible": true,
                           "isDisabled": false,
-                          "index": 0
+                          "index": 0,
+                          "onClick": "{{navigateTo('manageprofile', {}, 'SAME_WINDOW')}}"
                         },
                         "menuItem3": {
                           "label": "Logout",
@@ -8030,11 +8035,14 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "fontFamily"
+                        },
+                        {
+                          "key": "text"
                         }
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "name",
+                      "text": "{{appsmith.store.name}}",
                       "key": "f2h9rvrad0",
                       "isDeprecated": false,
                       "rightColumn": 59,
@@ -10140,17 +10148,69 @@
                   "widgetName": "Canvas5",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 560,
+                  "bottomRow": 660,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
                   "hideCard": true,
                   "shouldScrollContents": false,
-                  "minHeight": 562,
+                  "minHeight": 664,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
                   "dynamicBindingPathList": [],
                   "children": [
+                    {
+                      "widgetName": "Text11Copy",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label"
+                      ],
+                      "topRow": 10,
+                      "bottomRow": 14,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "parentColumnSpace": 11.3125,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 32,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "truncateButtonColor"
+                        },
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "text": "เวลา",
+                      "key": "oyrkwpmvu6",
+                      "isDeprecated": false,
+                      "rightColumn": 39,
+                      "textAlign": "CENTER",
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "ogkdj6l36c",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "9i0j364v99",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "fontSize": "0.875rem",
+                      "minDynamicHeight": 4
+                    },
                     {
                       "boxShadow": "none",
                       "widgetName": "IconButton3",
@@ -10502,12 +10562,12 @@
                       },
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                       "widgetName": "List1",
-                      "listData": "[\n  {\n    \"id\": \"08:00 - 16:00 น.\",\n    \"name\": \"นาย Blue\",\n\t\t\"Positon\" : \"Senior\"\n    \n  },\n  {\n    \"id\": \"08:00 - 16:00 น.\",\n    \"name\": \"นาย Green\",\n\t\t\t\t\"Positon\" : \"Junior\"\n\n  },\n\t  {\n    \"id\": \"08:00 - 16:00 น.\",\n    \"name\": \"นาย Green\",\n\t\t\t\t\"Positon\" : \"Junior\"\n\n  },  {\n    \"id\": \"08:00 - 16:00 น.\",\n    \"name\": \"นาย Green\",\n\t\t\t\t\"Positon\" : \"Junior\"\n\n  },  {\n    \"id\": \"08:00 - 16:00 น.\",\n    \"name\": \"นาย Green\",\n\t\t\t\t\"Positon\" : \"Junior\"\n\n  },  {\n    \"id\": \"08:00 - 16:00 น.\",\n    \"name\": \"นาย Green\",\n\t\t\t\t\"Positon\" : \"Junior\"\n\n  },  {\n    \"id\": \"08:00 - 16:00 น.\",\n    \"name\": \"นาย Green\",\n\t\t\t\t\"Positon\" : \"Junior\"\n\n  },  {\n    \"id\": \"08:00 - 16:00 น.\",\n    \"name\": \"นาย Green\",\n\t\t\t\t\"Positon\" : \"Junior\"\n\n  },  {\n    \"id\": \"08:00 - 16:00 น.\",\n    \"name\": \"นาย Green\",\n\t\t\t\t\"Positon\" : \"Junior\"\n\n  },\n  {\n    \"id\": \"08:00 - 16:00 น.\",\n    \"name\": \"นาย Red\",\n\t\t\t\t\"Positon\" : \"Junior\"\n\n  }\n]",
+                      "listData": "",
                       "isCanvas": true,
                       "displayName": "List",
                       "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
-                      "topRow": 14,
-                      "bottomRow": 51,
+                      "topRow": 20,
+                      "bottomRow": 57,
                       "parentRowSpace": 10,
                       "type": "LIST_WIDGET",
                       "hideCard": false,
@@ -10979,8 +11039,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 10,
-                      "bottomRow": 14,
+                      "topRow": 16,
+                      "bottomRow": 20,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -11031,8 +11091,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 10,
-                      "bottomRow": 14,
+                      "topRow": 16,
+                      "bottomRow": 20,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -11083,8 +11143,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 10,
-                      "bottomRow": 14,
+                      "topRow": 16,
+                      "bottomRow": 20,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -11125,6 +11185,215 @@
                       "maxDynamicHeight": 9000,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Input1",
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                      "searchTags": [
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
+                      ],
+                      "topRow": 10,
+                      "bottomRow": 14,
+                      "parentRowSpace": 10,
+                      "labelWidth": 5,
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET_V2",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 11.3125,
+                      "dynamicTriggerPathList": [],
+                      "resetOnSubmit": true,
+                      "leftColumn": 11,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
+                        }
+                      ],
+                      "labelPosition": "Top",
+                      "labelStyle": "",
+                      "inputType": "TEXT",
+                      "isDisabled": true,
+                      "key": "nxdwyf3ylh",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 31,
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "bxiz0cgosz",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "label": "",
+                      "version": 2,
+                      "parentId": "9i0j364v99",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "iconAlign": "left",
+                      "defaultText": "{{appsmith.store.name}}",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "resetFormOnClick": false,
+                      "boxShadow": "none",
+                      "widgetName": "Button1",
+                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 4,
+                      "bottomRow": 8,
+                      "parentRowSpace": 10,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 11.3125,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 44,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "buttonColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "text": "แก้ไข",
+                      "isDisabled": false,
+                      "key": "44jtphs7gt",
+                      "isDeprecated": false,
+                      "rightColumn": 54,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "fhilzihrqf",
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "9i0j364v99",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "disabledWhenInvalid": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "buttonVariant": "PRIMARY",
+                      "placement": "CENTER"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Select1",
+                      "isFilterable": true,
+                      "displayName": "Select",
+                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                      "labelText": "",
+                      "searchTags": [
+                        "dropdown"
+                      ],
+                      "topRow": 10,
+                      "bottomRow": 14,
+                      "parentRowSpace": 10,
+                      "labelWidth": 5,
+                      "type": "SELECT_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "GREEN",
+                      "animateLoading": true,
+                      "parentColumnSpace": 11.3125,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 41,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "labelPosition": "Top",
+                      "options": "[\n  {\n    \"label\": \"08:00 - 16:00 น.\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"Red\",\n    \"value\": \"RED\"\n  }\n]",
+                      "placeholderText": "Select option",
+                      "isDisabled": true,
+                      "key": "a6habcp5t0",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 61,
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "lvwudatf1h",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "9i0j364v99",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "widgetName": "Text11",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label"
+                      ],
+                      "topRow": 10,
+                      "bottomRow": 14,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "parentColumnSpace": 11.3125,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 3,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "truncateButtonColor"
+                        },
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "text": "ชื่อ",
+                      "key": "oyrkwpmvu6",
+                      "isDeprecated": false,
+                      "rightColumn": 10,
+                      "textAlign": "CENTER",
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "omgtrz4ale",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "9i0j364v99",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "fontSize": "1rem",
+                      "minDynamicHeight": 4
                     }
                   ],
                   "isDisabled": false,
@@ -11141,7 +11410,7 @@
                 }
               ],
               "key": "1m9smieafj",
-              "height": 562,
+              "height": 664,
               "isDeprecated": false,
               "rightColumn": 0,
               "detachFromLayout": true,
@@ -11155,26 +11424,12 @@
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "width": 628,
+              "width": 736,
               "minDynamicHeight": 24
             }
           ]
         },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Workshift_Calendarwork.getAllWorkshift",
-              "name": "Calendarwork.getAllWorkshift",
-              "collectionId": "Workshift_Calendarwork",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "() => {\n  clearStore();\n  get_workshift_morning.run(() => {\n    let shiftBox = moment(first_date.text).weekday() - 1;\n    let results = get_workshift_morning.data;\n    let total = get_workshift_morning.data.length;\n    for (let i = 0; i < total; i++) {\n      console.log(results[i]);\n      let day = Number(moment(results[i].date).format(\"D\")) + Number(shiftBox);\n      let key = \"box\" + day.toString();\n      console.log(key);\n      if (results[i].staff_total >= 9) {\n        storeValue(\"box\" + day, '#bbf7d0');\n      } else {\n        storeValue(\"box\" + day, '#fef08a');\n      }\n    }\n  });\n  clearStore();\n  GetSelect_Workshift_afternoon.run(() => {\n    let shiftBox1 = moment(first_date.text).weekday() - 1;\n    let results1 = GetSelect_Workshift_afternoon.data;\n    let total1 = GetSelect_Workshift_afternoon.data.length;\n    for (let i = 0; i < total1; i++) {\n      console.log(results1[i]);\n      let day1 = Number(moment(results1[i].date).format(\"D\")) + Number(shiftBox1);\n      let key1 = \"boxn\" + day1.toString();\n      console.log(key1);\n      if (results1[i].staff_total >= 9) {\n        storeValue(\"boxn\" + day1, '#bbf7d0');\n      } else {\n        storeValue(\"boxn\" + day1, '#fef08a');\n      }\n    }\n  });\n  clearStore();\n  GetSelect_Workshift_night.run(() => {\n    let shiftBox2 = moment(first_date.text).weekday() - 1;\n    let results2 = GetSelect_Workshift_night.data;\n    let total2 = GetSelect_Workshift_night.data.length;\n    for (let i = 0; i < total2; i++) {\n      console.log(results2[i]);\n      let day2 = Number(moment(results2[i].date).format(\"D\")) + Number(shiftBox2);\n      let key2 = \"boxnn\" + day2.toString();\n      console.log(key2);\n      if (results2[i].staff_total >= 9) {\n        storeValue(\"boxnn\" + day2, '#bbf7d0');\n      } else {\n        storeValue(\"boxnn\" + day2, '#fef08a');\n      }\n    }\n  });\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
+        "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Workshift",

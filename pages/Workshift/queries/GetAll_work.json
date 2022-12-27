@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 1000000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "Select * From public.\"Workshift\"",
+      "body": "Select * From public.\"Workshift\" WHERE TO_CHAR(DATE, 'mm-yyyy') = {{moment(first_date.text).add(7 - parseInt(first_day.text), \"days\").format(\"MM-YYYY\")}} order by date",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,13 +27,19 @@
       ]
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [
       "'Query timeout' field must be an integer between 0 and 60000"
     ],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "moment(first_date.text).add(7 - parseInt(first_day.text), \"days\").format(\"MM-YYYY\")"
+    ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
