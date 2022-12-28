@@ -160,7 +160,7 @@
                               ],
                               "labelStyle": "",
                               "inputType": "EMAIL",
-                              "placeholderText": "1234@gmail.com",
+                              "placeholderText": "jojo12@gmail.com",
                               "isDisabled": false,
                               "isRequired": true,
                               "dynamicHeight": "FIXED",
@@ -201,7 +201,7 @@
                               "originalTopRow": 25,
                               "maxDynamicHeight": 9000,
                               "iconAlign": "right",
-                              "defaultText": "jojo12@gmail.com",
+                              "defaultText": "",
                               "minDynamicHeight": 4
                             },
                             {
