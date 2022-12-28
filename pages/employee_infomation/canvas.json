@@ -42,7 +42,7 @@
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
-              "shouldScrollContents": true,
+              "shouldScrollContents": false,
               "animateLoading": true,
               "parentColumnSpace": 17.9375,
               "dynamicTriggerPathList": [],
@@ -150,7 +150,7 @@
                               "fontStyle": "",
                               "enableClientSideSearch": false,
                               "version": 1,
-                              "totalRecordsCount": 0,
+                              "totalRecordsCount": "",
                               "isLoading": false,
                               "childStylesheet": {
                                 "button": {
@@ -225,7 +225,7 @@
                                   "isEditable": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "E_id",
+                                  "label": "รหัสพนักงาน",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"E_id\"]))}}",
@@ -253,7 +253,7 @@
                                   "isEditable": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "E_name",
+                                  "label": "ชื่อ",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"E_name\"]))}}",
@@ -281,7 +281,7 @@
                                   "isEditable": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "Position",
+                                  "label": "ตำแหน่ง",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Position\"]))}}",
@@ -299,6 +299,7 @@
                               "label": "Data",
                               "searchKey": "",
                               "parentId": "yn1cwu1lz7",
+                              "serverSidePaginationEnabled": true,
                               "renderMode": "CANVAS",
                               "horizontalAlignment": "CENTER",
                               "isVisibleSearch": true,
@@ -442,7 +443,7 @@
                           "isVisible": true,
                           "isDisabled": false,
                           "index": 1,
-                          "onClick": "{{JSObject1.Logout()}}"
+                          "onClick": "{{logout.Logout()}}"
                         }
                       },
                       "isVisible": true,
@@ -627,6 +628,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "IconButton2Copy1Copy3",
+                              "onClick": "{{logout.Logout()}}",
                               "buttonColor": "#fef08a",
                               "dynamicPropertyPathList": [],
                               "displayName": "Icon Button",
@@ -642,7 +644,11 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 16.3125,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "leftColumn": 0,
                               "dynamicBindingPathList": [
                                 {
@@ -666,13 +672,9 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "IconButton2Copy1CopyCopy",
-                              "onClick": "{{navigateTo('Menu_senior',{}, 'SAME_WINDOW')}}",
+                              "onClick": "{{checkpositon.checkposition()}}",
                               "buttonColor": "#fef08a",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "onClick"
-                                }
-                              ],
+                              "dynamicPropertyPathList": [],
                               "displayName": "Icon Button",
                               "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
                               "searchTags": [
@@ -949,11 +951,14 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "text"
                         }
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "",
+                      "text": "{{appsmith.store.jwt.E_name}}",
                       "key": "f2h9rvrad0",
                       "isDeprecated": false,
                       "rightColumn": 59,
@@ -1014,7 +1019,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 100000
+              "timeoutInMillisecond": 1000000
             }
           ]
         ],

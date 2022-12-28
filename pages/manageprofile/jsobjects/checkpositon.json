@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "checkpositon",
+    "pageId": "manageprofile",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tcheckposition: () => {\n\t\tif(appsmith.store.Positon = 'Senior Staff'){\n\t\t\tnavigateTo('Menu_senior', {});\n\t\t}else{\n\t\t\tnavigateTo('Menu_staff', {});\n\t\t}\n\t},\n\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "manageprofile_checkpositon",
+  "deleted": false,
+  "gitSyncId": "638835132913ba43778b3c2e_63aa7da4690c8f1a0335d075"
+}

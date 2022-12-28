@@ -42,7 +42,7 @@
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
-              "shouldScrollContents": true,
+              "shouldScrollContents": false,
               "animateLoading": true,
               "parentColumnSpace": 17.9375,
               "dynamicTriggerPathList": [],
@@ -535,7 +535,7 @@
                           "index": 1,
                           "iconName": "log-out",
                           "iconAlign": "left",
-                          "onClick": "{{navigateTo('Login', {}, 'SAME_WINDOW')}}"
+                          "onClick": "{{Logout.Logout()}}"
                         }
                       },
                       "isVisible": true,
@@ -720,6 +720,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "IconButton2Copy1Copy3",
+                              "onClick": "{{Logout.Logout()}}",
                               "buttonColor": "#fef08a",
                               "dynamicPropertyPathList": [],
                               "displayName": "Icon Button",
@@ -735,7 +736,11 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 16.3125,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "leftColumn": 0,
                               "dynamicBindingPathList": [
                                 {
@@ -1045,7 +1050,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "{{appsmith.store.staffname}}",
+                      "text": "{{appsmith.store.jwt.E_name}}",
                       "key": "f2h9rvrad0",
                       "isDeprecated": false,
                       "rightColumn": 59,
@@ -1062,7 +1067,7 @@
                       "originalTopRow": 1,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 5,
+                      "originalBottomRow": 6,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     }

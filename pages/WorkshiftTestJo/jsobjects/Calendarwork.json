@@ -1,0 +1,25 @@
+{
+  "unpublishedCollection": {
+    "name": "Calendarwork",
+    "pageId": "WorkshiftTestJo",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tgetAllWorkshift: () => {\n\t\t//Morning\n\t\t//clear all store\n\t\tclearStore();\n\t\tget_workshift_morning.run(\n\t\t\t() => {\n\t\t\t\tlet shiftBox = moment(first_date.text).weekday() - 1;\n\t\t\t\tlet results = get_workshift_morning.data;\n\t\t\t\tlet total = get_workshift_morning.data.length;\n\t\t\t\tfor(let i=0;i < total;i++){\n\t\t\t\t\tconsole.log(results[i]);\n\t\t\t\t\tlet day = Number(moment(results[i].date).format(\"D\")) + Number(shiftBox);\n\t\t\t\t\tlet key = \"box\"+day.toString();\n\t\t\t\t\tconsole.log(key);\n\t\t\t\t\tif(results[i].staff_total >= 9){\n\t\t\t\t\t\tstoreValue(\"box\"+day,'#bbf7d0');\n\t\t\t\t\t}else{\n\t\t\t\t\t\tstoreValue(\"box\"+day,'#fef08a');\n\t\t\t\t\t}\n        }\n\t\t\t}\n\t\t);\n\t\t// Afternoon \n\t\tclearStore();\n\t\tGetSelect_Workshift_afternoon.run(\n\t\t\t() => {\n\t\t\t\tlet shiftBox1 = moment(first_date.text).weekday() - 1;\n\t\t\t\tlet results1 = GetSelect_Workshift_afternoon.data;\n\t\t\t\tlet total1 = GetSelect_Workshift_afternoon.data.length;\n\t\t\t\tfor(let i=0;i < total1;i++){\n\t\t\t\t\tconsole.log(results1[i]);\n\t\t\t\t\tlet day1 = Number(moment(results1[i].date).format(\"D\")) + Number(shiftBox1);\n\t\t\t\t\tlet key1 = \"boxn\"+day1.toString();\n\t\t\t\t\tconsole.log(key1);\n\t\t\t\t\tif(results1[i].staff_total >= 9){\n\t\t\t\t\t\tstoreValue(\"boxn\"+day1,'#bbf7d0');\n\t\t\t\t\t}else{\n\t\t\t\t\t\tstoreValue(\"boxn\"+day1,'#fef08a');\n\t\t\t\t\t}\n        }\n\t\t\t}\n\t\t);\n\t\t//Night\n\t\tclearStore();\n\t\tGetSelect_Workshift_night.run(\n\t\t\t() => {\n\t\t\t\tlet shiftBox2 = moment(first_date.text).weekday() - 1;\n\t\t\t\tlet results2 = GetSelect_Workshift_night.data;\n\t\t\t\tlet total2 = GetSelect_Workshift_night.data.length;\n\t\t\t\tfor(let i=0;i < total2;i++){\n\t\t\t\t\tconsole.log(results2[i]);\n\t\t\t\t\tlet day2 = Number(moment(results2[i].date).format(\"D\")) + Number(shiftBox2);\n\t\t\t\t\tlet key2 = \"boxnn\"+day2.toString();\n\t\t\t\t\tconsole.log(key2);\n\t\t\t\t\tif(results2[i].staff_total >= 9){\n\t\t\t\t\t\tstoreValue(\"boxnn\"+day2,'#bbf7d0');\n\t\t\t\t\t}else{\n\t\t\t\t\t\tstoreValue(\"boxnn\"+day2,'#fef08a');\n\t\t\t\t\t}\n        }\n\t\t\t}\n\t\t);\n\t},\n\t\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "WorkshiftTestJo_Calendarwork",
+  "deleted": false,
+  "gitSyncId": "638835132913ba43778b3c2e_63abfc2bbc0e8334c729ec2c"
+}

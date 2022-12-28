@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Menu_senior",
-    "collectionId": "Menu_senior_Logout",
+    "pageId": "Menu_staff",
+    "collectionId": "Menu_staff_Logout",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -42,7 +42,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Menu_senior_Logout.Logout",
+  "id": "Menu_staff_Logout.Logout",
   "deleted": false,
-  "gitSyncId": "638835132913ba43778b3c2e_63a946d1bc0e8334c729ba0c"
+  "gitSyncId": "638835132913ba43778b3c2e_63abe465647efb486b772c60"
 }

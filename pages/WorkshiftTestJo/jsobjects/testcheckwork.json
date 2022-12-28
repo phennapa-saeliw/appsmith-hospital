@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "testcheckwork",
+    "pageId": "WorkshiftTestJo",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tcheckworkshift: async () => {\n\t\tstoreValue('shift_moring', []);\n\t\tstoreValue('shift_afternoon', []);\n\t\tstoreValue('shift_night', []);\n\t\t//show workshiftall\n    await GetAll_work.run();\n\t\tif(GetAll_work.data.length > 0){\n\t\t\tlet shiftBox = moment(first_date.text).weekday() - 1;\n\n\t\t\tGetAll_work.data.map(async (item) => {\n      \tlet day = Number(moment(item.date).format(\"D\")) + Number(shiftBox)-1;\n\n        if(item.S_id == 1){\n            if(item.staff_total >= 9){\n               await storeValue(...appsmith.store.shift_moring,{'day': day, color: '#bbf7d0'});\n            }else{\n               await storeValue(...appsmith.store.shift_moring,{'day': day, color: '#fef08a'});\n            }\n        }\n\n        if(item.S_id == 2){\n            if(item.staff_total >= 9){\n               await storeValue(...appsmith.store.shift_night,{'day': day, color: '#bbf7d0'});\n            }else{\n               await storeValue(...appsmith.store.shift_afternoon,{'day': day, color: '#fef08a'});\n            }\n        }\n\n        if(item.S_id == 3){\n            if(item.staff_total >= 9){\n                await storeValue('shift_night', {'day': day, color: '#bbf7d0'});\n            }else{\n                await storeValue('shift_night', {'day': day, color: '#fef08a'});\n            }\n        }\n        \n\t\t\t})\n\n\t\t\tconsole.log(appsmith.store.shift_night);\n\n      \n\t\t}\n\t\t\n\t},\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "WorkshiftTestJo_testcheckwork",
+  "deleted": false,
+  "gitSyncId": "638835132913ba43778b3c2e_63abfc2bbc0e8334c729ec2e"
+}

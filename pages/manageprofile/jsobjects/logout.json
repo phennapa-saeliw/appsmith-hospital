@@ -1,7 +1,7 @@
 {
   "unpublishedCollection": {
-    "name": "Logout",
-    "pageId": "Menu_senior",
+    "name": "logout",
+    "pageId": "manageprofile",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "actions": [],
@@ -10,7 +10,7 @@
     "variables": [],
     "userPermissions": []
   },
-  "id": "Menu_senior_Logout",
+  "id": "manageprofile_logout",
   "deleted": false,
-  "gitSyncId": "638835132913ba43778b3c2e_63a946d1bc0e8334c729ba10"
+  "gitSyncId": "638835132913ba43778b3c2e_63abe2f5690c8f1a0335ebc0"
 }

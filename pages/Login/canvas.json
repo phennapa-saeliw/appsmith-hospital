@@ -201,7 +201,7 @@
                               "originalTopRow": 25,
                               "maxDynamicHeight": 9000,
                               "iconAlign": "right",
-                              "defaultText": "",
+                              "defaultText": "jojo12@gmail.com",
                               "minDynamicHeight": 4
                             },
                             {
@@ -391,7 +391,7 @@
                               "resetFormOnClick": false,
                               "boxShadow": "none",
                               "widgetName": "Button1",
-                              "onClick": "{{GetCheck_Email.run(() => {\n\tlet result = GetCheck_Email.data;\n\tif(result.length == 0){\n\t\tshowAlert('Invaild Email','error');\n\t}\n\telse\n\t{\nif(GetCheck_Email.data[0].Email == Input1.text){\n\tconsole.log('DB pass = '+GetCheck_Email.data[0].Password);\n\tconsole.log('Input pass = '+JSObject1.encodePassword(Input2.text));\n\t\nif(GetCheck_Email.data[0].Password == JSObject1.encodePassword(Input2.text)){\n\tif(GetCheck_Email.data[0].Position == 'Senior Staff'){\n\tnavigateTo('Menu_senior', {});\nstoreValue(\"E_id\",GetCheck_Email.data[0].E_id);\nstoreValue(\"Position\",GetCheck_Email.data[0].Position);\t\tstoreValue(\"name\",GetCheck_Email.data[0].E_name, false);\nstoreValue(\"E_email\",GetCheck_Email.data[0].Email);\n  }else{\n\tnavigateTo('Menu_staff', {});\n\t\tstoreValue(\"name\",GetCheck_Email.data[0].E_name)\n\t}\n  }else{\n\tshowAlert('Invalid Password', 'error');\n}\n}\t\n\t}\n} )}}",
+                              "onClick": "{{GetCheck_Email.run(() => {\n\tlet result = GetCheck_Email.data;\n\tif(result.length == 0){\n\t\tshowAlert('Invaild Email','error');\n\t}\n\telse\n\t{\nif(GetCheck_Email.data[0].Email == Input1.text){\n\tconsole.log('DB pass = '+GetCheck_Email.data[0].Password);\n\tconsole.log('Input pass = '+JSObject1.encodePassword(Input2.text));\n\t\nif(GetCheck_Email.data[0].Password == JSObject1.encodePassword(Input2.text)){\n\tif(GetCheck_Email.data[0].Position == 'Senior Staff'){\n\tnavigateTo('Menu_senior', {});\nstoreValue('jwt',GetCheck_Email.data[0]);\n  }else{\n\tnavigateTo('Menu_staff', {});\n\t\tstoreValue('jwt',GetCheck_Email.data[0]);\n\t}\n  }else{\n\tshowAlert('Invalid Password', 'error');\n}\n}\t\n\t}\n} )}}",
                               "buttonColor": "#86efac",
                               "dynamicPropertyPathList": [
                                 {

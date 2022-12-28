@@ -3,7 +3,7 @@
   "pluginId": "js-plugin",
   "unpublishedAction": {
     "name": "Logout",
-    "fullyQualifiedName": "JSObject1.Logout",
+    "fullyQualifiedName": "logout.Logout",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,13 +13,13 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "employee_infomation",
-    "collectionId": "employee_infomation_JSObject1",
+    "pageId": "Workshift",
+    "collectionId": "Workshift_logout",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  (storeValue('E_id', null), storeValue('E_email', null), storeValue('name', null), storeValue('Position', null));\n  navigateTo('Login');\n}",
+      "body": "() => {\n  (storeValue('jwt', null), navigateTo('Login'));\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -35,14 +35,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  (storeValue('E_id', null), storeValue('E_email', null), storeValue('name', null), storeValue('Position', null));\n  navigateTo('Login');\n}"
+      "() => {\n  (storeValue('jwt', null), navigateTo('Login'));\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "employee_infomation_JSObject1.Logout",
+  "id": "Workshift_logout.Logout",
   "deleted": false,
-  "gitSyncId": "638835132913ba43778b3c2e_63a947fcbc0e8334c729ba16"
+  "gitSyncId": "638835132913ba43778b3c2e_63abbc1ffcb7cc4992adfa4c"
 }

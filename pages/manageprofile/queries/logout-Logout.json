@@ -3,7 +3,7 @@
   "pluginId": "js-plugin",
   "unpublishedAction": {
     "name": "Logout",
-    "fullyQualifiedName": "Logout.Logout",
+    "fullyQualifiedName": "logout.Logout",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Menu_senior",
-    "collectionId": "Menu_senior_Logout",
+    "pageId": "manageprofile",
+    "collectionId": "manageprofile_logout",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -42,7 +42,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Menu_senior_Logout.Logout",
+  "id": "manageprofile_logout.Logout",
   "deleted": false,
-  "gitSyncId": "638835132913ba43778b3c2e_63a946d1bc0e8334c729ba0c"
+  "gitSyncId": "638835132913ba43778b3c2e_63abe2f5690c8f1a0335ebbe"
 }

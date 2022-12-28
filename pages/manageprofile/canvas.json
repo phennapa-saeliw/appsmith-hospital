@@ -144,7 +144,7 @@
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "Email : {{appsmith.store.E_email}}",
+                              "text": "Email : {{appsmith.store.jwt.Email}}",
                               "key": "9a72hk0o05",
                               "isDeprecated": false,
                               "rightColumn": 46,
@@ -201,7 +201,7 @@
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "ชื่อ : {{appsmith.store.name}}",
+                              "text": "ชื่อ : {{appsmith.store.jwt.E_name}}",
                               "key": "9a72hk0o05",
                               "isDeprecated": false,
                               "rightColumn": 46,
@@ -258,7 +258,7 @@
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "ตำแหน่ง : {{appsmith.store.Position}}",
+                              "text": "ตำแหน่ง : {{appsmith.store.jwt.Position}}",
                               "key": "9a72hk0o05",
                               "isDeprecated": false,
                               "rightColumn": 46,
@@ -354,7 +354,7 @@
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "รหัสพนักงาน : {{appsmith.store.E_id}}",
+                              "text": "รหัสพนักงาน : {{appsmith.store.jwt.E_id}}",
                               "key": "9a72hk0o05",
                               "isDeprecated": false,
                               "rightColumn": 46,
@@ -475,7 +475,11 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 14.7255859375,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "menuItems.menuItem3.onClick"
+                        }
+                      ],
                       "leftColumn": 59,
                       "dynamicBindingPathList": [
                         {
@@ -505,7 +509,8 @@
                           "widgetId": "",
                           "isVisible": true,
                           "isDisabled": false,
-                          "index": 1
+                          "index": 1,
+                          "onClick": "{{logout.Logout()}}"
                         }
                       },
                       "isVisible": true,
@@ -690,7 +695,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "IconButton2Copy1Copy3",
-                              "onClick": "{{navigateTo('Login',{}, 'SAME_WINDOW')}}",
+                              "onClick": "{{logout.Logout()}}",
                               "buttonColor": "#fef08a",
                               "dynamicPropertyPathList": [],
                               "displayName": "Icon Button",
@@ -734,7 +739,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "IconButton2Copy1CopyCopy",
-                              "onClick": "{{navigateTo('Menu', {}, 'SAME_WINDOW')}}",
+                              "onClick": "{{checkpositon.checkposition()}}",
                               "buttonColor": "#fef08a",
                               "dynamicPropertyPathList": [],
                               "displayName": "Icon Button",
@@ -1020,7 +1025,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "{{appsmith.store.name}}",
+                      "text": "{{appsmith.store.jwt.E_name}}",
                       "key": "f2h9rvrad0",
                       "isDeprecated": false,
                       "rightColumn": 59,

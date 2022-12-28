@@ -1,7 +1,7 @@
 {
   "unpublishedCollection": {
-    "name": "Logout",
-    "pageId": "Menu_senior",
+    "name": "logout",
+    "pageId": "Workshift",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "actions": [],
@@ -10,7 +10,7 @@
     "variables": [],
     "userPermissions": []
   },
-  "id": "Menu_senior_Logout",
+  "id": "Workshift_logout",
   "deleted": false,
-  "gitSyncId": "638835132913ba43778b3c2e_63a946d1bc0e8334c729ba10"
+  "gitSyncId": "638835132913ba43778b3c2e_63abbc1ffcb7cc4992adfa4e"
 }
