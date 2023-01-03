@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "initObj",
+    "pageId": "Workshift",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tonLoadPage: async () => {\n\t\tstoreValue(\"boxall\", undefined);\n        //show workshiftall\n     await GetAll_work.run(\n            () => {\n\t\t\t\t\t\t\t\tlet all = {};\n                let shiftBox = moment(first_date.text).weekday() - 1;\n                let result = GetAll_work.data;\n                let total = GetAll_work.data.length;\n                console.log(result);\n                for(let i=0; i < total;i++){\n                    let day = Number(moment(result[i].date).format(\"D\")) + Number(shiftBox);\n                    console.log(day);\n                    if(result[i].Schedules_id == 1){\n                        if(result[i].staff_total >= 9){\n                            all[\"box\"+day] = '#bbf7d0';\n                        }else{\n                            all[\"box\"+day] = '#fef08a';\n                        }\n                    }else if(result[i].Schedules_id == 2){\n                        if(result[i].staff_total >= 9){\n                            all[\"boxn\"+day] = '#bbf7d0';\n                        }else{\n                            all[\"boxn\"+day] = '#fef08a';\n                        }\n                    }else if(result[i].Schedules_id == 3){\n                        if(result[i].staff_total >= 9){\n                            all[\"boxnn\"+day] = '#bbf7d0';\n                        }else{\n                            all[\"boxnn\"+day] = '#fef08a';\n                        }\n                    }\n                }\n\t\t\t\t\t\t\t\tstoreValue(\"boxall\", all);\n            }\n            \n        );\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Workshift_initObj",
+  "deleted": false,
+  "gitSyncId": "638835132913ba43778b3c2e_63ad24cfbc0e8334c729fc79"
+}

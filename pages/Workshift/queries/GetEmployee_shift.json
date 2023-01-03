@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "GetAll_Senior",
+    "name": "GetEmployee_shift",
     "datasource": {
       "name": "work",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "WorkshiftTestJo",
+    "pageId": "Workshift",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT \"E\".\"E_name\",\"U\".\"Position\" From Public.\"Users\" as \"U\"\nINNER JOIN Public.\"Employee\" as \"E\" ON \"U\".\"U_Id\" = \"E\".\"U_Id\"\nWHERE \"U\".\"Position\" LIKE 'Senior%'",
+      "body": "Select \"work_id\",\"E_name\",\"S_id\",\"date\"",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "WorkshiftTestJo_GetAll_Senior",
+  "id": "Workshift_GetEmployee_shift",
   "deleted": false,
-  "gitSyncId": "638835132913ba43778b3c2e_63abfc2bbc0e8334c729ec1f"
+  "gitSyncId": "638835132913ba43778b3c2e_63ad5305bc0e8334c729ff7e"
 }

@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "GetAll_Junior",
+    "name": "Query1",
     "datasource": {
       "name": "work",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "WorkshiftTestJo",
+    "pageId": "employee_infomation",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT \"E\".\"E_name\",\"U\".\"Position\" From Public.\"Users\" as \"U\"\nINNER JOIN Public.\"Employee\" as \"E\" ON \"U\".\"U_Id\" = \"E\".\"U_Id\"\nWHERE \"U\".\"Position\" LIKE 'Junior%'",
+      "body": "SELECT \"E\".\"E_id\",\"E\".\"E_name\",\"U\".\"Position\" from \"Employee\" as \"E\"\nINNER JOIN Public.\"Users\" as \"U\" \nOn \"E\".\"U_Id\" = \"U\".\"U_Id\"\nOrder by \"E\".\"E_id\" ASC;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "WorkshiftTestJo_GetAll_Junior",
+  "id": "employee_infomation_Query1",
   "deleted": false,
-  "gitSyncId": "638835132913ba43778b3c2e_63abfc2bbc0e8334c729ec23"
+  "gitSyncId": "638835132913ba43778b3c2e_63ad5bd6b7e37c573eaae0f7"
 }
