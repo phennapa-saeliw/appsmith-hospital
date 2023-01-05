@@ -13,16 +13,18 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Workshift",
-    "collectionId": "Workshift_JSObject1",
+    "pageId": "Page2",
+    "collectionId": "Page2_JSObject1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {}",
+      "body": "Button2 => {\n  const button = Button2;\n  if (button == true) {\n    storeValue('select', true);\n  } else {\n    storeValue('select', false);\n  }\n}",
       "selfReferencingDataPaths": [],
-      "jsArguments": [],
-      "isAsync": false
+      "jsArguments": [
+        {}
+      ],
+      "isAsync": true
     },
     "executeOnLoad": false,
     "clientSideExecution": true,
@@ -35,14 +37,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {}"
+      "Button2 => {\n  const button = Button2;\n  if (button == true) {\n    storeValue('select', true);\n  } else {\n    storeValue('select', false);\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Workshift_JSObject1.myFun1",
+  "id": "Page2_JSObject1.myFun1",
   "deleted": false,
-  "gitSyncId": "638835132913ba43778b3c2e_63ad605d647efb486b7743b4"
+  "gitSyncId": "638835132913ba43778b3c2e_63b4f1f55b7acd601d97e62d"
 }

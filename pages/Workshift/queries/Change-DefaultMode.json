@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "checkposition",
-    "fullyQualifiedName": "checkpositon.checkposition",
+    "name": "DefaultMode",
+    "fullyQualifiedName": "Change.DefaultMode",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,18 +14,17 @@
       "userPermissions": []
     },
     "pageId": "Workshift",
-    "collectionId": "Workshift_checkpositon",
+    "collectionId": "Workshift_Change",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  if (appsmith.store.jwt.Positon = 'Senior Staff') {\n    navigateTo('Menu_senior', {});\n  } else {\n    navigateTo('Menu_staff', {});\n  }\n}",
+      "body": "async () => {\n  storeValue(\"mode\", \"edit\");\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },
     "executeOnLoad": false,
-    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -35,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  if (appsmith.store.jwt.Positon = 'Senior Staff') {\n    navigateTo('Menu_senior', {});\n  } else {\n    navigateTo('Menu_staff', {});\n  }\n}"
+      "async () => {\n  storeValue(\"mode\", \"edit\");\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Workshift_checkpositon.checkposition",
+  "id": "Workshift_Change.DefaultMode",
   "deleted": false,
-  "gitSyncId": "638835132913ba43778b3c2e_63aa9152fcb7cc4992ade2f7"
+  "gitSyncId": "638835132913ba43778b3c2e_63b63d9a5b7acd601d97ff0b"
 }

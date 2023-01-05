@@ -15606,7 +15606,7 @@
                               "originalTopRow": 2,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 6,
+                              "originalBottomRow": 7,
                               "fontSize": "1.875rem",
                               "minDynamicHeight": 4
                             }
@@ -15766,52 +15766,6 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
-                      "widgetName": "Text11Copy",
-                      "displayName": "Text",
-                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-                      "searchTags": [
-                        "typography",
-                        "paragraph",
-                        "label"
-                      ],
-                      "topRow": 10,
-                      "bottomRow": 14,
-                      "parentRowSpace": 10,
-                      "type": "TEXT_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "overflow": "NONE",
-                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-                      "parentColumnSpace": 11.3125,
-                      "dynamicTriggerPathList": [],
-                      "leftColumn": 31,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "fontFamily"
-                        }
-                      ],
-                      "shouldTruncate": false,
-                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "เวลา",
-                      "key": "oyrkwpmvu6",
-                      "isDeprecated": false,
-                      "rightColumn": 36,
-                      "textAlign": "CENTER",
-                      "dynamicHeight": "FIXED",
-                      "widgetId": "ogkdj6l36c",
-                      "isVisible": true,
-                      "fontStyle": "BOLD",
-                      "textColor": "#231F20",
-                      "version": 1,
-                      "parentId": "9i0j364v99",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "maxDynamicHeight": 9000,
-                      "fontSize": "0.875rem",
-                      "minDynamicHeight": 4
-                    },
-                    {
                       "boxShadow": "none",
                       "widgetName": "IconButton3",
                       "onClick": "{{closeModal('Modal1')}}",
@@ -15914,7 +15868,7 @@
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 9.625,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 23,
+                      "leftColumn": 22,
                       "dynamicBindingPathList": [
                         {
                           "key": "text"
@@ -15928,7 +15882,7 @@
                       "text": "{{moment(first_date.text).add(2 - parseInt(first_day.text), \"days\").format(\"DD-MM-YYYY\")}}",
                       "key": "z3m4wpko91",
                       "isDeprecated": false,
-                      "rightColumn": 39,
+                      "rightColumn": 38,
                       "textAlign": "CENTER",
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "8ybuyqjf76",
@@ -16154,8 +16108,8 @@
                       "isCanvas": true,
                       "displayName": "List",
                       "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
-                      "topRow": 20,
-                      "bottomRow": 57,
+                      "topRow": 21,
+                      "bottomRow": 58,
                       "parentRowSpace": 10,
                       "type": "LIST_WIDGET",
                       "hideCard": false,
@@ -16683,8 +16637,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 16,
-                      "bottomRow": 20,
+                      "topRow": 17,
+                      "bottomRow": 21,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -16723,6 +16677,11 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "Input1",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isDisabled"
+                        }
+                      ],
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -16742,22 +16701,22 @@
                       "parentColumnSpace": 11.3125,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 11,
+                      "leftColumn": 3,
                       "dynamicBindingPathList": [
-                        {
-                          "key": "defaultText"
-                        },
                         {
                           "key": "accentColor"
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "isDisabled"
                         }
                       ],
-                      "labelPosition": "Top",
+                      "labelPosition": "Left",
                       "labelStyle": "",
                       "inputType": "TEXT",
-                      "isDisabled": true,
+                      "isDisabled": "{{(appsmith.store.mode == 'edit'? true:false)}}",
                       "key": "nxdwyf3ylh",
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
@@ -16767,7 +16726,7 @@
                       "widgetId": "bxiz0cgosz",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
-                      "label": "",
+                      "label": "ชื่อ : ",
                       "version": 2,
                       "parentId": "9i0j364v99",
                       "labelAlignment": "left",
@@ -16776,14 +16735,23 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "{{appsmith.store.name}}",
+                      "defaultText": "",
                       "minDynamicHeight": 4
                     },
                     {
                       "resetFormOnClick": false,
                       "boxShadow": "none",
-                      "widgetName": "Button1",
-                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "widgetName": "checkedit",
+                      "onClick": "{{appsmith.store.mode == \"save\" ? Change.EditMode():Change.SaveMode()}}",
+                      "buttonColor": "{{(appsmith.store.mode == 'edit'? '#553DE9':'#bbf7d0')}}",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        },
+                        {
+                          "key": "buttonColor"
+                        }
+                      ],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [
@@ -16797,21 +16765,28 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 11.3125,
-                      "dynamicTriggerPathList": [],
-                      "leftColumn": 46,
-                      "dynamicBindingPathList": [
+                      "dynamicTriggerPathList": [
                         {
-                          "key": "buttonColor"
-                        },
-                        {
-                          "key": "borderRadius"
+                          "key": "onClick"
                         }
                       ],
-                      "text": "แก้ไข",
+                      "leftColumn": 48,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "text"
+                        },
+                        {
+                          "key": "buttonColor"
+                        }
+                      ],
+                      "text": "{{appsmith.store.mode == \"save\" ? \"บันทึก\":(appsmith.store.mode == \"edit\" ? \"แก้ไข\" :\"แก้ไข\")}}",
                       "isDisabled": false,
                       "key": "44jtphs7gt",
                       "isDeprecated": false,
-                      "rightColumn": 56,
+                      "rightColumn": 58,
                       "isDefaultClickDisabled": true,
                       "widgetId": "fhilzihrqf",
                       "isVisible": true,
@@ -16829,9 +16804,14 @@
                       "boxShadow": "none",
                       "widgetName": "Select1",
                       "isFilterable": true,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isDisabled"
+                        }
+                      ],
                       "displayName": "Select",
                       "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-                      "labelText": "",
+                      "labelText": "เวลา : ",
                       "searchTags": [
                         "dropdown"
                       ],
@@ -16846,19 +16826,22 @@
                       "animateLoading": true,
                       "parentColumnSpace": 11.3125,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 36,
+                      "leftColumn": 31,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "isDisabled"
                         }
                       ],
-                      "labelPosition": "Top",
+                      "labelPosition": "Left",
                       "options": "[\n  {\n    \"label\": \"08:00 - 16:00 น.\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"Red\",\n    \"value\": \"RED\"\n  }\n]",
                       "placeholderText": "Select option",
-                      "isDisabled": true,
+                      "isDisabled": "{{(appsmith.store.mode == 'edit'? true:false)}}",
                       "key": "a6habcp5t0",
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
@@ -16875,52 +16858,6 @@
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "minDynamicHeight": 4
-                    },
-                    {
-                      "widgetName": "Text11",
-                      "displayName": "Text",
-                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-                      "searchTags": [
-                        "typography",
-                        "paragraph",
-                        "label"
-                      ],
-                      "topRow": 10,
-                      "bottomRow": 14,
-                      "parentRowSpace": 10,
-                      "type": "TEXT_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "overflow": "NONE",
-                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-                      "parentColumnSpace": 11.3125,
-                      "dynamicTriggerPathList": [],
-                      "leftColumn": 3,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "fontFamily"
-                        }
-                      ],
-                      "shouldTruncate": false,
-                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "ชื่อ",
-                      "key": "oyrkwpmvu6",
-                      "isDeprecated": false,
-                      "rightColumn": 10,
-                      "textAlign": "CENTER",
-                      "dynamicHeight": "FIXED",
-                      "widgetId": "omgtrz4ale",
-                      "isVisible": true,
-                      "fontStyle": "BOLD",
-                      "textColor": "#231F20",
-                      "version": 1,
-                      "parentId": "9i0j364v99",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "maxDynamicHeight": 9000,
-                      "fontSize": "1rem",
                       "minDynamicHeight": 4
                     }
                   ],
@@ -16967,7 +16904,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  storeValue(\"boxall\", undefined);\n  await GetAll_work.run(() => {\n    let all = {};\n    let shiftBox = moment(first_date.text).weekday() - 1;\n    let result = GetAll_work.data;\n    let total = GetAll_work.data.length;\n    console.log(result);\n    for (let i = 0; i < total; i++) {\n      let day = Number(moment(result[i].date).format(\"D\")) + Number(shiftBox);\n      console.log(day);\n      if (result[i].Schedules_id == 1) {\n        if (result[i].staff_total >= 9) {\n          all[\"box\" + day] = '#bbf7d0';\n        } else {\n          all[\"box\" + day] = '#fef08a';\n        }\n      } else if (result[i].Schedules_id == 2) {\n        if (result[i].staff_total >= 9) {\n          all[\"boxn\" + day] = '#bbf7d0';\n        } else {\n          all[\"boxn\" + day] = '#fef08a';\n        }\n      } else if (result[i].Schedules_id == 3) {\n        if (result[i].staff_total >= 9) {\n          all[\"boxnn\" + day] = '#bbf7d0';\n        } else {\n          all[\"boxnn\" + day] = '#fef08a';\n        }\n      }\n    }\n    storeValue(\"boxall\", all);\n  });\n}"
+                "async () => {\n  storeValue(\"boxall\", undefined);\n  await GetAll_work.run(() => {\n    let all = {};\n    let shiftBox = moment(first_date.text).weekday() - 1;\n    let result = GetAll_work.data;\n    let total = GetAll_work.data.length;\n    for (let i = 0; i < total; i++) {\n      let day = Number(moment(result[i].date).format(\"D\")) + Number(shiftBox);\n      console.log(day);\n      if (result[i].Schedules_id == 1) {\n        if (result[i].staff_total >= 9) {\n          all[\"box\" + day] = '#bbf7d0';\n        } else {\n          all[\"box\" + day] = '#fef08a';\n        }\n      } else if (result[i].Schedules_id == 2) {\n        if (result[i].staff_total >= 9) {\n          all[\"boxn\" + day] = '#bbf7d0';\n        } else {\n          all[\"boxn\" + day] = '#fef08a';\n        }\n      } else if (result[i].Schedules_id == 3) {\n        if (result[i].staff_total >= 9) {\n          all[\"boxnn\" + day] = '#bbf7d0';\n        } else {\n          all[\"boxnn\" + day] = '#fef08a';\n        }\n      }\n    }\n    storeValue(\"boxall\", all);\n    console.log(all);\n  });\n}"
               ],
               "timeoutInMillisecond": 10000
             },

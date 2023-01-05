@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "Change",
+    "pageId": "Workshift",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tDefaultMode: async () => {\n\t\tstoreValue(\"mode\", \"edit\");\n\t},\n\tEditMode: async () => {\n\t\tstoreValue(\"mode\", \"edit\");\n\t},\n\tSaveMode: async () => {\n\t\t\tawait storeValue(\"mode\",\"save\");\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Workshift_Change",
+  "deleted": false,
+  "gitSyncId": "638835132913ba43778b3c2e_63b54ffd5b7acd601d97eee9"
+}
