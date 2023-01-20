@@ -1037,6 +1037,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "IconButton2Copy",
+                              "onClick": "{{navigateTo('Random', {}, 'SAME_WINDOW')}}",
                               "buttonColor": "#fef08a",
                               "dynamicPropertyPathList": [],
                               "displayName": "Icon Button",
@@ -1052,7 +1053,11 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 16.3125,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "leftColumn": 0,
                               "dynamicBindingPathList": [
                                 {
@@ -1063,7 +1068,7 @@
                               "key": "cxjlqfsgdl",
                               "isDeprecated": false,
                               "rightColumn": 59,
-                              "iconName": "changes",
+                              "iconName": "random",
                               "widgetId": "48lto7nx0v",
                               "isVisible": true,
                               "version": 1,

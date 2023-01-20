@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "EditMode",
-    "fullyQualifiedName": "Change.EditMode",
+    "name": "myFun2",
+    "fullyQualifiedName": "getstaff.myFun2",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,18 +13,19 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Workshift",
-    "collectionId": "Workshift_Change",
+    "pageId": "Test Random",
+    "collectionId": "Test Random_getstaff",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  storeValue(\"mode\", \"edit\");\n}",
+      "body": "async () => {}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
+    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -34,14 +35,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  storeValue(\"mode\", \"edit\");\n}"
+      "async () => {}"
     ],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Workshift_Change.EditMode",
+  "id": "Test Random_getstaff.myFun2",
   "deleted": false,
-  "gitSyncId": "638835132913ba43778b3c2e_63b63d9a5b7acd601d97ff0f"
+  "gitSyncId": "63b6e018a9f4ff7974e6afa2_63ca5c6029e6fc43b6bc5610"
 }

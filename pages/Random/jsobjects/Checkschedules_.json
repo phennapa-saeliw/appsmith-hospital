@@ -1,0 +1,25 @@
+{
+  "unpublishedCollection": {
+    "name": "Checkschedules_",
+    "pageId": "Random",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\ttest: async () => {\n\t\temployee.run();\n\t\tlet total = 9;\n    let x = true;\n    let namer = [];\n\t\tconst namejunior = employee.data\n        while( x ) {\n            let r = Math.floor( Math.random() * namejunior.length );\n\t\t\t\t\t\tlet rr = namejunior[r];\n            if( namer.indexOf( rr.E_id ) < 0 ) namer.push( rr.E_id );\n            if( namer.length == parseInt(total) ) x = false;\n\t\t\t\t\tstoreValue(\"stafftotal\",namer.length)\n\t\t\t\tstoreValue(\"staffname\",namer)\n        }\n        namer = [];\n        x = true;\n\t\t//------------------------------------------------------------------------------------------\n\t},\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Random_Checkschedules_",
+  "deleted": false,
+  "gitSyncId": "63b6e018a9f4ff7974e6afa2_63ca1bd429e6fc43b6bc55d6"
+}

@@ -680,45 +680,6 @@
                             },
                             {
                               "boxShadow": "none",
-                              "widgetName": "IconButton2Copy2",
-                              "buttonColor": "#fef08a",
-                              "dynamicPropertyPathList": [],
-                              "displayName": "Icon Button",
-                              "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
-                              "searchTags": [
-                                "click",
-                                "submit"
-                              ],
-                              "topRow": 39,
-                              "bottomRow": 48,
-                              "parentRowSpace": 10,
-                              "type": "ICON_BUTTON_WIDGET",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "parentColumnSpace": 16.3125,
-                              "dynamicTriggerPathList": [],
-                              "leftColumn": 0,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
-                              "isDisabled": false,
-                              "key": "cxjlqfsgdl",
-                              "isDeprecated": false,
-                              "rightColumn": 59,
-                              "iconName": "changes",
-                              "widgetId": "6iarvhcl1k",
-                              "isVisible": true,
-                              "version": 1,
-                              "parentId": "k5tid2eems",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "buttonVariant": "TERTIARY"
-                            },
-                            {
-                              "boxShadow": "none",
                               "widgetName": "IconButton2Copy1Copy3",
                               "onClick": "{{Logout.Logout()}}",
                               "buttonColor": "#fef08a",

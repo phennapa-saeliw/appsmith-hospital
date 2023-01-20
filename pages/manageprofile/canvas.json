@@ -656,8 +656,13 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "IconButton2Copy2",
+                              "onClick": "{{navigateTo('Random', {}, 'SAME_WINDOW')}}",
                               "buttonColor": "#fef08a",
-                              "dynamicPropertyPathList": [],
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
                               "displayName": "Icon Button",
                               "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
                               "searchTags": [
@@ -671,20 +676,27 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 16.3125,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "leftColumn": 0,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
+                                },
+                                {
+                                  "key": "isVisible"
                                 }
                               ],
                               "isDisabled": false,
                               "key": "cxjlqfsgdl",
                               "isDeprecated": false,
                               "rightColumn": 59,
-                              "iconName": "changes",
+                              "iconName": "random",
                               "widgetId": "q3vcdwv3y9",
-                              "isVisible": true,
+                              "isVisible": "{{(appsmith.store.jwt.Position !== 'Junior Staff'? true:false)}}",
                               "version": 1,
                               "parentId": "2c91xake7s",
                               "renderMode": "CANVAS",

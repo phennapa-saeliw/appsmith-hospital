@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "GetSelect_Employee",
+    "name": "Insert_Junior_workshift",
     "datasource": {
       "name": "work",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,10 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "employee_infomation",
+    "pageId": "Workshift",
     "actionConfiguration": {
-      "timeoutInMillisecond": 1000000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT \"E\".\"E_id\",\"E\".\"E_name\",\"U\".\"Position\" from \"Employee\" as \"E\"\nINNER JOIN Public.\"Users\" as \"U\" \nOn \"E\".\"U_Id\" = \"U\".\"U_Id\"\nOrder by \"U\".\"Position\" DESC;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,20 +24,17 @@
         }
       ]
     },
-    "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "executeOnLoad": false,
     "isValid": true,
-    "invalids": [
-      "'Query timeout' field must be an integer between 0 and 60000"
-    ],
+    "invalids": [],
     "messages": [],
     "jsonPathKeys": [],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "employee_infomation_GetSelect_Employee",
+  "id": "Workshift_Insert_Junior_workshift",
   "deleted": false,
-  "gitSyncId": "638835132913ba43778b3c2e_639ad7d37c323677ddd83196"
+  "gitSyncId": "63b6e018a9f4ff7974e6afa2_63c10edd2f7c716d97bfe2b4"
 }

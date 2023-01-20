@@ -1,0 +1,25 @@
+{
+  "unpublishedCollection": {
+    "name": "randomliststaff",
+    "pageId": "Test Random",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tRamdomstaff: async () => {\n\t\t//Senior random\n\t\tQuery1.run();\n\t\tlet namesenior = Query1.data;\n\t\tlet index = Math.floor(Math.random() * namesenior.length);\n\t\tlet namesen = namesenior[index];\n\t\tstoreValue(\"senior_id\",namesen.E_id);\n\t\t//------------------------------------------------------------------------------------------\n\t},\n\t\tRamdomworkshift: async () => {\n\t\t//Senior random\n\t\tSchedules.run();\n\t\tlet nameworkshift = Schedules.data;\n\t\tlet workshiftid = Math.floor(Math.random() * nameworkshift.length);\n\t\tlet idworkshift = nameworkshift[workshiftid];\n\t\tstoreValue(\"Schedulesid\",idworkshift.Schedules_id);\n\t\t//------------------------------------------------------------------------------------------\n\t},\n\ttest: async () => {\n\t\temployee.run();\n\t\tlet total = 9;\n    let x = true;\n    let namer = [];\n\t\tconst namejunior = employee.data\n        while( x ) {\n            let r = Math.floor( Math.random() * namejunior.length );\n\t\t\t\t\t\tlet rr = namejunior[r];\n            if( namer.indexOf( rr ) < 0 ) namer.push( rr );\n            if( namer.length == parseInt(total) ) x = false;\n\t\t\t\t\tstoreValue(\"stafftotal\",namer.length)\n\t\t\t\tstoreValue(\"staffname\",namer)\n        }\n        namer = [];\n        x = true;\n\t\t//------------------------------------------------------------------------------------------\n\t},\n\tmyFun2: async () => {\n\t\t//use async-await or promises\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Test Random_randomliststaff",
+  "deleted": false,
+  "gitSyncId": "63b6e018a9f4ff7974e6afa2_63be37ef2f7c716d97bfe15f"
+}
