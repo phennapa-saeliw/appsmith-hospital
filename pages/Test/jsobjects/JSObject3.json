@@ -1,0 +1,25 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject3",
+    "pageId": "Test",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\n\t\tlet all = [];\nconst ary = ['three', 'seven', 'eleven'];\n\t\tconst ary1 = ['seven'];\nconst aryWithoutSeven = ary.filter(function(value) { return value != ary1 });\n\t\tall.push(aryWithoutSeven)\n\t\tconsole.log(all)\n\t},\n\tmyFun2: async () => {\n\t\t//use async-await or promises\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Test_JSObject3",
+  "deleted": false,
+  "gitSyncId": "63b6e018a9f4ff7974e6afa2_63c4d0022f7c716d97bfe335"
+}

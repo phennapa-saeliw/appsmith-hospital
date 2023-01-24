@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\ttest: async () => {\n\t\temployee.run();\n\t\tlet total = 9;\n    let x = true;\n    let namer = [];\n\t\tconst namejunior = employee.data\n        while( x ) {\n            let r = Math.floor( Math.random() * namejunior.length );\n\t\t\t\t\t\tlet rr = namejunior[r];\n            if( namer.indexOf( rr.E_id ) < 0 ) namer.push( rr.E_id );\n            if( namer.length == parseInt(total) ) x = false;\n\t\t\t\t\tstoreValue(\"stafftotal\",namer.length)\n\t\t\t\tstoreValue(\"staffname\",namer)\n        }\n        namer = [];\n        x = true;\n\t\t//------------------------------------------------------------------------------------------\n\t},\n}",
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\ttest: async () => {\n\t\temployee.run();\n\t\tlet total = 9;\n    let x = true;\n    let namer = [];\n\t\tconst namejunior = employee.data\n        while( x ) {\n            let r = Math.floor( Math.random() * namejunior.length );\n\t\t\t\t\t\tlet rr = namejunior[r];\n            if( namer.indexOf( rr) < 0 ) namer.push( rr);\n            if( namer.length == parseInt(total) ) x = false;\n\t\t\t\t\tstoreValue(\"stafftotal\",namer.length)\n\t\t\t\tstoreValue(\"staffname\",namer)\n        }\n        namer = [];\n        x = true;\n\t\t//------------------------------------------------------------------------------------------\n\t},\n}",
     "variables": [
       {
         "name": "myVar1",

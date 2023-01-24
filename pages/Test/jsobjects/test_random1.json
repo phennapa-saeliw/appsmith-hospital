@@ -1,0 +1,25 @@
+{
+  "unpublishedCollection": {
+    "name": "test_random1",
+    "pageId": "Test",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\n\t\tQuery1.run();\n\t\temployee.run();\n\t\tSchedules.run();\n\t\trandomliststaff.Ramdomstaff();\n\t\trandomliststaff.Ramdomworkshift();\n\t\tconst seniorid = appsmith.store.senior_id;\n\t\tconst getseniorid = [];\n\t\tconst workshift = appsmith.store.Schedulesid\n\t\tgetseniorid.push(seniorid,workshift);\n\t\tif(getseniorid[1] == 3){\n\t\t\tconst staff1 = [10002];\n\t\t\tconst i = [];\n\t\t\tconst result = _.without(getseniorid, staff1);\n\t\t\ti.push(result)\n\t\t\tconsole.log(i);\n    }else if(getseniorid[1] == 2){\n\t\t\t\n\t\t}else{\n\n\t\t}\n\t},\n\tmyFun2: async () => {\n\t\t//use async-await or promises\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Test_test_random1",
+  "deleted": false,
+  "gitSyncId": "63b6e018a9f4ff7974e6afa2_63c4fa212f7c716d97bfe36a"
+}

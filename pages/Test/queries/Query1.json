@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "employee",
+    "name": "Query1",
     "datasource": {
       "name": "work",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Random",
+    "pageId": "Test",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select \"E_id\",\"E_name\" from public.\"Employee\"",
+      "body": "SELECT \"Em\".\"E_id\" FROM public.\"Employee\" as \"Em\"\nINNER JOIN public.\"Users\" as \"U\" on \"Em\".\"U_Id\" = \"U\".\"U_Id\" where \"U\".\"Position\" = 'Senior Staff'",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,18 +26,18 @@
         }
       ]
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Random_employee",
+  "id": "Test_Query1",
   "deleted": false,
-  "gitSyncId": "63b6e018a9f4ff7974e6afa2_63cf3bff29e6fc43b6bc56f3"
+  "gitSyncId": "63b6e018a9f4ff7974e6afa2_63be445f2f7c716d97bfe16d"
 }

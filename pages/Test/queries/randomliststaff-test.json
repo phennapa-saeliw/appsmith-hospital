@@ -3,7 +3,7 @@
   "pluginId": "js-plugin",
   "unpublishedAction": {
     "name": "test",
-    "fullyQualifiedName": "Checkschedules_.test",
+    "fullyQualifiedName": "randomliststaff.test",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Random",
-    "collectionId": "Random_Checkschedules_",
+    "pageId": "Test",
+    "collectionId": "Test_randomliststaff",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -41,7 +41,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Random_Checkschedules_.test",
+  "id": "Test_randomliststaff.test",
   "deleted": false,
-  "gitSyncId": "63b6e018a9f4ff7974e6afa2_63ca1d1429e6fc43b6bc55de"
+  "gitSyncId": "63b6e018a9f4ff7974e6afa2_63c4fbd12f7c716d97bfe36f"
 }

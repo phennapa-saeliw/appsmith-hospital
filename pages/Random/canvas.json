@@ -112,7 +112,7 @@
                               "resetFormOnClick": false,
                               "boxShadow": "none",
                               "widgetName": "Button4Copy",
-                              "onClick": "{{randomliststaff.test()}}",
+                              "onClick": "{{Checkworkshift.myFun2()}}",
                               "buttonColor": "#bbf7d0",
                               "dynamicPropertyPathList": [
                                 {
@@ -165,7 +165,7 @@
                               "placement": "CENTER"
                             },
                             {
-                              "widgetName": "Checkbox1Copy1",
+                              "widgetName": "Checkbox3",
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "isDisabled"
@@ -184,7 +184,11 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 14.535888671875,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onCheckChange"
+                                }
+                              ],
                               "leftColumn": 37,
                               "dynamicBindingPathList": [
                                 {
@@ -198,6 +202,7 @@
                                 }
                               ],
                               "labelPosition": "Left",
+                              "onCheckChange": "{{Checkworkshift.myFun2()}}",
                               "isDisabled": "{{Checkbox1.isChecked}}",
                               "key": "aw63qro3ni",
                               "labelTextSize": "1rem",
@@ -219,7 +224,7 @@
                               "minDynamicHeight": 4
                             },
                             {
-                              "widgetName": "Checkbox1Copy",
+                              "widgetName": "Checkbox2",
                               "dynamicPropertyPathList": [],
                               "displayName": "Checkbox",
                               "iconSVG": "/static/media/icon.aaab032b43383e4fa53ffc0ef40c90ef.svg",
@@ -367,7 +372,7 @@
                                 }
                               ],
                               "labelPosition": "Left",
-                              "isDisabled": "{{Checkbox1.isChecked?false:true&&Checkbox1Copy.isChecked?false:true&&Checkbox1Copy1.isChecked?false:true}}",
+                              "isDisabled": "{{Checkbox1.isChecked?false:true&&Checkbox2.isChecked?false:true&&Checkbox3.isChecked?false:true}}",
                               "key": "pxgmcyz9vy",
                               "labelTextSize": "0.875rem",
                               "isRequired": false,
@@ -544,7 +549,7 @@
                                 }
                               ],
                               "labelPosition": "Left",
-                              "isDisabled": "{{Checkbox1.isChecked?false:true&&Checkbox1Copy.isChecked?false:true&&Checkbox1Copy1.isChecked?false:true}}",
+                              "isDisabled": "{{Checkbox1.isChecked?false:true&&Checkbox2.isChecked?false:true&&Checkbox3.isChecked?false:true}}",
                               "key": "pxgmcyz9vy",
                               "labelTextSize": "0.875rem",
                               "isRequired": false,
@@ -608,8 +613,8 @@
                                 }
                               ],
                               "labelPosition": "Left",
-                              "onCheckChange": "{{Checkschedules_.test()}}",
-                              "isDisabled": "{{Checkbox1Copy1.isChecked }}",
+                              "onCheckChange": "{{Checkworkshift.myFun2()}}",
+                              "isDisabled": "{{Checkbox3.isChecked }}",
                               "key": "aw63qro3ni",
                               "labelTextSize": "1rem",
                               "isRequired": false,
@@ -667,7 +672,7 @@
                               "labelTextSize": "1rem",
                               "isDeprecated": false,
                               "rightColumn": 62,
-                              "onChange": "{{randomliststaff.test()}}",
+                              "onChange": "{{Checkworkshift.myFun2()}}",
                               "dynamicHeight": "FIXED",
                               "widgetId": "r6oj4max1n",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -775,7 +780,7 @@
                                 }
                               ],
                               "labelPosition": "Left",
-                              "options": "{{ appsmith.store.staffname.map((row) => { \n      return { label: row.E_name, value: row.E_id } \n   }) \n}}",
+                              "options": "{{appsmith.store.select}}",
                               "placeholderText": "Select option(s)",
                               "isDisabled": "{{Switch1.isSwitchedOn}}",
                               "key": "l787csml0n",
@@ -940,7 +945,7 @@
                                   "isEditable": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "E_name",
+                                  "label": "ชื่อพนักงาน",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"E_name\"]))}}",
@@ -953,7 +958,7 @@
                               "rightColumn": 52,
                               "textSize": "0.875rem",
                               "widgetId": "bi6pgyqw4w",
-                              "tableData": "{{appsmith.store.staffname}}",
+                              "tableData": "{{appsmith.store.ramdomlist}}",
                               "label": "Data",
                               "searchKey": "",
                               "parentId": "aykqis0loe",
@@ -1931,11 +1936,54 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "Random_Getstaff_work1",
+              "name": "Getstaff_work1",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "Random_Query1",
               "name": "Query1",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Random_Getstaff_work3",
+              "name": "Getstaff_work3",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Random_randomliststaff.work1",
+              "name": "randomliststaff.work1",
+              "collectionId": "Random_randomliststaff",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  Getstaff_work1.run();\n  let total = 9;\n  let x = true;\n  let namer = [];\n  const namejunior = Getstaff_work1.data;\n  while (x) {\n    let r = Math.floor(Math.random() * namejunior.length);\n    let rr = namejunior[r];\n    if (namer.indexOf(rr) < 0) namer.push(rr);\n    if (namer.length == parseInt(total)) x = false;\n    storeValue(\"stafftotal\", namer.length);\n    storeValue(\"staffname\", namer);\n  }\n  namer = [];\n  x = true;\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Random_randomliststaff.work2",
+              "name": "randomliststaff.work2",
+              "collectionId": "Random_randomliststaff",
+              "clientSideExecution": true,
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  Getstaff_work3.run();\n  let total = 9;\n  let x = true;\n  let namer3 = [];\n  const namejunior = Getstaff_work3.data;\n  while (x) {\n    let r = Math.floor(Math.random() * namejunior.length);\n    let rr = namejunior[r];\n    if (namer3.indexOf(rr) < 0) namer3.push(rr);\n    if (namer3.length == parseInt(total)) x = false;\n    storeValue(\"stafftotal\", namer3.length);\n    storeValue(\"staffname3\", namer3);\n  }\n  namer3 = [];\n  x = true;\n}"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]

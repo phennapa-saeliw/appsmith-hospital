@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "employee",
+    "name": "Query3",
     "datasource": {
       "name": "work",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Random",
+    "pageId": "Test",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select \"E_id\",\"E_name\" from public.\"Employee\"",
+      "body": "SELECT * FROM public.\"Employee\"\nORDER BY RAND()\nLIMIT 4;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Random_employee",
+  "id": "Test_Query3",
   "deleted": false,
-  "gitSyncId": "63b6e018a9f4ff7974e6afa2_63cf3bff29e6fc43b6bc56f3"
+  "gitSyncId": "63b6e018a9f4ff7974e6afa2_63ca37cf29e6fc43b6bc55ed"
 }

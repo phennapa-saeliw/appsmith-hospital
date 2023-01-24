@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "employee",
+    "name": "Getstaff_work1",
     "datasource": {
       "name": "work",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select \"E_id\",\"E_name\" from public.\"Employee\"",
+      "body": "SELECT \"Employee\".\"E_id\",\"E_name\" FROM \"Workshift_detail\"\nright join \"Employee\" on \"Workshift_detail\".\"E_id\"=\"Employee\".\"E_id\" where schedules_id is null or schedules_id = 1 or schedules_id = 2",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,18 +26,18 @@
         }
       ]
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Random_employee",
+  "id": "Random_Getstaff_work1",
   "deleted": false,
-  "gitSyncId": "63b6e018a9f4ff7974e6afa2_63cf3bff29e6fc43b6bc56f3"
+  "gitSyncId": "63b6e018a9f4ff7974e6afa2_63cac45629e6fc43b6bc5626"
 }

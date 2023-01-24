@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "checkposition",
-    "fullyQualifiedName": "checkpositon.checkposition",
+    "name": "myFun2",
+    "fullyQualifiedName": "JSObject3.myFun2",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,16 +13,16 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Workshift",
-    "collectionId": "Workshift_checkpositon",
+    "pageId": "Test",
+    "collectionId": "Test_JSObject3",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  if (appsmith.store.jwt.Positon = 'Senior Staff') {\n    navigateTo('Menu_senior', {});\n  } else {\n    navigateTo('Menu_staff', {});\n  }\n}",
+      "body": "async () => {}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": false
+      "isAsync": true
     },
     "executeOnLoad": false,
     "clientSideExecution": true,
@@ -35,14 +35,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  if (appsmith.store.jwt.Positon = 'Senior Staff') {\n    navigateTo('Menu_senior', {});\n  } else {\n    navigateTo('Menu_staff', {});\n  }\n}"
+      "async () => {}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Workshift_checkpositon.checkposition",
+  "id": "Test_JSObject3.myFun2",
   "deleted": false,
-  "gitSyncId": "638835132913ba43778b3c2e_63aa9152fcb7cc4992ade2f7"
+  "gitSyncId": "63b6e018a9f4ff7974e6afa2_63c4d0022f7c716d97bfe332"
 }

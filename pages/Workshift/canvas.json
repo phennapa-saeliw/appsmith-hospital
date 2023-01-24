@@ -11548,7 +11548,7 @@
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy3Copy5",
                                               "onClick": "{{showModal('Modal1')}}",
-                                              "buttonColor": "{{appsmith.store.box5}}",
+                                              "buttonColor": "{{appsmith.store.boxall.box11}}",
                                               "dynamicPropertyPathList": [
                                                 {
                                                   "key": "onClick"
@@ -11595,7 +11595,7 @@
                                               "isDefaultClickDisabled": true,
                                               "iconName": "time",
                                               "widgetId": "sjof7evzlg",
-                                              "isVisible": "{{appsmith.store.box5?true:false}}",
+                                              "isVisible": "{{appsmith.store.boxall.box11?true:false}}",
                                               "recaptchaType": "V3",
                                               "version": 1,
                                               "parentId": "k1igklxuws",
