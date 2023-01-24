@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 74,
+          "version": 75,
           "minHeight": 830,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -1949,41 +1949,6 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Random_Getstaff_work3",
-              "name": "Getstaff_work3",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Random_randomliststaff.work1",
-              "name": "randomliststaff.work1",
-              "collectionId": "Random_randomliststaff",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  Getstaff_work1.run();\n  let total = 9;\n  let x = true;\n  let namer = [];\n  const namejunior = Getstaff_work1.data;\n  while (x) {\n    let r = Math.floor(Math.random() * namejunior.length);\n    let rr = namejunior[r];\n    if (namer.indexOf(rr) < 0) namer.push(rr);\n    if (namer.length == parseInt(total)) x = false;\n    storeValue(\"stafftotal\", namer.length);\n    storeValue(\"staffname\", namer);\n  }\n  namer = [];\n  x = true;\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Random_randomliststaff.work2",
-              "name": "randomliststaff.work2",
-              "collectionId": "Random_randomliststaff",
-              "clientSideExecution": true,
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  Getstaff_work3.run();\n  let total = 9;\n  let x = true;\n  let namer3 = [];\n  const namejunior = Getstaff_work3.data;\n  while (x) {\n    let r = Math.floor(Math.random() * namejunior.length);\n    let rr = namejunior[r];\n    if (namer3.indexOf(rr) < 0) namer3.push(rr);\n    if (namer3.length == parseInt(total)) x = false;\n    storeValue(\"stafftotal\", namer3.length);\n    storeValue(\"staffname3\", namer3);\n  }\n  namer3 = [];\n  x = true;\n}"
-              ],
               "timeoutInMillisecond": 10000
             }
           ]

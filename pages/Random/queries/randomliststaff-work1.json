@@ -19,12 +19,12 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  Getstaff_work1.run();\n  let total = 9;\n  let x = true;\n  let namer = [];\n  const namejunior = Getstaff_work1.data;\n  while (x) {\n    let r = Math.floor(Math.random() * namejunior.length);\n    let rr = namejunior[r];\n    if (namer.indexOf(rr) < 0) namer.push(rr);\n    if (namer.length == parseInt(total)) x = false;\n    storeValue(\"stafftotal\", namer.length);\n    storeValue(\"staffname\", namer);\n  }\n  namer = [];\n  x = true;\n}",
+      "body": "() => {\n  Getstaff_work1.run();\n  let total = 9;\n  let x = true;\n  let namer = [];\n  const namejunior = Getstaff_work1.data;\n  while (x) {\n    let r = Math.floor(Math.random() * namejunior.length);\n    let rr = namejunior[r];\n    if (namer.indexOf(rr) < 0) namer.push(rr);\n    if (namer.length == parseInt(total)) x = false;\n    storeValue(\"stafftotal\", namer.length);\n    storeValue(\"staffname\", namer);\n  }\n  namer = [];\n  x = true;\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  Getstaff_work1.run();\n  let total = 9;\n  let x = true;\n  let namer = [];\n  const namejunior = Getstaff_work1.data;\n  while (x) {\n    let r = Math.floor(Math.random() * namejunior.length);\n    let rr = namejunior[r];\n    if (namer.indexOf(rr) < 0) namer.push(rr);\n    if (namer.length == parseInt(total)) x = false;\n    storeValue(\"stafftotal\", namer.length);\n    storeValue(\"staffname\", namer);\n  }\n  namer = [];\n  x = true;\n}"
+      "() => {\n  Getstaff_work1.run();\n  let total = 9;\n  let x = true;\n  let namer = [];\n  const namejunior = Getstaff_work1.data;\n  while (x) {\n    let r = Math.floor(Math.random() * namejunior.length);\n    let rr = namejunior[r];\n    if (namer.indexOf(rr) < 0) namer.push(rr);\n    if (namer.length == parseInt(total)) x = false;\n    storeValue(\"stafftotal\", namer.length);\n    storeValue(\"staffname\", namer);\n  }\n  namer = [];\n  x = true;\n}"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
