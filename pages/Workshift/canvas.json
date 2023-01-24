@@ -1487,7 +1487,7 @@
                   "widgetName": "Canvas5Copy3",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 670,
+                  "bottomRow": 660,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -1499,51 +1499,127 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
-                      "widgetName": "Text11CopyCopy",
-                      "displayName": "Text",
-                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-                      "searchTags": [
-                        "typography",
-                        "paragraph",
-                        "label"
+                      "boxShadow": "none",
+                      "widgetName": "Input1Copy2",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isDisabled"
+                        }
                       ],
-                      "topRow": 10,
-                      "bottomRow": 14,
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                      "searchTags": [
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
+                      ],
+                      "topRow": 9,
+                      "bottomRow": 13,
                       "parentRowSpace": 10,
-                      "type": "TEXT_WIDGET",
+                      "labelWidth": 5,
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET_V2",
                       "hideCard": false,
                       "animateLoading": true,
-                      "overflow": "NONE",
-                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "parentColumnSpace": 11.3125,
+                      "dynamicTriggerPathList": [],
+                      "resetOnSubmit": true,
+                      "leftColumn": 3,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "isDisabled"
+                        }
+                      ],
+                      "labelPosition": "Left",
+                      "labelStyle": "",
+                      "inputType": "TEXT",
+                      "isDisabled": "{{(appsmith.store.mode == 'edit'? true:false)}}",
+                      "key": "nxdwyf3ylh",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 31,
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "ymn1lyp867",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "label": "ชื่อ : ",
+                      "version": 2,
+                      "parentId": "butnv0ol6o",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "iconAlign": "left",
+                      "defaultText": "",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Select1Copy2",
+                      "isFilterable": true,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isDisabled"
+                        }
+                      ],
+                      "displayName": "Select",
+                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                      "labelText": "เวลา : ",
+                      "searchTags": [
+                        "dropdown"
+                      ],
+                      "topRow": 9,
+                      "bottomRow": 13,
+                      "parentRowSpace": 10,
+                      "labelWidth": 5,
+                      "type": "SELECT_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "GREEN",
+                      "animateLoading": true,
                       "parentColumnSpace": 11.3125,
                       "dynamicTriggerPathList": [],
                       "leftColumn": 31,
                       "dynamicBindingPathList": [
                         {
-                          "key": "fontFamily"
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "isDisabled"
                         }
                       ],
-                      "shouldTruncate": false,
-                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "เวลา",
-                      "key": "oyrkwpmvu6",
+                      "labelPosition": "Left",
+                      "options": "[\n  {\n    \"label\": \"08:00 - 16:00 น.\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"Red\",\n    \"value\": \"RED\"\n  }\n]",
+                      "placeholderText": "Select option",
+                      "isDisabled": "{{(appsmith.store.mode == 'edit'? true:false)}}",
+                      "key": "a6habcp5t0",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 36,
-                      "textAlign": "CENTER",
+                      "rightColumn": 56,
                       "dynamicHeight": "FIXED",
-                      "widgetId": "mzj7n7pluw",
+                      "widgetId": "whbs3oklrc",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
-                      "fontStyle": "BOLD",
-                      "textColor": "#231F20",
                       "version": 1,
                       "parentId": "butnv0ol6o",
+                      "labelAlignment": "left",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 10,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 14,
-                      "fontSize": "0.875rem",
                       "minDynamicHeight": 4
                     },
                     {
@@ -2667,67 +2743,6 @@
                       "minDynamicHeight": 4
                     },
                     {
-                      "boxShadow": "none",
-                      "widgetName": "Input1Copy",
-                      "displayName": "Input",
-                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                      "searchTags": [
-                        "form",
-                        "text input",
-                        "number",
-                        "textarea"
-                      ],
-                      "topRow": 10,
-                      "bottomRow": 14,
-                      "parentRowSpace": 10,
-                      "labelWidth": 5,
-                      "autoFocus": false,
-                      "type": "INPUT_WIDGET_V2",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 11.3125,
-                      "dynamicTriggerPathList": [],
-                      "resetOnSubmit": true,
-                      "leftColumn": 11,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "defaultText"
-                        },
-                        {
-                          "key": "accentColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "labelPosition": "Top",
-                      "labelStyle": "",
-                      "inputType": "TEXT",
-                      "isDisabled": true,
-                      "key": "nxdwyf3ylh",
-                      "labelTextSize": "0.875rem",
-                      "isRequired": false,
-                      "isDeprecated": false,
-                      "rightColumn": 31,
-                      "dynamicHeight": "FIXED",
-                      "widgetId": "5zckbgff5i",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisible": true,
-                      "label": "",
-                      "version": 2,
-                      "parentId": "butnv0ol6o",
-                      "labelAlignment": "left",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "originalTopRow": 10,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "maxDynamicHeight": 9000,
-                      "originalBottomRow": 14,
-                      "iconAlign": "left",
-                      "defaultText": "{{appsmith.store.name}}",
-                      "minDynamicHeight": 4
-                    },
-                    {
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button1Copy",
@@ -2774,106 +2789,6 @@
                       "originalBottomRow": 8,
                       "buttonVariant": "PRIMARY",
                       "placement": "CENTER"
-                    },
-                    {
-                      "boxShadow": "none",
-                      "widgetName": "Select1Copy",
-                      "isFilterable": true,
-                      "displayName": "Select",
-                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-                      "labelText": "",
-                      "searchTags": [
-                        "dropdown"
-                      ],
-                      "topRow": 10,
-                      "bottomRow": 14,
-                      "parentRowSpace": 10,
-                      "labelWidth": 5,
-                      "type": "SELECT_WIDGET",
-                      "serverSideFiltering": false,
-                      "hideCard": false,
-                      "defaultOptionValue": "GREEN",
-                      "animateLoading": true,
-                      "parentColumnSpace": 11.3125,
-                      "dynamicTriggerPathList": [],
-                      "leftColumn": 36,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "accentColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "labelPosition": "Top",
-                      "options": "[\n  {\n    \"label\": \"08:00 - 16:00 น.\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"Red\",\n    \"value\": \"RED\"\n  }\n]",
-                      "placeholderText": "Select option",
-                      "isDisabled": true,
-                      "key": "a6habcp5t0",
-                      "labelTextSize": "0.875rem",
-                      "isRequired": false,
-                      "isDeprecated": false,
-                      "rightColumn": 56,
-                      "dynamicHeight": "FIXED",
-                      "widgetId": "82dsnbx79o",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisible": true,
-                      "version": 1,
-                      "parentId": "butnv0ol6o",
-                      "labelAlignment": "left",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "originalTopRow": 10,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "maxDynamicHeight": 9000,
-                      "originalBottomRow": 14,
-                      "minDynamicHeight": 4
-                    },
-                    {
-                      "widgetName": "Text11Copy1",
-                      "displayName": "Text",
-                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-                      "searchTags": [
-                        "typography",
-                        "paragraph",
-                        "label"
-                      ],
-                      "topRow": 10,
-                      "bottomRow": 14,
-                      "parentRowSpace": 10,
-                      "type": "TEXT_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "overflow": "NONE",
-                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-                      "parentColumnSpace": 11.3125,
-                      "dynamicTriggerPathList": [],
-                      "leftColumn": 3,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "fontFamily"
-                        }
-                      ],
-                      "shouldTruncate": false,
-                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "ชื่อ",
-                      "key": "oyrkwpmvu6",
-                      "isDeprecated": false,
-                      "rightColumn": 10,
-                      "textAlign": "CENTER",
-                      "dynamicHeight": "FIXED",
-                      "widgetId": "3hx9uomrbn",
-                      "isVisible": true,
-                      "fontStyle": "BOLD",
-                      "textColor": "#231F20",
-                      "version": 1,
-                      "parentId": "butnv0ol6o",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "maxDynamicHeight": 9000,
-                      "fontSize": "1rem",
-                      "minDynamicHeight": 4
                     }
                   ],
                   "isDisabled": false,
@@ -15609,6 +15524,48 @@
                               "originalBottomRow": 7,
                               "fontSize": "1.875rem",
                               "minDynamicHeight": 4
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "Switch1",
+                              "displayName": "Switch",
+                              "iconSVG": "/static/media/icon.a3115bc1c224776de2846985c8819f99.svg",
+                              "searchTags": [
+                                "boolean"
+                              ],
+                              "topRow": 2,
+                              "bottomRow": 6,
+                              "parentRowSpace": 10,
+                              "type": "SWITCH_WIDGET",
+                              "alignWidget": "LEFT",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 17.3125,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 51,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
+                              "labelPosition": "Left",
+                              "isDisabled": false,
+                              "key": "i4dwbtyx4s",
+                              "labelTextSize": "1.25rem",
+                              "isDeprecated": false,
+                              "rightColumn": 63,
+                              "dynamicHeight": "FIXED",
+                              "widgetId": "7cj8i8y15f",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "isVisible": true,
+                              "label": "random wofkshift",
+                              "defaultSwitchState": true,
+                              "version": 1,
+                              "parentId": "zuq246gmxz",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "maxDynamicHeight": 9000,
+                              "minDynamicHeight": 4
                             }
                           ],
                           "key": "gvntv0xeqz",
@@ -16895,6 +16852,19 @@
           ]
         },
         "layoutOnLoadActions": [
+          [
+            {
+              "id": "Workshift_Change.DefaultMode",
+              "name": "Change.DefaultMode",
+              "collectionId": "Workshift_Change",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  storeValue(\"mode\", \"edit\");\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
           [
             {
               "id": "Workshift_initObj.onLoadPage",

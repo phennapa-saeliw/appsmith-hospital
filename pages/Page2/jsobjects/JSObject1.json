@@ -6,11 +6,20 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "",
-    "variables": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\n\t\t\t\tlet boy = Query1.data;\n\t\tconsole.log(boy)\n\t\t\t\tfor (let i = 1; i = i; i++) {\n    let num = Math.floor(Math.random() * 10);\n    console.log(num);\n\t\tstoreValue(\"Random\", num)\n}\n\n\t},\n\tmyFun2: async () => {\n\t\t//use async-await or promises\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ],
     "userPermissions": []
   },
   "id": "Page2_JSObject1",
   "deleted": false,
-  "gitSyncId": "638835132913ba43778b3c2e_63b4f1f55b7acd601d97e631"
+  "gitSyncId": "638835132913ba43778b3c2e_63be2fe096c9042751e5a177"
 }

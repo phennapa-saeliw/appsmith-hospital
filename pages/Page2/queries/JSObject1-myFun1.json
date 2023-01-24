@@ -19,11 +19,9 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "Button2 => {\n  const button = Button2;\n  if (button == true) {\n    storeValue('select', true);\n  } else {\n    storeValue('select', false);\n  }\n}",
+      "body": "() => {\n  let boy = Query1.data;\n  console.log(boy);\n  for (let i = 1; i = i; i++) {\n    let num = Math.floor(Math.random() * 10);\n    console.log(num);\n    storeValue(\"Random\", num);\n  }\n}",
       "selfReferencingDataPaths": [],
-      "jsArguments": [
-        {}
-      ],
+      "jsArguments": [],
       "isAsync": true
     },
     "executeOnLoad": false,
@@ -37,7 +35,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Button2 => {\n  const button = Button2;\n  if (button == true) {\n    storeValue('select', true);\n  } else {\n    storeValue('select', false);\n  }\n}"
+      "() => {\n  let boy = Query1.data;\n  console.log(boy);\n  for (let i = 1; i = i; i++) {\n    let num = Math.floor(Math.random() * 10);\n    console.log(num);\n    storeValue(\"Random\", num);\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
@@ -46,5 +44,5 @@
   },
   "id": "Page2_JSObject1.myFun1",
   "deleted": false,
-  "gitSyncId": "638835132913ba43778b3c2e_63b4f1f55b7acd601d97e62d"
+  "gitSyncId": "638835132913ba43778b3c2e_63be2fe096c9042751e5a173"
 }
