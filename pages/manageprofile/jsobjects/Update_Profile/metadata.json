@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "Update_Profile",
+    "pageId": "manageprofile",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "manageprofile_Update_Profile",
+  "deleted": false,
+  "gitSyncId": "63cf62f247460b73912584b3_63cfd76a47460b7391258f0e"
+}

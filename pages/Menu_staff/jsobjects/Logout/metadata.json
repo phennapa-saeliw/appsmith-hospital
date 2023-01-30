@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Logout",
+    "pageId": "Menu_staff",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Menu_staff_Logout",
+  "deleted": false,
+  "gitSyncId": "638835132913ba43778b3c2e_63abe465647efb486b772c62"
+}

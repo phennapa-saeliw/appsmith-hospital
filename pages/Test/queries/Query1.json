@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT \"Em\".\"E_id\" FROM public.\"Employee\" as \"Em\"\nINNER JOIN public.\"Users\" as \"U\" on \"Em\".\"U_Id\" = \"U\".\"U_Id\" where \"U\".\"Position\" = 'Senior Staff'",
+      "body": "SELECT \"Employee\".\"E_id\",\"E_name\" FROM \"Workshift_detail\"\nright join \"Employee\" on \"Workshift_detail\".\"E_id\"=\"Employee\".\"E_id\" \ninner join \"Users\" on \"Employee\".\"U_Id\" = \"Users\".\"U_Id\"\nwhere \"Position\" = 'Junior Staff'\nand\nschedules_id is null or schedules_id = 1 or schedules_id = 2",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

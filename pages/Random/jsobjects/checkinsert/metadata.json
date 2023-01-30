@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "checkinsert",
+    "pageId": "Random",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Random_checkinsert",
+  "deleted": false,
+  "gitSyncId": "63cf62f247460b73912584b3_63cf8c9f8516cd46b362ab72"
+}

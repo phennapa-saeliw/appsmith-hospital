@@ -45,6 +45,7 @@
     "type": "DESKTOP"
   },
   "unpublishedCustomJSLibs": [],
+  "publishedCustomJSLibs": [],
   "evaluationVersion": 2,
   "applicationVersion": 2,
   "isManualUpdate": false,

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "checkpositon",
+    "pageId": "employee_infomation",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "employee_infomation_checkpositon",
+  "deleted": false,
+  "gitSyncId": "638835132913ba43778b3c2e_63aa9149bc0e8334c729cd5a"
+}
