@@ -744,10 +744,10 @@
                       "parentId": "tqly3f8pdt",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 17,
+                      "originalTopRow": 16,
                       "borderRadius": "0px",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 77,
+                      "originalBottomRow": 76,
                       "minDynamicHeight": 10
                     },
                     {
@@ -1156,10 +1156,10 @@
                       "parentId": "tqly3f8pdt",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 17,
+                      "originalTopRow": 16,
                       "borderRadius": "0px",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 77,
+                      "originalBottomRow": 76,
                       "minDynamicHeight": 10
                     },
                     {
@@ -1288,10 +1288,10 @@
                       "parentId": "tqly3f8pdt",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 7,
+                      "originalTopRow": 6,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 17,
+                      "originalBottomRow": 16,
                       "minDynamicHeight": 10
                     },
                     {
@@ -1304,7 +1304,7 @@
                         "label"
                       ],
                       "topRow": 1,
-                      "bottomRow": 2,
+                      "bottomRow": 5,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -1347,7 +1347,7 @@
                       "originalTopRow": 1,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 6,
+                      "originalBottomRow": 2,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     }
