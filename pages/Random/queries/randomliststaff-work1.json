@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  Getstaff_work1.run();\n  let total = 9;\n  let x = true;\n  let namer = [];\n  const namejunior1 = Getstaff_work1.data;\n  while (x) {\n    let r = Math.floor(Math.random() * namejunior1.length);\n    let rr = namejunior1[r];\n    if (namer.indexOf(rr) < 0) namer.push(rr);\n    if (namer.length == parseInt(total)) x = false;\n    storeValue(\"stafftotal\", namer.length);\n    storeValue(\"staffname\", namer);\n  }\n  namer = [];\n  x = true;\n}",
+      "body": "() => {\n  Getstaff_work1.run();\n  let total = 9;\n  let x = true;\n  let namer = [];\n  const namejunior1 = Getstaff_work1.data;\n  while (x) {\n    let r = Math.floor(Math.random() * namejunior1.length);\n    let rr = namejunior1[r];\n    if (namer.indexOf(rr) < 0) namer.push(rr);\n    if (namer.length == parseInt(total)) x = false;\n    storeValue(\"stafftotal\", namer.length);\n    storeValue(\"staffname\", namer);\n  }\n  namer = [];\n  console.log(namer);\n  x = true;\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  Getstaff_work1.run();\n  let total = 9;\n  let x = true;\n  let namer = [];\n  const namejunior1 = Getstaff_work1.data;\n  while (x) {\n    let r = Math.floor(Math.random() * namejunior1.length);\n    let rr = namejunior1[r];\n    if (namer.indexOf(rr) < 0) namer.push(rr);\n    if (namer.length == parseInt(total)) x = false;\n    storeValue(\"stafftotal\", namer.length);\n    storeValue(\"staffname\", namer);\n  }\n  namer = [];\n  x = true;\n}"
+      "() => {\n  Getstaff_work1.run();\n  let total = 9;\n  let x = true;\n  let namer = [];\n  const namejunior1 = Getstaff_work1.data;\n  while (x) {\n    let r = Math.floor(Math.random() * namejunior1.length);\n    let rr = namejunior1[r];\n    if (namer.indexOf(rr) < 0) namer.push(rr);\n    if (namer.length == parseInt(total)) x = false;\n    storeValue(\"stafftotal\", namer.length);\n    storeValue(\"staffname\", namer);\n  }\n  namer = [];\n  console.log(namer);\n  x = true;\n}"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,

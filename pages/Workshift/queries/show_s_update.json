@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "Show_Junior",
+    "name": "show_s_update",
     "datasource": {
       "name": "work",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT wd.work_id, wd.\"E_id\", e.\"E_name\",u.\"Position\", wd.\"Schedules_id\" FROM public.\"Workshift_detail\" wd join public.\"Employee\" e on wd.\"E_id\" = e.\"E_id\" join public.\"Users\" u on e.\"U_Id\" = u.\"U_Id\" where wd.work_id = {{appsmith.store.input_work_id}};",
+      "body": "SELECT w.work_id, w.\"E_id\", e.\"E_name\",u.\"Position\", w.\"Schedules_id\", w.date FROM public.\"Workshift\" w join public.\"Employee\" e on w.\"E_id\" = e.\"E_id\" join public.\"Users\" u on e.\"U_Id\" = u.\"U_Id\" where w.\"Schedules_id\" = {{appsmith.store.input_sid}} and w.date = '{{appsmith.store.input_date}}' and w.\"E_id\" = '{{appsmith.store.jwt.E_id}}'",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -36,14 +36,16 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.input_work_id"
+      "appsmith.store.input_date",
+      "appsmith.store.input_sid",
+      "appsmith.store.jwt.E_id"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Workshift_Show_Junior",
+  "id": "Workshift_show_s_update",
   "deleted": false,
-  "gitSyncId": "63cf62f247460b73912584b3_63d76edc8eeef253ccca2f2c"
+  "gitSyncId": "63cf62f247460b73912584b3_63d79ce68eeef253ccca3567"
 }

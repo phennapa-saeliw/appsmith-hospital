@@ -1,7 +1,7 @@
 export default {
 	myVar1: [],
 	myVar2: {},
-	myFun1: async () => {
+	loopsenior: async () => {
 		await loop_date.myFun2();
 		let date = await appsmith.store.dayofmounth
 		for(let i=0;i < date.length;i++){
@@ -11,7 +11,14 @@ export default {
 			console.log(element);
     }
 	},
-	myFun2: async () => {
-		//use async-await or promises
-	}
+	selectsenior: async () => {
+		await loop_date.myFun2();
+		let date = await appsmith.store.dayofmounth
+		for(let i=0;i < date.length;i++){
+    	const element = date[i];
+			storeValue('date',element);
+			await Insert_Select_Senior.run();
+			console.log(element);
+    }
+	},
 }

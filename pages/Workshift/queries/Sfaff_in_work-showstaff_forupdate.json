@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun2",
-    "fullyQualifiedName": "Sfaff_in_work.myFun2",
+    "name": "showstaff_forupdate",
+    "fullyQualifiedName": "Sfaff_in_work.showstaff_forupdate",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {}",
+      "body": "async () => {\n  await show_s_update.run().then(() => {\n    Show_j_update.run().then(() => {\n      let staffsArr = [];\n      staffsArr = Show_j_update.data;\n      staffsArr.unshift(show_s_update.data[0]);\n      storeValue('update_staff', staffsArr);\n      console.log(staffsArr);\n    });\n  });\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -35,14 +35,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {}"
+      "async () => {\n  await show_s_update.run().then(() => {\n    Show_j_update.run().then(() => {\n      let staffsArr = [];\n      staffsArr = Show_j_update.data;\n      staffsArr.unshift(show_s_update.data[0]);\n      storeValue('update_staff', staffsArr);\n      console.log(staffsArr);\n    });\n  });\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Workshift_Sfaff_in_work.myFun2",
+  "id": "Workshift_Sfaff_in_work.showstaff_forupdate",
   "deleted": false,
-  "gitSyncId": "63cf62f247460b73912584b3_63d76f0eb8b46679d190dc7d"
+  "gitSyncId": "63cf62f247460b73912584b3_63d76f0eb8b46679d190dc7f"
 }

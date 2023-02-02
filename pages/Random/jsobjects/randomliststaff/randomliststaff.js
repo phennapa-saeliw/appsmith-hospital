@@ -16,6 +16,7 @@ export default {
 				storeValue("staffname",namer)
         }
         namer = [];
+					console.log(namer);
         x = true;
 		//------------------------------------------------------------------------------------------
 	},
@@ -34,6 +35,7 @@ export default {
 				storeValue("staffname2",namer2)
         }
         namer2 = [];
+			console.log(namer2);
         x = true;
 		//------------------------------------------------------------------------------------------
 	},
@@ -52,6 +54,7 @@ export default {
 				storeValue("staffname3",namer3)
         }
         namer3 = [];
+					console.log(namer3);
         x = true;
 		//------------------------------------------------------------------------------------------
 	},

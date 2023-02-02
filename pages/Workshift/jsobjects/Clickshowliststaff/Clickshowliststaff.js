@@ -3,7 +3,7 @@ export default {
 	myVar2: {},
 	getlist: async (Schedules_id, date) => {
 		//write code here
-			showModal('Progress')
+			//showModal('Modal2')
 			storeValue('input_sid', Schedules_id)
 			storeValue('input_date', date)
 		//console.log(Schedules_id + " "+ date)
@@ -19,8 +19,8 @@ export default {
 				console.log(staffsArr)
 			})
 		})
-		await closeModal('Progress')
-		await showModal('Modal1');
+		//closeModal('Modal2')
+		showModal('Modal1');
 	},
 	myFun2: async () => {
 		//use async-await or promises

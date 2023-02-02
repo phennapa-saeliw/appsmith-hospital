@@ -50,5 +50,8 @@ export default {
 		storeValue('select', data)
 		return data
 		return randomlist
+		console.log(appsmith.store.idschedules);
+		console.log(appsmith.store.randomlist);
+		console.log(appsmith.store.data);
 	}
 }
