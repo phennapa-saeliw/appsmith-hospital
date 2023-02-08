@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 2920,
+          "bottomRow": 2240,
           "containerStyle": "none",
           "snapRows": 82,
           "parentRowSpace": 1,
@@ -480,8 +480,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 123,
-              "bottomRow": 127,
+              "topRow": 124,
+              "bottomRow": 128,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -698,8 +698,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 133,
-              "bottomRow": 284,
+              "topRow": 134,
+              "bottomRow": 216,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -758,8 +758,8 @@
               "searchTags": [
                 "boolean"
               ],
-              "topRow": 71,
-              "bottomRow": 75,
+              "topRow": 72,
+              "bottomRow": 76,
               "parentRowSpace": 10,
               "type": "CHECKBOX_WIDGET",
               "alignWidget": "LEFT",
@@ -796,11 +796,11 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 139,
+              "originalTopRow": 71,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "defaultCheckedState": false,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 143,
+              "originalBottomRow": 75,
               "minDynamicHeight": 4
             },
             {
@@ -814,8 +814,8 @@
                 "dropdown",
                 "tags"
               ],
-              "topRow": 78,
-              "bottomRow": 85,
+              "topRow": 79,
+              "bottomRow": 86,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "type": "MULTI_SELECT_WIDGET_V2",
@@ -870,8 +870,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 89,
-              "bottomRow": 93,
+              "topRow": 90,
+              "bottomRow": 94,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -931,8 +931,8 @@
               "displayName": "Checkbox Group",
               "iconSVG": "/static/media/icon.ecb3847950c4515966ef642a32758afb.svg",
               "labelText": "Label",
-              "topRow": 93,
-              "bottomRow": 100,
+              "topRow": 94,
+              "bottomRow": 101,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "type": "CHECKBOX_GROUP_WIDGET",
@@ -988,8 +988,8 @@
               "searchTags": [
                 "calendar"
               ],
-              "topRow": 108,
-              "bottomRow": 115,
+              "topRow": 109,
+              "bottomRow": 116,
               "shortcuts": false,
               "parentRowSpace": 10,
               "labelWidth": 5,
@@ -1045,8 +1045,8 @@
               "searchTags": [
                 "calendar"
               ],
-              "topRow": 116,
-              "bottomRow": 123,
+              "topRow": 117,
+              "bottomRow": 124,
               "shortcuts": false,
               "parentRowSpace": 10,
               "labelWidth": 5,
@@ -1102,7 +1102,7 @@
                 "label"
               ],
               "topRow": 18,
-              "bottomRow": 22,
+              "bottomRow": 23,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -1128,7 +1128,7 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "{{Checkbox2 == 3}}",
+              "text": "{{Date()}}",
               "key": "qtkxj1876w",
               "isDeprecated": false,
               "rightColumn": 54,
@@ -1145,7 +1145,7 @@
               "originalTopRow": 18,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 90,
+              "originalBottomRow": 22,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             }

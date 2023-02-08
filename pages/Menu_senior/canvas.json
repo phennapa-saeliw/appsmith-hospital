@@ -317,11 +317,7 @@
                                       "boxShadow": "none",
                                       "widgetName": "IconButton2Copy1Copy1",
                                       "buttonColor": "#22c55e",
-                                      "dynamicPropertyPathList": [
-                                        {
-                                          "key": "iconName"
-                                        }
-                                      ],
+                                      "dynamicPropertyPathList": [],
                                       "displayName": "Icon Button",
                                       "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
                                       "searchTags": [
@@ -346,7 +342,7 @@
                                       "key": "cxjlqfsgdl",
                                       "isDeprecated": false,
                                       "rightColumn": 52,
-                                      "iconName": "calendar",
+                                      "iconName": "random",
                                       "widgetId": "0w56vx4k5z",
                                       "isVisible": true,
                                       "version": 1,
@@ -630,15 +626,15 @@
                               "hideCard": false,
                               "chartData": {
                                 "iq0f8fblq5": {
-                                  "seriesName": "Sales/",
-                                  "data": "[\n  {\n    \"x\": \"Product1\",\n    \"y\": 20000\n  },\n  {\n    \"x\": \"Product2\",\n    \"y\": 22000\n  },\n  {\n    \"x\": \"Product3\",\n    \"y\": 32000\n  }\n]"
+                                  "seriesName": "",
+                                  "data": "[\n  {\n    \"x\": \"เช้า\",\n    \"y\": {{get_work_today.data[0].staff_total}}\n  },\n  {\n    \"x\": \"บ่าย\",\n    \"y\": {{get_work_today.data[1].staff_total}}\n  },\n  {\n    \"x\": \"ดึก\",\n    \"y\": {{get_work_today.data[2].staff_total}}\n  }\n]"
                                 }
                               },
                               "animateLoading": true,
                               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                               "parentColumnSpace": 14.885528564453125,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 1,
+                              "leftColumn": 0,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
@@ -651,6 +647,9 @@
                                 },
                                 {
                                   "key": "fontFamily"
+                                },
+                                {
+                                  "key": "chartData.iq0f8fblq5.data"
                                 }
                               ],
                               "customFusionChartConfig": {
@@ -702,7 +701,7 @@
                               },
                               "key": "bqpvg1v693",
                               "isDeprecated": false,
-                              "rightColumn": 62,
+                              "rightColumn": 63,
                               "widgetId": "zyf4zkh39o",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
@@ -711,11 +710,75 @@
                               "labelOrientation": "auto",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "yAxisName": "Revenue($)",
-                              "chartName": "พนักงาน",
+                              "yAxisName": "จำนวนพนักงาน (คน)",
+                              "chartName": "",
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "xAxisName": "Product Line",
+                              "xAxisName": "เวลางาน",
                               "chartType": "COLUMN_CHART"
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "DatePicker1",
+                              "minDate": "1920-12-31T18:30:00.000Z",
+                              "dateFormat": "YYYY-MM-DD",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "defaultDate"
+                                }
+                              ],
+                              "displayName": "DatePicker",
+                              "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
+                              "searchTags": [
+                                "calendar"
+                              ],
+                              "topRow": 13,
+                              "bottomRow": 17,
+                              "shortcuts": false,
+                              "parentRowSpace": 10,
+                              "labelWidth": 5,
+                              "type": "DATE_PICKER_WIDGET2",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 15.384765625,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 22,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "defaultDate"
+                                }
+                              ],
+                              "labelPosition": "Top",
+                              "isDisabled": true,
+                              "key": "jq6gttk9vv",
+                              "labelTextSize": "0.875rem",
+                              "isRequired": false,
+                              "defaultDate": "{{Date()}}",
+                              "isDeprecated": false,
+                              "rightColumn": 42,
+                              "dynamicHeight": "FIXED",
+                              "widgetId": "05fumv74r8",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "isVisible": false,
+                              "datePickerType": "DATE_PICKER",
+                              "label": "",
+                              "version": 2,
+                              "parentId": "hfk4ano650",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "timePrecision": "minute",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "maxDynamicHeight": 9000,
+                              "firstDayOfWeek": 0,
+                              "closeOnSelection": true,
+                              "maxDate": "2121-12-31T18:29:00.000Z",
+                              "minDynamicHeight": 4
                             }
                           ],
                           "key": "n7zd92lyq1",
@@ -744,10 +807,10 @@
                       "parentId": "tqly3f8pdt",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 16,
+                      "originalTopRow": 17,
                       "borderRadius": "0px",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 76,
+                      "originalBottomRow": 77,
                       "minDynamicHeight": 10
                     },
                     {
@@ -952,7 +1015,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "IconButton2Copy",
-                              "onClick": "{{navigateTo('Random', {}, 'SAME_WINDOW')}}",
+                              "onClick": "{{navigateTo('create and random work', {}, 'SAME_WINDOW')}}",
                               "buttonColor": "#fef08a",
                               "dynamicPropertyPathList": [],
                               "displayName": "Icon Button",
@@ -1156,10 +1219,10 @@
                       "parentId": "tqly3f8pdt",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 16,
+                      "originalTopRow": 17,
                       "borderRadius": "0px",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 76,
+                      "originalBottomRow": 77,
                       "minDynamicHeight": 10
                     },
                     {
@@ -1288,10 +1351,10 @@
                       "parentId": "tqly3f8pdt",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 6,
+                      "originalTopRow": 7,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 16,
+                      "originalBottomRow": 17,
                       "minDynamicHeight": 10
                     },
                     {
@@ -1347,7 +1410,7 @@
                       "originalTopRow": 1,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 2,
+                      "originalBottomRow": 6,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     }
@@ -1384,7 +1447,20 @@
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Menu_senior_get_work_today",
+              "name": "get_work_today",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "DatePicker1.formattedDate"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Menu_senior",

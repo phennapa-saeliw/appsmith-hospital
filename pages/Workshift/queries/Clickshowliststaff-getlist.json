@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async (Schedules_id, date) => {\n  storeValue('input_sid', Schedules_id);\n  storeValue('input_date', date);\n  await Show_Senior.run().then(() => {\n    storeValue('input_work_id', Show_Senior.data[0].work_id);\n    Show_Junior.run().then(() => {\n      let staffsArr = [];\n      staffsArr = Show_Junior.data;\n      staffsArr.unshift(Show_Senior.data[0]);\n      storeValue('staffs_table', staffsArr);\n      console.log(staffsArr);\n    });\n  });\n  showModal('Modal1');\n}",
+      "body": "async (Schedules_id, date) => {\n  storeValue('input_sid', Schedules_id);\n  storeValue('input_date', date);\n  await Show_Senior.run().then(() => {\n    storeValue('input_work_id', Show_Senior.data[0].work_id);\n    Show_Junior.run().then(() => {\n      let staffsArr = [];\n      staffsArr = Show_Junior.data;\n      staffsArr.unshift(Show_Senior.data[0]);\n      storeValue('staffs_table', staffsArr);\n      console.log(staffsArr);\n      Show_j_update.run().then(() => {\n        let changeworksttaff = [];\n        changeworksttaff = Show_j_update.data;\n        storeValue('update_staff_work', changeworksttaff);\n        console.log(Show_j_update.data);\n      });\n    });\n  });\n  showModal('Modal1');\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [
         {},
@@ -37,7 +37,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async (Schedules_id, date) => {\n  storeValue('input_sid', Schedules_id);\n  storeValue('input_date', date);\n  await Show_Senior.run().then(() => {\n    storeValue('input_work_id', Show_Senior.data[0].work_id);\n    Show_Junior.run().then(() => {\n      let staffsArr = [];\n      staffsArr = Show_Junior.data;\n      staffsArr.unshift(Show_Senior.data[0]);\n      storeValue('staffs_table', staffsArr);\n      console.log(staffsArr);\n    });\n  });\n  showModal('Modal1');\n}"
+      "async (Schedules_id, date) => {\n  storeValue('input_sid', Schedules_id);\n  storeValue('input_date', date);\n  await Show_Senior.run().then(() => {\n    storeValue('input_work_id', Show_Senior.data[0].work_id);\n    Show_Junior.run().then(() => {\n      let staffsArr = [];\n      staffsArr = Show_Junior.data;\n      staffsArr.unshift(Show_Senior.data[0]);\n      storeValue('staffs_table', staffsArr);\n      console.log(staffsArr);\n      Show_j_update.run().then(() => {\n        let changeworksttaff = [];\n        changeworksttaff = Show_j_update.data;\n        storeValue('update_staff_work', changeworksttaff);\n        console.log(Show_j_update.data);\n      });\n    });\n  });\n  showModal('Modal1');\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

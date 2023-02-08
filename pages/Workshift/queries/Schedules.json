@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select * from public.\"Schedules\"",
+      "body": "select \"Schedules_id\",\"S_shiftname\" from public.\"Schedules\"",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

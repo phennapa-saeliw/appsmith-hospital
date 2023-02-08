@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  await storeValue(\"mode\", \"save\");\n}",
+      "body": "async () => {\n  updatework_total.run();\n  updatework_detail.run();\n  await storeValue(\"mode\", \"save\");\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  await storeValue(\"mode\", \"save\");\n}"
+      "async () => {\n  updatework_total.run();\n  updatework_detail.run();\n  await storeValue(\"mode\", \"save\");\n}"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,

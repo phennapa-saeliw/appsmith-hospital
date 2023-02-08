@@ -1,6 +1,7 @@
 export default {
 	onLoadPage: async () => {
 		storeValue("boxall", undefined);
+		await showModal('waitprocess');
      await GetAll_work.run(
             () => {
 								let all = {};
@@ -36,6 +37,7 @@ export default {
             }
             
         );
+						closeModal('waitprocess')
 	}
 	
 }

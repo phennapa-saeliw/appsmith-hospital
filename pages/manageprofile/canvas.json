@@ -361,7 +361,7 @@
                               "textAlign": "LEFT",
                               "dynamicHeight": "AUTO_HEIGHT",
                               "widgetId": "6ppsmq6fut",
-                              "isVisible": true,
+                              "isVisible": false,
                               "fontStyle": "BOLD",
                               "textColor": "#231F20",
                               "version": 1,
@@ -751,7 +751,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "IconButton2Copy2",
-                              "onClick": "{{navigateTo('Random', {}, 'SAME_WINDOW')}}",
+                              "onClick": "{{navigateTo('create and random work', {}, 'SAME_WINDOW')}}",
                               "buttonColor": "#fef08a",
                               "dynamicPropertyPathList": [
                                 {

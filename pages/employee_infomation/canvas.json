@@ -589,7 +589,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "IconButton2Copy2",
-                              "onClick": "{{navigateTo('Random', {}, 'SAME_WINDOW')}}",
+                              "onClick": "{{navigateTo('create and random work', {}, 'SAME_WINDOW')}}",
                               "buttonColor": "#fef08a",
                               "dynamicPropertyPathList": [
                                 {

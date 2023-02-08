@@ -17,12 +17,19 @@ export default {
 				staffsArr.unshift(Show_Senior.data[0])
 				storeValue('staffs_table', staffsArr)
 				console.log(staffsArr)
+				Show_j_update.run().then(()=>{
+					let changeworksttaff = []
+					changeworksttaff = Show_j_update.data
+					storeValue('update_staff_work',changeworksttaff)
+					console.log(Show_j_update.data)
+				})
 			})
 		})
 		//closeModal('Modal2')
 		showModal('Modal1');
 	},
-	myFun2: async () => {
-		//use async-await or promises
+	checkworkid: async () => {
+		await Get_work_id.run();
+		await storeValue('getworkid',Get_work_id.data[0].work_id)
 	}
 }

@@ -6,6 +6,8 @@ export default {
 		storeValue("mode", "edit");
 	},
 	SaveMode: async () => {
+			updatework_total.run();
+			updatework_detail.run();
 			await storeValue("mode","save");
 	}
 }

@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  await Search_Staff1.run(() => {\n    showModal('searchstaff');\n    let workstaff = Search_Staff1.data;\n    storeValue('namestaffwork1', workstaff);\n  });\n  await Search_Staff2.run(() => {\n    let workstaff2 = Search_Staff2.data;\n    storeValue('namestaffwork2', workstaff2);\n  });\n  await Search_Staff3.run(() => {\n    let workstaff3 = Search_Staff3.data;\n    storeValue('namestaffwork3', workstaff3);\n  });\n}",
+      "body": "async () => {\n  await Search_Staff1.run(() => {\n    showModal('searchstaff');\n    let workstaff = Search_Staff1.data;\n    storeValue('namestaffwork1', workstaff);\n    console.log(Search_Staff1.data.l);\n  });\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  await Search_Staff1.run(() => {\n    showModal('searchstaff');\n    let workstaff = Search_Staff1.data;\n    storeValue('namestaffwork1', workstaff);\n  });\n  await Search_Staff2.run(() => {\n    let workstaff2 = Search_Staff2.data;\n    storeValue('namestaffwork2', workstaff2);\n  });\n  await Search_Staff3.run(() => {\n    let workstaff3 = Search_Staff3.data;\n    storeValue('namestaffwork3', workstaff3);\n  });\n}"
+      "async () => {\n  await Search_Staff1.run(() => {\n    showModal('searchstaff');\n    let workstaff = Search_Staff1.data;\n    storeValue('namestaffwork1', workstaff);\n    console.log(Search_Staff1.data.l);\n  });\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
