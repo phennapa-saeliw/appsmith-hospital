@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  await loop_date.myFun2();\n  let date = await appsmith.store.dayofmounth;\n  for (let i = 0; i < date.length; i++) {\n    const element = date[i];\n    storeValue('date', element);\n    await Insert_Select_Senior.run(() => {}, () => {\n      showAlert(\"เพิ่มข้อมูลไม่ได้\");\n    });\n    console.log(element);\n  }\n}",
+      "body": "async () => {\n  await loop_date.myFun2();\n  let date = await appsmith.store.dayofmounth;\n  for (let i = 0; i < date.length; i++) {\n    const element = date[i];\n    storeValue('date', element);\n    await Insert_Select_Senior.run();\n    console.log(element);\n  }\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  await loop_date.myFun2();\n  let date = await appsmith.store.dayofmounth;\n  for (let i = 0; i < date.length; i++) {\n    const element = date[i];\n    storeValue('date', element);\n    await Insert_Select_Senior.run(() => {}, () => {\n      showAlert(\"เพิ่มข้อมูลไม่ได้\");\n    });\n    console.log(element);\n  }\n}"
+      "async () => {\n  await loop_date.myFun2();\n  let date = await appsmith.store.dayofmounth;\n  for (let i = 0; i < date.length; i++) {\n    const element = date[i];\n    storeValue('date', element);\n    await Insert_Select_Senior.run();\n    console.log(element);\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

@@ -627,7 +627,7 @@
                               "chartData": {
                                 "iq0f8fblq5": {
                                   "seriesName": "",
-                                  "data": "[\n  {\n    \"x\": \"เช้า\",\n    \"y\": {{get_work_today.data[0].staff_total}}\n  },\n  {\n    \"x\": \"บ่าย\",\n    \"y\": {{get_work_today.data[1].staff_total}}\n  },\n  {\n    \"x\": \"ดึก\",\n    \"y\": {{get_work_today.data[2].staff_total}}\n  }\n]"
+                                  "data": "[\n  {\n    \"x\": \"เช้า\",\n    \"y\": '{{get_work_today.data[0].staff_total}}'\n  },\n  {\n    \"x\": \"บ่าย\",\n    \"y\": '{{get_work_today.data[0].staff_total}}'\n  },\n  {\n    \"x\": \"ดึก\",\n    \"y\": '{{get_work_today.data[0].staff_total}}'\n  }\n]"
                                 }
                               },
                               "animateLoading": true,

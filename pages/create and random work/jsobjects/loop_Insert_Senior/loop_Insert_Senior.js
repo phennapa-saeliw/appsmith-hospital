@@ -17,7 +17,7 @@ export default {
 		for(let i=0;i < date.length;i++){
     	const element = date[i];
 			storeValue('date',element);
-			await Insert_Select_Senior.run(()=>{}, ()=>{showAlert("เพิ่มข้อมูลไม่ได้")});
+			await Insert_Select_Senior.run();
 			console.log(element);
     }
 	},

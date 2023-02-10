@@ -98,7 +98,7 @@
                           "widgetName": "Canvas2",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 590,
+                          "bottomRow": 600,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -333,7 +333,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "DatePicker2",
-                              "minDate": "1920-12-31T18:30:00.000Z",
+                              "minDate": "{{DatePicker1.selectedDate}}",
                               "dateFormat": "DD/MM/YYYY",
                               "dynamicPropertyPathList": [
                                 {
@@ -344,6 +344,9 @@
                                 },
                                 {
                                   "key": "isDisabled"
+                                },
+                                {
+                                  "key": "minDate"
                                 }
                               ],
                               "displayName": "DatePicker",
@@ -374,6 +377,9 @@
                                 },
                                 {
                                   "key": "isDisabled"
+                                },
+                                {
+                                  "key": "minDate"
                                 }
                               ],
                               "labelPosition": "Left",
@@ -381,7 +387,7 @@
                               "key": "pxgmcyz9vy",
                               "labelTextSize": "0.875rem",
                               "isRequired": false,
-                              "defaultDate": "{{Date()}}",
+                              "defaultDate": "{{DatePicker1.selectedDate}}",
                               "isDeprecated": false,
                               "rightColumn": 42,
                               "dynamicHeight": "FIXED",
@@ -398,9 +404,9 @@
                               "timePrecision": "minute",
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "firstDayOfWeek": 0,
+                              "firstDayOfWeek": "0",
                               "closeOnSelection": true,
-                              "maxDate": "2121-12-31T18:29:00.000Z",
+                              "maxDate": "2122-01-01T01:29:00.000+07:00",
                               "minDynamicHeight": 4
                             },
                             {
@@ -700,6 +706,9 @@
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "isDisabled"
+                                },
+                                {
+                                  "key": "isVisible"
                                 }
                               ],
                               "displayName": "Button",
@@ -730,6 +739,9 @@
                                 },
                                 {
                                   "key": "isDisabled"
+                                },
+                                {
+                                  "key": "isVisible"
                                 }
                               ],
                               "text": "Add",
@@ -739,7 +751,7 @@
                               "rightColumn": 51,
                               "isDefaultClickDisabled": true,
                               "widgetId": "t16sj0rtn5",
-                              "isVisible": true,
+                              "isVisible": "{{MultiSelect1.selectedOptionValues.length == '9'}}",
                               "recaptchaType": "V3",
                               "version": 1,
                               "parentId": "aykqis0loe",
@@ -1268,7 +1280,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "IconButton2Copy2",
-                              "onClick": "{{navigateTo('Random', {}, 'SAME_WINDOW')}}",
+                              "onClick": "{{navigateTo('create and random work', {}, 'SAME_WINDOW')}}",
                               "buttonColor": "#fef08a",
                               "dynamicPropertyPathList": [
                                 {

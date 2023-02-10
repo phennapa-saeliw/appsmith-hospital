@@ -7366,7 +7366,7 @@
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3CopyCopy6Copy8",
                                               "onClick": "{{Clickshowliststaff.getlist('3',moment(first_date.text).add(16 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
-                                              "buttonColor": "{{appsmith.store.boxall.boxn16}}",
+                                              "buttonColor": "{{appsmith.store.boxall.boxnn16}}",
                                               "dynamicPropertyPathList": [
                                                 {
                                                   "key": "buttonColor"
