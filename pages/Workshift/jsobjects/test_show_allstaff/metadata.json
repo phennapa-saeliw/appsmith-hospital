@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "test_show_allstaff",
+    "pageId": "Workshift",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Workshift_test_show_allstaff",
+  "deleted": false,
+  "gitSyncId": "63cf62f247460b73912584b3_63d21d1147460b739125b7b6"
+}

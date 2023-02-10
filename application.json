@@ -25,7 +25,7 @@
       "isDefault": false
     },
     {
-      "id": "Random",
+      "id": "create and random work",
       "isDefault": false
     },
     {
@@ -44,8 +44,15 @@
   "publishedAppLayout": {
     "type": "DESKTOP"
   },
+  "unpublishedCustomJSLibs": [],
+  "publishedCustomJSLibs": [],
   "evaluationVersion": 2,
   "applicationVersion": 2,
+  "embedSetting": {
+    "height": "720px",
+    "width": "1024px",
+    "showNavigationBar": false
+  },
   "isManualUpdate": false,
   "deleted": false
 }

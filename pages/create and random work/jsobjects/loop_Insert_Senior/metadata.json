@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "loop_Insert_Senior",
+    "pageId": "create and random work",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "create and random work_loop_Insert_Senior",
+  "deleted": false,
+  "gitSyncId": "63cf62f247460b73912584b3_63cf8cb147460b739125880f"
+}

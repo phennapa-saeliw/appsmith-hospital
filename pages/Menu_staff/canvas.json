@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 74,
+          "version": 76,
           "minHeight": 830,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -60,12 +60,12 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 790,
+                  "bottomRow": 780,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
                   "hideCard": true,
-                  "minHeight": 790,
+                  "minHeight": 780,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
                   "dynamicBindingPathList": [],
@@ -82,8 +82,8 @@
                         "parent",
                         "group"
                       ],
-                      "topRow": 17,
-                      "bottomRow": 77,
+                      "topRow": 16,
+                      "bottomRow": 76,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
@@ -149,7 +149,7 @@
                                     {
                                       "boxShadow": "none",
                                       "widgetName": "IconButton2Copy1Copy4",
-                                      "onClick": "",
+                                      "onClick": "{{navigateTo('employee_infomation', {}, 'SAME_WINDOW')}}",
                                       "buttonColor": "#22c55e",
                                       "dynamicPropertyPathList": [],
                                       "displayName": "Icon Button",
@@ -180,7 +180,7 @@
                                       "key": "cxjlqfsgdl",
                                       "isDeprecated": false,
                                       "rightColumn": 52,
-                                      "iconName": "changes",
+                                      "iconName": "mugshot",
                                       "widgetId": "isuyovmqs0",
                                       "isVisible": true,
                                       "version": 1,
@@ -316,7 +316,7 @@
                                     {
                                       "boxShadow": "none",
                                       "widgetName": "IconButton2Copy1",
-                                      "onClick": "",
+                                      "onClick": "{{navigateTo('Workshift', {}, 'SAME_WINDOW')}}",
                                       "buttonColor": "#22c55e",
                                       "dynamicPropertyPathList": [
                                         {
@@ -473,10 +473,10 @@
                       "parentId": "epxnlofc4t",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 17,
+                      "originalTopRow": 16,
                       "borderRadius": "0px",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 77,
+                      "originalBottomRow": 76,
                       "minDynamicHeight": 10
                     },
                     {
@@ -562,8 +562,8 @@
                         "parent",
                         "group"
                       ],
-                      "topRow": 17,
-                      "bottomRow": 77,
+                      "topRow": 16,
+                      "bottomRow": 76,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
@@ -633,7 +633,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "IconButton2",
-                              "onClick": "",
+                              "onClick": "{{navigateTo('Workshift', {}, 'SAME_WINDOW')}}",
                               "buttonColor": "#fef08a",
                               "dynamicPropertyPathList": [
                                 {
@@ -725,7 +725,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "IconButton2Copy1CopyCopy",
-                              "onClick": "",
+                              "onClick": "{{navigateTo('Menu_staff', {}, 'SAME_WINDOW')}}",
                               "buttonColor": "#fef08a",
                               "dynamicPropertyPathList": [],
                               "displayName": "Icon Button",
@@ -769,7 +769,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "IconButton2Copy1CopyCopy1",
-                              "onClick": "",
+                              "onClick": "{{navigateTo('employee_infomation', {}, 'SAME_WINDOW')}}",
                               "buttonColor": "#fef08a",
                               "dynamicPropertyPathList": [],
                               "displayName": "Icon Button",
@@ -837,10 +837,10 @@
                       "parentId": "epxnlofc4t",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 17,
+                      "originalTopRow": 16,
                       "borderRadius": "0px",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 77,
+                      "originalBottomRow": 76,
                       "minDynamicHeight": 10
                     },
                     {
@@ -855,8 +855,8 @@
                         "parent",
                         "group"
                       ],
-                      "topRow": 7,
-                      "bottomRow": 17,
+                      "topRow": 6,
+                      "bottomRow": 16,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
@@ -969,10 +969,10 @@
                       "parentId": "epxnlofc4t",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 7,
+                      "originalTopRow": 6,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 17,
+                      "originalBottomRow": 16,
                       "minDynamicHeight": 10
                     },
                     {
@@ -985,7 +985,7 @@
                         "label"
                       ],
                       "topRow": 1,
-                      "bottomRow": 6,
+                      "bottomRow": 5,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,

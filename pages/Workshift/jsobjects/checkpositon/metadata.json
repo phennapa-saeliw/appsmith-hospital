@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "checkpositon",
+    "pageId": "Workshift",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Workshift_checkpositon",
+  "deleted": false,
+  "gitSyncId": "638835132913ba43778b3c2e_63aa9152fcb7cc4992ade2f9"
+}

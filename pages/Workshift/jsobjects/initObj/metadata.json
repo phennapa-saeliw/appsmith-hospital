@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "initObj",
+    "pageId": "Workshift",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Workshift_initObj",
+  "deleted": false,
+  "gitSyncId": "638835132913ba43778b3c2e_63ad24cfbc0e8334c729fc79"
+}
