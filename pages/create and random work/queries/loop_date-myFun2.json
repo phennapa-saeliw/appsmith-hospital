@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  let from = new Date(DatePicker1.selectedDate);\n  let to = new Date(DatePicker2.selectedDate);\n  let dayofmounth = [];\n  for (let day = from; day <= to; day.setDate(day.getDate() + 1)) {\n    dayofmounth.push(day.toLocaleDateString());\n  }\n  storeValue('dayofmounth', dayofmounth);\n}",
+      "body": "async () => {\n  let from = new Date(DatePicker1.selectedDate);\n  let to = new Date(DatePicker2.selectedDate);\n  let dayofmounth = [];\n  for (let day = from; day <= to; day.setDate(day.getDate() + 1)) {\n    console.log(\"loop for of compare date from and to.\");\n    dayofmounth.push(day.toLocaleDateString());\n  }\n  storeValue('dayofmounth', dayofmounth);\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -35,7 +35,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  let from = new Date(DatePicker1.selectedDate);\n  let to = new Date(DatePicker2.selectedDate);\n  let dayofmounth = [];\n  for (let day = from; day <= to; day.setDate(day.getDate() + 1)) {\n    dayofmounth.push(day.toLocaleDateString());\n  }\n  storeValue('dayofmounth', dayofmounth);\n}"
+      "async () => {\n  let from = new Date(DatePicker1.selectedDate);\n  let to = new Date(DatePicker2.selectedDate);\n  let dayofmounth = [];\n  for (let day = from; day <= to; day.setDate(day.getDate() + 1)) {\n    console.log(\"loop for of compare date from and to.\");\n    dayofmounth.push(day.toLocaleDateString());\n  }\n  storeValue('dayofmounth', dayofmounth);\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  let junior = await MultiSelect1.selectedOptionValues;\n  await Get_workid.run();\n  let headwork = await Get_workid.data;\n  for (let i = 0; i < headwork.length; i++) {\n    for (let x = 0; x < junior.length; x++) {\n      const element = headwork[i];\n      const elementx = junior[x];\n      storeValue('detailworkid', element.work_id);\n      storeValue('detaile_id', elementx);\n      await InsertJunior_work.run();\n      console.log(element, elementx);\n    }\n  }\n}",
+      "body": "async () => {\n  let junior = await MultiSelect1.selectedOptionValues;\n  await Get_workid.run().then(async () => {\n    let headwork = await Get_workid.data;\n    for (let i = 0; i < headwork.length; i++) {\n      for (let x = 0; x < junior.length; x++) {\n        const element = headwork[i];\n        const elementx = junior[x];\n        storeValue('detailworkid', element.work_id);\n        storeValue('detaile_id', elementx);\n        await InsertJunior_work.run();\n        console.log(element, elementx);\n      }\n    }\n  }).catch(() => {\n    console.log(\"error\");\n  });\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -35,7 +35,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  let junior = await MultiSelect1.selectedOptionValues;\n  await Get_workid.run();\n  let headwork = await Get_workid.data;\n  for (let i = 0; i < headwork.length; i++) {\n    for (let x = 0; x < junior.length; x++) {\n      const element = headwork[i];\n      const elementx = junior[x];\n      storeValue('detailworkid', element.work_id);\n      storeValue('detaile_id', elementx);\n      await InsertJunior_work.run();\n      console.log(element, elementx);\n    }\n  }\n}"
+      "async () => {\n  let junior = await MultiSelect1.selectedOptionValues;\n  await Get_workid.run().then(async () => {\n    let headwork = await Get_workid.data;\n    for (let i = 0; i < headwork.length; i++) {\n      for (let x = 0; x < junior.length; x++) {\n        const element = headwork[i];\n        const elementx = junior[x];\n        storeValue('detailworkid', element.work_id);\n        storeValue('detaile_id', elementx);\n        await InsertJunior_work.run();\n        console.log(element, elementx);\n      }\n    }\n  }).catch(() => {\n    console.log(\"error\");\n  });\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

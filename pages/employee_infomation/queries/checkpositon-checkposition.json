@@ -22,7 +22,7 @@
       "body": "() => {\n  if (appsmith.store.jwt.Positon = 'Senior Staff') {\n    navigateTo('Menu_senior', {});\n  } else {\n    navigateTo('Menu_staff', {});\n  }\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
     "executeOnLoad": false,
     "clientSideExecution": true,

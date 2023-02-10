@@ -4,8 +4,9 @@ export default {
 	myFun1: async () => {
 		let junior = await MultiSelect1.selectedOptionValues;
 		//console.log(junior)
-		await Get_workid.run();
-		let headwork = await Get_workid.data
+		await Get_workid.run()
+		.then(async() => {
+				let headwork = await Get_workid.data
 		//console.log(headwork)
 			for(let i=0;i < headwork.length;i++){
 			for(let x=0;x < junior.length;x++){
@@ -17,6 +18,11 @@ export default {
 				console.log(element,elementx);
       }
     }
+		})
+		.catch(() =>{
+			console.log("error")
+		})
+	
 	},
 	myFun2: async () => {
 		//use async-await or promises
