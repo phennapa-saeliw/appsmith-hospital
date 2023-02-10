@@ -98,7 +98,7 @@
                           "widgetName": "Canvas2",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 600,
+                          "bottomRow": 590,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -285,7 +285,7 @@
                                 "label"
                               ],
                               "topRow": 4,
-                              "bottomRow": 8,
+                              "bottomRow": 9,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -294,7 +294,7 @@
                               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                               "parentColumnSpace": 15.384765625,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 6,
+                              "leftColumn": 9,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "truncateButtonColor"
@@ -314,7 +314,7 @@
                               "text": "{{appsmith.store.jwt.E_name}}",
                               "key": "c1iqtshukx",
                               "isDeprecated": false,
-                              "rightColumn": 20,
+                              "rightColumn": 31,
                               "textAlign": "LEFT",
                               "dynamicHeight": "FIXED",
                               "widgetId": "y3fx7csg5i",
@@ -465,7 +465,7 @@
                                 "label"
                               ],
                               "topRow": 4,
-                              "bottomRow": 8,
+                              "bottomRow": 9,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -491,7 +491,7 @@
                               "text": "Senior : ",
                               "key": "c1iqtshukx",
                               "isDeprecated": false,
-                              "rightColumn": 6,
+                              "rightColumn": 9,
                               "textAlign": "LEFT",
                               "dynamicHeight": "FIXED",
                               "widgetId": "impskptorh",
