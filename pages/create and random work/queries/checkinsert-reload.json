@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun2",
-    "fullyQualifiedName": "checkinsert.myFun2",
+    "name": "reload",
+    "fullyQualifiedName": "checkinsert.reload",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -42,7 +42,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "create and random work_checkinsert.myFun2",
+  "id": "create and random work_checkinsert.reload",
   "deleted": false,
   "gitSyncId": "63cf62f247460b73912584b3_63cf8c9f8516cd46b362ab70"
 }

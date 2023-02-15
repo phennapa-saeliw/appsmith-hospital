@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun1",
-    "fullyQualifiedName": "checkinsert.myFun1",
+    "name": "checkinsert",
+    "fullyQualifiedName": "checkinsert.checkinsert",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -42,7 +42,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "create and random work_checkinsert.myFun1",
+  "id": "create and random work_checkinsert.checkinsert",
   "deleted": false,
   "gitSyncId": "63cf62f247460b73912584b3_63cf8c9f8516cd46b362ab6e"
 }

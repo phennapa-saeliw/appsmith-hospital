@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "update public.\"Employee\"\nset \"E_name\" = '{{Input1.text}}'\nwhere \"E_id\" = '{{appsmith.store.jwt.E_id}}'",
+      "body": "update public.\"Employee\"\nset \"E_name\" = '{{ename.text}}'\nwhere \"E_id\" = '{{appsmith.store.jwt.E_id}}'",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,8 +36,8 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Input1.text",
-      "appsmith.store.jwt.E_id"
+      "appsmith.store.jwt.E_id",
+      "ename.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

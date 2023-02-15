@@ -1,7 +1,7 @@
 export default {
 	myVar1: [],
 	myVar2: {},
-	myFun1: () => {
+	checkinsert: () => {
 		let totalstaff = appsmith.store.staffname;
 		let dayof = appsmith.store.dayofmounth;
 		for(let i=0;i < dayof.length;i++){
@@ -12,7 +12,7 @@ export default {
       }
     }
 	},
-	myFun2: async () => {
-		//use async-await or promises
+	reload: async () => {
+		
 	}
 }

@@ -15037,17 +15037,6 @@
                 "async () => {\n  storeValue(\"boxall\", undefined);\n  await showModal('waitprocess');\n  await GetAll_work.run(() => {\n    let all = {};\n    let shiftBox = moment(first_date.text).weekday() - 1;\n    let result = GetAll_work.data;\n    let total = GetAll_work.data.length;\n    for (let i = 0; i < total; i++) {\n      let day = Number(moment(result[i].date).format(\"D\")) + Number(shiftBox);\n      console.log(day);\n      if (result[i].Schedules_id == 1) {\n        if (result[i].staff_total >= 9) {\n          all[\"box\" + day] = '#bbf7d0';\n        } else {\n          all[\"box\" + day] = '#fef08a';\n        }\n      } else if (result[i].Schedules_id == 2) {\n        if (result[i].staff_total >= 9) {\n          all[\"boxn\" + day] = '#bbf7d0';\n        } else {\n          all[\"boxn\" + day] = '#fef08a';\n        }\n      } else if (result[i].Schedules_id == 3) {\n        if (result[i].staff_total >= 9) {\n          all[\"boxnn\" + day] = '#bbf7d0';\n        } else {\n          all[\"boxnn\" + day] = '#fef08a';\n        }\n      }\n    }\n    storeValue(\"boxall\", all);\n    console.log(appsmith.store.boxall.box23);\n  });\n  closeModal('waitprocess');\n}"
               ],
               "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Workshift_testcheckwork.checkworkshift",
-              "name": "testcheckwork.checkworkshift",
-              "collectionId": "Workshift_testcheckwork",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "() => {\n  storeValue(\"boxall\", undefined);\n  GetAll_work.run(() => {\n    let all = {};\n    let shiftBox = moment(first_date.text).weekday() - 1;\n    let result = GetAll_work.data;\n    let total = GetAll_work.data.length;\n    console.log(result);\n    for (let i = 0; i < total; i++) {\n      let day = Number(moment(result[i].date).format(\"D\")) + Number(shiftBox);\n      console.log(day);\n      if (result[i].Schedules_id == 1) {\n        if (result[i].staff_total >= 9) {\n          all[\"box\" + day] = '#bbf7d0';\n        } else {\n          all[\"box\" + day] = '#fef08a';\n        }\n      } else if (result[i].Schedules_id == 2) {\n        if (result[i].staff_total >= 9) {\n          all[\"boxn\" + day] = '#bbf7d0';\n        } else {\n          all[\"boxn\" + day] = '#fef08a';\n        }\n      } else if (result[i].Schedules_id == 3) {\n        if (result[i].staff_total >= 9) {\n          all[\"boxnn\" + day] = '#bbf7d0';\n        } else {\n          all[\"boxnn\" + day] = '#fef08a';\n        }\n      }\n    }\n    storeValue(\"boxall\", all);\n  });\n}"
-              ],
-              "timeoutInMillisecond": 10000
             }
           ]
         ],
