@@ -334,13 +334,10 @@
                               "boxShadow": "none",
                               "widgetName": "DatePicker2",
                               "minDate": "{{DatePicker1.selectedDate}}",
-                              "dateFormat": "DD/MM/YYYY",
+                              "dateFormat": "YYYY-MM-DD",
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "defaultDate"
-                                },
-                                {
-                                  "key": "dateFormat"
                                 },
                                 {
                                   "key": "isDisabled"
@@ -517,13 +514,10 @@
                               "boxShadow": "none",
                               "widgetName": "DatePicker1",
                               "minDate": "1920-12-31T18:30:00.000Z",
-                              "dateFormat": "DD/MM/YYYY",
+                              "dateFormat": "YYYY-MM-DD",
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "defaultDate"
-                                },
-                                {
-                                  "key": "dateFormat"
                                 },
                                 {
                                   "key": "isDisabled"
@@ -1611,7 +1605,7 @@
                       "backgroundColor": "#22c55e",
                       "isDeprecated": false,
                       "rightColumn": 64,
-                      "dynamicHeight": "AUTO_HEIGHT",
+                      "dynamicHeight": "FIXED",
                       "widgetId": "9nh4uuvyjw",
                       "containerStyle": "card",
                       "isVisible": true,
@@ -1619,10 +1613,8 @@
                       "parentId": "xr8yvuw5rz",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 6,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 16,
                       "minDynamicHeight": 10
                     },
                     {

@@ -6,7 +6,7 @@ export default {
 		let to = new Date(DatePicker2.selectedDate);
 		let dayofmounth = [];
 		// loop for every day
-		for (let day = (from); day <= to; day.setDate(day.getDate() + 1)) {
+		for (let day = from; day <= to; day.setDate(day.getDate() + 1)) {
 			// your day is here
 			console.log("loop for of compare date from and to.")
 			dayofmounth.push(moment(day.toLocaleDateString()).format("YYYY-MM-DD"))

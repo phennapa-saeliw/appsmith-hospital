@@ -1,7 +1,7 @@
 export default {
 	myVar1: [],
 	myVar2: {},
-	myFun1: async () => {
+	Select_Junior: async () => {
 		let junior = await MultiSelect1.selectedOptionValues;
 		//console.log(junior)
 		await Get_workid.run()

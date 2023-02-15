@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  showModal('Waitprocess1');\n  await loop_Insert_Senior.selectsenior();\n  await Select_Insert_Junior.myFun1();\n  closeModal('Waitprocess1');\n}",
+      "body": "async () => {\n  showModal('Waitprocess1');\n  await loop_Insert_Senior.selectsenior();\n  await Select_Insert_Junior.Select_Junior();\n  closeModal('Waitprocess1');\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  showModal('Waitprocess1');\n  await loop_Insert_Senior.selectsenior();\n  await Select_Insert_Junior.myFun1();\n  closeModal('Waitprocess1');\n}"
+      "async () => {\n  showModal('Waitprocess1');\n  await loop_Insert_Senior.selectsenior();\n  await Select_Insert_Junior.Select_Junior();\n  closeModal('Waitprocess1');\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

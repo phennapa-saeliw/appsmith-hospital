@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun1",
-    "fullyQualifiedName": "loop_Insert_Junior.myFun1",
+    "name": "insert_J_loop",
+    "fullyQualifiedName": "loop_Insert_Junior.insert_J_loop",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -42,7 +42,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "create and random work_loop_Insert_Junior.myFun1",
+  "id": "create and random work_loop_Insert_Junior.insert_J_loop",
   "deleted": false,
   "gitSyncId": "63cf62f247460b73912584b3_63cf9065af0003311d22e48f"
 }

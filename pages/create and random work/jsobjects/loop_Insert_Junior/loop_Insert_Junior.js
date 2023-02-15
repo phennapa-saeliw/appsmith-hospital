@@ -1,7 +1,7 @@
 export default {
 	myVar1: [],
 	myVar2: {},
-	myFun1: async () => {
+	insert_J_loop: async () => {
 		await Get_workid.run();
 		let totalstaff = appsmith.store.staffname;
 		let headwork = Get_workid.data
