@@ -77,7 +77,7 @@
                         "label"
                       ],
                       "topRow": 1,
-                      "bottomRow": 5,
+                      "bottomRow": 6,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -117,7 +117,7 @@
                       "originalTopRow": 1,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 6,
+                      "originalBottomRow": 5,
                       "fontSize": "1.875rem",
                       "minDynamicHeight": 4
                     },
@@ -131,8 +131,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 22,
-                      "bottomRow": 26,
+                      "topRow": 23,
+                      "bottomRow": 27,
                       "parentRowSpace": 10,
                       "groupButtons": {
                         "groupButton1": {
@@ -161,7 +161,7 @@
                           "index": 1,
                           "menuItems": {},
                           "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                          "onClick": "{{navigateTo('create and random work',{},'NEW_WINDOW')}}"
+                          "onClick": "{{navigateTo('https://app.appsmith.com/app/workshift/create-and-random-work-63e5bc603ae5ac321b837e7e', {}, 'SAME_WINDOW')}}"
                         }
                       },
                       "type": "BUTTON_GROUP_WIDGET",
@@ -203,9 +203,9 @@
                           "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
                         }
                       },
-                      "originalTopRow": 23,
+                      "originalTopRow": 22,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 27,
+                      "originalBottomRow": 26,
                       "buttonVariant": "PRIMARY"
                     }
                   ],
@@ -2264,42 +2264,46 @@
                       "minDynamicHeight": 4
                     },
                     {
-                      "boxShadow": "none",
-                      "widgetName": "IconButton4",
-                      "buttonColor": "#fef08a",
-                      "displayName": "Icon Button",
-                      "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+                      "widgetName": "Progress1",
+                      "progressType": "circular",
+                      "isCanvas": false,
+                      "displayName": "Progress",
+                      "iconSVG": "/static/media/icon.9b0d7b96a0223e8120bf6f14aca4154a.svg",
                       "searchTags": [
-                        "click",
-                        "submit"
+                        "percent"
                       ],
-                      "topRow": 3,
-                      "bottomRow": 24,
+                      "topRow": 5,
+                      "bottomRow": 21,
                       "parentRowSpace": 10,
-                      "type": "ICON_BUTTON_WIDGET",
+                      "type": "PROGRESS_WIDGET",
+                      "isIndeterminate": true,
                       "hideCard": false,
-                      "animateLoading": true,
+                      "fillColor": "{{appsmith.theme.colors.primaryColor}}",
                       "parentColumnSpace": 7.84375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 12,
+                      "leftColumn": 18,
                       "dynamicBindingPathList": [
+                        {
+                          "key": "fillColor"
+                        },
                         {
                           "key": "borderRadius"
                         }
                       ],
-                      "isDisabled": false,
-                      "key": "p23v0jdhr4",
+                      "key": "wfkjnaybz7",
+                      "showResult": false,
                       "isDeprecated": false,
-                      "rightColumn": 52,
-                      "iconName": "warning-sign",
-                      "widgetId": "nsvf1fa6qz",
+                      "rightColumn": 46,
+                      "counterClosewise": false,
+                      "widgetId": "o9v58u8oyj",
                       "isVisible": true,
+                      "steps": "1",
                       "version": 1,
                       "parentId": "6rxsjddgsp",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "buttonVariant": "TERTIARY"
+                      "progress": ""
                     }
                   ],
                   "isDisabled": false,
