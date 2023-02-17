@@ -13846,14 +13846,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "Input1",
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "isDisabled"
-                        },
-                        {
-                          "key": "isVisible"
-                        }
-                      ],
+                      "dynamicPropertyPathList": [],
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -13876,9 +13869,6 @@
                       "leftColumn": 3,
                       "dynamicBindingPathList": [
                         {
-                          "key": "isDisabled"
-                        },
-                        {
                           "key": "accentColor"
                         },
                         {
@@ -13886,15 +13876,12 @@
                         },
                         {
                           "key": "defaultText"
-                        },
-                        {
-                          "key": "isVisible"
                         }
                       ],
                       "labelPosition": "Left",
                       "labelStyle": "",
                       "inputType": "TEXT",
-                      "isDisabled": "{{(appsmith.store.mode == 'edit'? true:false)}}",
+                      "isDisabled": true,
                       "key": "nxdwyf3ylh",
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
@@ -13903,7 +13890,7 @@
                       "dynamicHeight": "FIXED",
                       "widgetId": "bxiz0cgosz",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisible": "{{(appsmith.store.jwt.Position !== 'Senior Staff'? true:false)}}",
+                      "isVisible": false,
                       "label": "ชื่อ : ",
                       "version": 2,
                       "parentId": "9i0j364v99",
