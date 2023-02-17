@@ -13,7 +13,7 @@ export default {
 			showAlert('Error กรุณาใส่พาสเวิร์ด 8 ตัวขึ้นไป','error')
 				} else{
 		if ((password.text) === (c_password.text))
-			console.log(Update_profile_EmailPassword.run()) ,showAlert(' เปลี่ยนพาสเวิร์ดสำเร็จ.' , 'success') , closeModal('Modal1')  ;	
+			console.log(Update_profile_EmailPassword.run()) ,showAlert(' เปลี่ยนพาสเวิร์ดสำเร็จ.' , 'success') , closeModal('Modal1'),resetWidget('password'),resetWidget('c_password')  ;	
 		else (console.log 
     	(showAlert(' กรุณากรอกพาสเวิร์ดให้ตรงกัน.', 'error')))
 		}

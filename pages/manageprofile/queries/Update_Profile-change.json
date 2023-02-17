@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  if (password.text.length <= 7) {\n    showAlert('Error กรุณาใส่พาสเวิร์ด 8 ตัวขึ้นไป', 'error');\n  } else {\n    if (password.text === c_password.text) (console.log(Update_profile_EmailPassword.run()), showAlert(' เปลี่ยนพาสเวิร์ดสำเร็จ.', 'success'), closeModal('Modal1')); else console.log(showAlert(' กรุณากรอกพาสเวิร์ดให้ตรงกัน.', 'error'));\n  }\n}",
+      "body": "async () => {\n  if (password.text.length <= 7) {\n    showAlert('Error กรุณาใส่พาสเวิร์ด 8 ตัวขึ้นไป', 'error');\n  } else {\n    if (password.text === c_password.text) (console.log(Update_profile_EmailPassword.run()), showAlert(' เปลี่ยนพาสเวิร์ดสำเร็จ.', 'success'), closeModal('Modal1'), resetWidget('password'), resetWidget('c_password')); else console.log(showAlert(' กรุณากรอกพาสเวิร์ดให้ตรงกัน.', 'error'));\n  }\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  if (password.text.length <= 7) {\n    showAlert('Error กรุณาใส่พาสเวิร์ด 8 ตัวขึ้นไป', 'error');\n  } else {\n    if (password.text === c_password.text) (console.log(Update_profile_EmailPassword.run()), showAlert(' เปลี่ยนพาสเวิร์ดสำเร็จ.', 'success'), closeModal('Modal1')); else console.log(showAlert(' กรุณากรอกพาสเวิร์ดให้ตรงกัน.', 'error'));\n  }\n}"
+      "async () => {\n  if (password.text.length <= 7) {\n    showAlert('Error กรุณาใส่พาสเวิร์ด 8 ตัวขึ้นไป', 'error');\n  } else {\n    if (password.text === c_password.text) (console.log(Update_profile_EmailPassword.run()), showAlert(' เปลี่ยนพาสเวิร์ดสำเร็จ.', 'success'), closeModal('Modal1'), resetWidget('password'), resetWidget('c_password')); else console.log(showAlert(' กรุณากรอกพาสเวิร์ดให้ตรงกัน.', 'error'));\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
