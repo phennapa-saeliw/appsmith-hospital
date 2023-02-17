@@ -117,7 +117,7 @@
                       "originalTopRow": 1,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 5,
+                      "originalBottomRow": 6,
                       "fontSize": "1.875rem",
                       "minDynamicHeight": 4
                     },
@@ -161,7 +161,7 @@
                           "index": 1,
                           "menuItems": {},
                           "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                          "onClick": "{{navigateTo('https://app.appsmith.com/app/workshift/create-and-random-work-63e5bc603ae5ac321b837e7e', {}, 'SAME_WINDOW')}}"
+                          "onClick": "{{navigateTo('https://app.appsmith.com/app/workshift/create-and-random-work-63e5bc603ae5ac321b837e7e?branch=master&embed=true', {}, 'SAME_WINDOW')}}"
                         }
                       },
                       "type": "BUTTON_GROUP_WIDGET",
@@ -203,9 +203,9 @@
                           "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
                         }
                       },
-                      "originalTopRow": 22,
+                      "originalTopRow": 23,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 26,
+                      "originalBottomRow": 27,
                       "buttonVariant": "PRIMARY"
                     }
                   ],
