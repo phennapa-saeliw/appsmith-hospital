@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT \"Users\".\"U_Id\",\"E_id\",\"E_name\",\"Password\",\"Email\",\"Position\" FROM public.\"Employee\"\ninner join public.\"Users\" on \"Employee\".\"U_Id\" = \"Users\".\"U_Id\"\nWhere \"E_id\" = '{{appsmith.store.jwt.E_id}}'",
+      "body": "SELECT \"Users\".\"U_Id\",\"E_id\",\"E_name\",\"Password\",\"Email\",\"Position\" as user_position FROM public.\"Employee\"\ninner join public.\"Users\" on \"Employee\".\"U_Id\" = \"Users\".\"U_Id\"\nWhere \"E_id\" = '{{appsmith.store.jwt.E_id}}'",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
