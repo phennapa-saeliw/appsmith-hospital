@@ -45,6 +45,7 @@ export default {
 			randomlist = appsmith.store.staffname3
       }
 		}
+		resetWidget('MultiSelect1')
 		storeValue('idschedules',idschedules)
 		storeValue('ramdomlist', randomlist)
 		storeValue('select', data)

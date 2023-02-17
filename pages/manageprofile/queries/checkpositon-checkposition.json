@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  if (appsmith.store.Positon = 'Senior Staff') {\n    navigateTo('Menu_senior', {});\n  } else {\n    navigateTo('Menu_staff', {});\n  }\n}",
+      "body": "() => {\n  if (appsmith.store.jwt.user_position == 'Senior Staff') {\n    navigateTo('Menu_senior', {});\n    console.log(appsmith.store.jwt.user_position);\n  } else if (appsmith.store.jwt.user_position == 'Junior Staff') {\n    navigateTo('Menu_staff', {});\n    console.log(appsmith.store.jwt.user_position);\n  }\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -35,7 +35,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  if (appsmith.store.Positon = 'Senior Staff') {\n    navigateTo('Menu_senior', {});\n  } else {\n    navigateTo('Menu_staff', {});\n  }\n}"
+      "() => {\n  if (appsmith.store.jwt.user_position == 'Senior Staff') {\n    navigateTo('Menu_senior', {});\n    console.log(appsmith.store.jwt.user_position);\n  } else if (appsmith.store.jwt.user_position == 'Junior Staff') {\n    navigateTo('Menu_staff', {});\n    console.log(appsmith.store.jwt.user_position);\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

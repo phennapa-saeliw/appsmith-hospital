@@ -975,6 +975,7 @@
                               "boxShadow": "none",
                               "widgetName": "MultiSelect1",
                               "isFilterable": true,
+                              "allowSelectAll": false,
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "isDisabled"
