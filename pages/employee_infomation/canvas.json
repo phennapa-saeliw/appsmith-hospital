@@ -148,10 +148,11 @@
                               "isVisibleFilters": false,
                               "isVisible": true,
                               "fontStyle": "",
-                              "enableClientSideSearch": false,
+                              "enableClientSideSearch": true,
                               "version": 1,
-                              "totalRecordsCount": "",
+                              "totalRecordsCount": "10",
                               "isLoading": false,
+                              "onSearchTextChanged": "",
                               "childStylesheet": {
                                 "button": {
                                   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -299,7 +300,7 @@
                               "label": "Data",
                               "searchKey": "",
                               "parentId": "yn1cwu1lz7",
-                              "serverSidePaginationEnabled": true,
+                              "serverSidePaginationEnabled": false,
                               "renderMode": "CANVAS",
                               "horizontalAlignment": "CENTER",
                               "isVisibleSearch": true,
