@@ -446,7 +446,7 @@
                                 "label"
                               ],
                               "topRow": 45,
-                              "bottomRow": 49,
+                              "bottomRow": 50,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -1096,7 +1096,7 @@
                               "rightColumn": 59,
                               "iconName": "random",
                               "widgetId": "q3vcdwv3y9",
-                              "isVisible": "{{(appsmith.store.jwt.Position !== 'Junior Staff'? true:false)}}",
+                              "isVisible": "{{(appsmith.store.jwt.user_position !== 'Junior Staff'? true:false)}}",
                               "version": 1,
                               "parentId": "2c91xake7s",
                               "renderMode": "CANVAS",

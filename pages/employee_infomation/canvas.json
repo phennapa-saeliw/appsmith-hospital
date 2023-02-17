@@ -630,7 +630,7 @@
                               "rightColumn": 59,
                               "iconName": "random",
                               "widgetId": "q5ols75a3b",
-                              "isVisible": "{{(appsmith.store.jwt.Position !== 'Junior Staff'? true:false)}}",
+                              "isVisible": "{{(appsmith.store.jwt.user_position !== 'Junior Staff'? true:false)}}",
                               "version": 1,
                               "parentId": "8qlcexvfkj",
                               "renderMode": "CANVAS",

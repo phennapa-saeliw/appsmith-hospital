@@ -12733,7 +12733,7 @@
                               "rightColumn": 59,
                               "iconName": "random",
                               "widgetId": "es076atmzb",
-                              "isVisible": "{{(appsmith.store.jwt.Position !== 'Junior Staff'? true:false)}}",
+                              "isVisible": "{{(appsmith.store.jwt.user_position !== 'Junior Staff'? true:false)}}",
                               "version": 1,
                               "parentId": "ig198j4lyt",
                               "renderMode": "CANVAS",
