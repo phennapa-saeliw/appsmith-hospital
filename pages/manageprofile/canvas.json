@@ -165,7 +165,7 @@
                       "isDeprecated": false,
                       "rightColumn": 18,
                       "textAlign": "LEFT",
-                      "dynamicHeight": "AUTO_HEIGHT",
+                      "dynamicHeight": "FIXED",
                       "widgetId": "owkj68yow2",
                       "isVisible": true,
                       "fontStyle": "BOLD",
@@ -182,7 +182,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "IconButton4Copy",
-                      "onClick": "{{closeModal('Modal1Copy')}}",
+                      "onClick": "{{closeModal('editname')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Icon Button",
                       "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
@@ -195,6 +195,11 @@
                       "type": "ICON_BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 58,
                       "dynamicBindingPathList": [
                         {
@@ -421,7 +426,7 @@
                           "widgetName": "Canvas2",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 590,
+                          "bottomRow": 600,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -529,7 +534,7 @@
                               "isDeprecated": false,
                               "rightColumn": 58,
                               "textAlign": "LEFT",
-                              "dynamicHeight": "AUTO_HEIGHT",
+                              "dynamicHeight": "FIXED",
                               "widgetId": "h58ezm1rld",
                               "isVisible": true,
                               "fontStyle": "BOLD",
@@ -538,10 +543,8 @@
                               "parentId": "8o8ui79gxk",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "originalTopRow": 35,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 39,
                               "fontSize": "1rem",
                               "minDynamicHeight": 4
                             },
@@ -1560,9 +1563,9 @@
                       "text": "ยืนยันรหัสผ่านใหม่ :",
                       "key": "03oiz2tx09",
                       "isDeprecated": false,
-                      "rightColumn": 19,
+                      "rightColumn": 21,
                       "textAlign": "LEFT",
-                      "dynamicHeight": "AUTO_HEIGHT",
+                      "dynamicHeight": "FIXED",
                       "widgetId": "fc6ptsev93",
                       "isVisible": true,
                       "fontStyle": "BOLD",
@@ -1571,10 +1574,8 @@
                       "parentId": "ed3j6tzhzn",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 19,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 24,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     },
@@ -1600,7 +1601,7 @@
                       "parentColumnSpace": 8.09375,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 21,
+                      "leftColumn": 26,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -1617,7 +1618,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 53,
+                      "rightColumn": 58,
                       "dynamicHeight": "FIXED",
                       "widgetId": "52kah2nc2h",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -1657,7 +1658,7 @@
                       "parentColumnSpace": 8.09375,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 21,
+                      "leftColumn": 26,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -1674,7 +1675,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 53,
+                      "rightColumn": 58,
                       "dynamicHeight": "FIXED",
                       "widgetId": "yiqrlplvwv",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -1728,9 +1729,9 @@
                       "text": "รหัสผ่านใหม่ :",
                       "key": "03oiz2tx09",
                       "isDeprecated": false,
-                      "rightColumn": 18,
+                      "rightColumn": 21,
                       "textAlign": "LEFT",
-                      "dynamicHeight": "AUTO_HEIGHT",
+                      "dynamicHeight": "FIXED",
                       "widgetId": "s01ex1efv8",
                       "isVisible": true,
                       "fontStyle": "BOLD",

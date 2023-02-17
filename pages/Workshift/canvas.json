@@ -12419,6 +12419,7 @@
                                       "labelPosition": "Top",
                                       "labelStyle": "",
                                       "inputType": "TEXT",
+                                      "placeholderText": "ค้นหารายชื่อพนักงาน",
                                       "isDisabled": false,
                                       "key": "xofi6h3676",
                                       "labelTextSize": "0.875rem",
