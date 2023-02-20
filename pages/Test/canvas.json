@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 2920,
+          "bottomRow": 1370,
           "containerStyle": "none",
           "snapRows": 82,
           "parentRowSpace": 1,
@@ -575,59 +575,6 @@
               "minDynamicHeight": 4
             },
             {
-              "widgetName": "Checkbox3",
-              "dynamicPropertyPathList": [
-                {
-                  "key": "isDisabled"
-                }
-              ],
-              "displayName": "Checkbox",
-              "iconSVG": "/static/media/icon.aaab032b43383e4fa53ffc0ef40c90ef.svg",
-              "searchTags": [
-                "boolean"
-              ],
-              "topRow": 2,
-              "bottomRow": 6,
-              "parentRowSpace": 10,
-              "type": "CHECKBOX_WIDGET",
-              "alignWidget": "LEFT",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 17.9375,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 37,
-              "dynamicBindingPathList": [
-                {
-                  "key": "accentColor"
-                },
-                {
-                  "key": "borderRadius"
-                },
-                {
-                  "key": "isDisabled"
-                }
-              ],
-              "labelPosition": "Left",
-              "isDisabled": "{{Checkbox1.isChecked}}",
-              "key": "aw63qro3ni",
-              "isRequired": false,
-              "isDeprecated": false,
-              "rightColumn": 49,
-              "dynamicHeight": "AUTO_HEIGHT",
-              "widgetId": "xmqf4ug2rc",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "isVisible": true,
-              "label": "Label",
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "defaultCheckedState": false,
-              "maxDynamicHeight": 9000,
-              "minDynamicHeight": 4
-            },
-            {
               "widgetName": "CheckboxGroup1",
               "dynamicPropertyPathList": [
                 {
@@ -699,7 +646,7 @@
                 "label"
               ],
               "topRow": 133,
-              "bottomRow": 284,
+              "bottomRow": 137,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -742,7 +689,7 @@
               "originalTopRow": 133,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 269,
+              "originalBottomRow": 284,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
