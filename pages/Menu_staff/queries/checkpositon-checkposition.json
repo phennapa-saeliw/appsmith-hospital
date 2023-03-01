@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "employee_infomation",
-    "collectionId": "employee_infomation_checkpositon",
+    "pageId": "Menu_staff",
+    "collectionId": "Menu_staff_checkpositon",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -42,7 +42,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "employee_infomation_checkpositon.checkposition",
+  "id": "Menu_staff_checkpositon.checkposition",
   "deleted": false,
-  "gitSyncId": "638835132913ba43778b3c2e_63aa9149bc0e8334c729cd58"
+  "gitSyncId": "63e5bc5a3ae5ac321b837e6f_63fecc498a12fa7e07de7b48"
 }

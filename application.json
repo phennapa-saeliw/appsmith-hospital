@@ -31,10 +31,6 @@
     {
       "id": "Test",
       "isDefault": false
-    },
-    {
-      "id": "Login Copy",
-      "isDefault": false
     }
   ],
   "viewMode": false,

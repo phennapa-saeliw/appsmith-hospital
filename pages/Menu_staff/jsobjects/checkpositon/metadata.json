@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "checkpositon",
+    "pageId": "Menu_staff",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Menu_staff_checkpositon",
+  "deleted": false,
+  "gitSyncId": "63e5bc5a3ae5ac321b837e6f_63fecc498a12fa7e07de7b4a"
+}

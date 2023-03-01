@@ -13,78 +13,18 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 900,
+          "bottomRow": 860,
           "containerStyle": "none",
           "snapRows": 82,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 76,
+          "version": 77,
           "minHeight": 830,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
           "children": [
-            {
-              "boxShadow": "none",
-              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-              "topRow": 86,
-              "labelWidth": 5,
-              "type": "INPUT_WIDGET_V2",
-              "animateLoading": true,
-              "resetOnSubmit": true,
-              "leftColumn": 21,
-              "dynamicBindingPathList": [
-                {
-                  "key": "accentColor"
-                }
-              ],
-              "labelStyle": "",
-              "inputType": "EMAIL",
-              "placeholderText": "example@gmail.com",
-              "isDisabled": false,
-              "isRequired": true,
-              "dynamicHeight": "FIXED",
-              "iconName": "user",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "isVisible": true,
-              "version": 2,
-              "isLoading": false,
-              "regex": "",
-              "borderRadius": "1.5rem",
-              "originalBottomRow": 29,
-              "widgetName": "Input1",
-              "dynamicPropertyPathList": [],
-              "displayName": "Input",
-              "searchTags": [
-                "form",
-                "text input",
-                "number",
-                "textarea"
-              ],
-              "bottomRow": 90,
-              "parentRowSpace": 10,
-              "autoFocus": false,
-              "hideCard": false,
-              "parentColumnSpace": 10.731689453125,
-              "dynamicTriggerPathList": [],
-              "labelPosition": "Top",
-              "labelTextColor": "#15803d",
-              "key": "7mbho45eds",
-              "labelTextSize": "0.875rem",
-              "isDeprecated": false,
-              "rightColumn": 44,
-              "widgetId": "zj337ljn8i",
-              "label": "",
-              "parentId": "0",
-              "labelAlignment": "left",
-              "renderMode": "CANVAS",
-              "originalTopRow": 25,
-              "maxDynamicHeight": 9000,
-              "iconAlign": "right",
-              "defaultText": "",
-              "minDynamicHeight": 4
-            },
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
               "widgetName": "Container1",
@@ -142,8 +82,8 @@
                         "parent",
                         "group"
                       ],
-                      "topRow": 16,
-                      "bottomRow": 76,
+                      "topRow": 17,
+                      "bottomRow": 77,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
@@ -376,6 +316,7 @@
                                     {
                                       "boxShadow": "none",
                                       "widgetName": "IconButton2Copy1Copy1",
+                                      "onClick": "{{navigateTo('create and random work', {}, 'SAME_WINDOW')}}",
                                       "buttonColor": "#22c55e",
                                       "dynamicPropertyPathList": [],
                                       "displayName": "Icon Button",
@@ -391,7 +332,11 @@
                                       "hideCard": false,
                                       "animateLoading": true,
                                       "parentColumnSpace": 16.3125,
-                                      "dynamicTriggerPathList": [],
+                                      "dynamicTriggerPathList": [
+                                        {
+                                          "key": "onClick"
+                                        }
+                                      ],
                                       "leftColumn": 9,
                                       "dynamicBindingPathList": [
                                         {
@@ -956,8 +901,8 @@
                         "parent",
                         "group"
                       ],
-                      "topRow": 16,
-                      "bottomRow": 76,
+                      "topRow": 17,
+                      "bottomRow": 77,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
@@ -1163,13 +1108,9 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "IconButton2Copy1CopyCopy",
-                              "onClick": "{{}}",
+                              "onClick": "{{checkpositon.checkposition()}}",
                               "buttonColor": "#fef08a",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "onClick"
-                                }
-                              ],
+                              "dynamicPropertyPathList": [],
                               "displayName": "Icon Button",
                               "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
                               "searchTags": [
@@ -1297,8 +1238,8 @@
                         "parent",
                         "group"
                       ],
-                      "topRow": 6,
-                      "bottomRow": 16,
+                      "topRow": 7,
+                      "bottomRow": 17,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
@@ -1411,8 +1352,10 @@
                       "parentId": "tqly3f8pdt",
                       "renderMode": "CANVAS",
                       "isLoading": false,
+                      "originalTopRow": 6,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
+                      "originalBottomRow": 16,
                       "minDynamicHeight": 10
                     },
                     {
@@ -1425,7 +1368,7 @@
                         "label"
                       ],
                       "topRow": 1,
-                      "bottomRow": 5,
+                      "bottomRow": 6,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -1468,7 +1411,7 @@
                       "originalTopRow": 1,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 6,
+                      "originalBottomRow": 5,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     }
