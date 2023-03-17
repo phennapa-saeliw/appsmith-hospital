@@ -1,0 +1,1 @@
+SELECT wd.work_id, wd."E_id", e."E_name",u."Position", wd."Schedules_id" FROM public."Workshift_detail" wd join public."Employee" e on wd."E_id" = e."E_id" join public."Users" u on e."U_Id" = u."U_Id" where wd.work_id = {{appsmith.store.input_work_id}};

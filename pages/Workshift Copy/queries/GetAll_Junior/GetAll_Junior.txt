@@ -1,0 +1,5 @@
+Select "E"."E_name","W"."date","U"."Position" From public."Workshift_detail" as "WD" 
+INNER JOIN public."Employee" as "E" ON "WD"."E_id" = "E"."E_id" 
+INNER JOIN public."Users" as "U" ON "E"."U_Id" = "U"."U_Id"
+INNER JOIN public."Workshift" AS "W" ON "WD"."work_id" = "W"."work_id"
+WHERE "U"."Position" LIKE 'Junior%' AND TO_CHAR(DATE, 'mm-yyyy') = {{moment(first_date.text).add(7 - parseInt(first_day.text), "days").format("MM-YYYY")}} order by "W"."date"

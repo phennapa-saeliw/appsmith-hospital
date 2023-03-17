@@ -972,7 +972,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "IconButton2",
-                              "onClick": "{{navigateTo('Workshift', {}, 'SAME_WINDOW')}}",
+                              "onClick": "{{checkpositon.checkworkshift()}}",
                               "buttonColor": "#fef08a",
                               "dynamicPropertyPathList": [
                                 {

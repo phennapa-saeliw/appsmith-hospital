@@ -1,0 +1,73 @@
+INSERT INTO Public."Users"
+  ("U_Id","Email", "Password", "Position")
+VALUES
+  (	'22',
+    'Jds123@gmail.com',
+    {{ JSObject1.encodePassword('123') }},
+    'Junior Staff'
+  ),
+	('23',
+    'Junssdior1@gmail.com',
+    {{ JSObject1.encodePassword('123') }},
+    'Junior Staff'
+  ),
+	('24',
+    'Junisdor2@gmail.com',
+    {{ JSObject1.encodePassword('123') }},
+    'Junior Staff'
+  ),
+	('25',
+    'Junsdior3@gmail.com',
+    {{ JSObject1.encodePassword('123') }},
+    'Junior Staff'
+  ),
+	('26',
+    'Junsdwor44@gmail.com',
+    {{ JSObject1.encodePassword('123') }},
+    'Junior Staff'
+  ),
+	('27',
+    'Juniowedr12@gmail.com',
+    {{ JSObject1.encodePassword('123') }},
+    'Junior Staff'
+  ),
+	('28',
+    'Junid23or121@gmail.com',
+    {{ JSObject1.encodePassword('123') }},
+    'Junior Staff'
+  ),
+	('29',
+    'Juni23for142@gmail.com',
+    {{ JSObject1.encodePassword('123') }},
+    'Junior Staff'
+  ),
+	('35',
+    'Juniodvrgr187@gmail.com',
+    {{ JSObject1.encodePassword('123') }},
+    'Junior Staff'
+  ),
+	('30',
+    'Sen34fior21@gmail.com',
+    {{ JSObject1.encodePassword('123') }},
+    'Senior Staff'
+  ),
+	('31',
+    'Sefebnior12@gmail.com',
+    {{ JSObject1.encodePassword('123') }},
+    'Senior Staff'
+  ),
+	('32',
+    'Sen23eior98@gmail.com',
+    {{ JSObject1.encodePassword('123') }},
+    'Senior Staff'
+  ),
+	('33',
+    'Seni234or43@gmail.com',
+    {{ JSObject1.encodePassword('123') }},
+    'Senior Staff'
+  ),
+	('34',
+    'Seniocdwwr986@gmail.com',
+    {{ JSObject1.encodePassword('123') }},
+    'Senior Staff'
+  );

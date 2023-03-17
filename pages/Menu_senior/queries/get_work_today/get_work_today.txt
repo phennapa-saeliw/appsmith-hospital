@@ -1,0 +1,1 @@
+SELECT * FROM public."Workshift" where "date" = '{{DatePicker1.formattedDate}}' order by "Schedules_id" asc

@@ -1,0 +1,4 @@
+Insert into public."Workshift_detail"
+("work_id","E_id","Schedules_id")
+values
+('{{appsmith.store.detailworkid}}','{{appsmith.store.detaile_id}}','{{appsmith.store.idschedules}}')

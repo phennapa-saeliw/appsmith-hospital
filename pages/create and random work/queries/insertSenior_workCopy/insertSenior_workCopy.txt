@@ -1,0 +1,2 @@
+Insert into public."Workshift" ("E_id","staff_total", "date", "Schedules_id")
+values ('19','1','2023-02-23','2')

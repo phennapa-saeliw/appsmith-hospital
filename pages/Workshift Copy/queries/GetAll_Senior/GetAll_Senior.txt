@@ -1,0 +1,4 @@
+Select "E"."E_name","W"."date","U"."Position" From public."Workshift" as "W" 
+INNER JOIN public."Employee" as "E" ON "W"."E_id" = "E"."E_id" 
+INNER JOIN public."Users" as "U" ON "E"."U_Id" = "U"."U_Id"
+WHERE "U"."Position" LIKE 'Senior%' AND TO_CHAR(DATE, 'mm-yyyy') = {{moment(first_date.text).add(7 - parseInt(first_day.text), "days").format("MM-YYYY")}} order by "W"."date"

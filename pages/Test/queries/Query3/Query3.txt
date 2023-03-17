@@ -1,0 +1,3 @@
+SELECT * FROM public."Employee"
+ORDER BY RAND()
+LIMIT 4;

@@ -1,0 +1,1 @@
+SELECT DATE as date,"staff_total" FROM PUBLIC."Workshift" WHERE TO_CHAR(DATE, 'mm-yyyy') = {{moment(first_date.text).add(7 - parseInt(first_day.text), "days").format("MM-YYYY")}} AND"S_id" = '3' order by date;

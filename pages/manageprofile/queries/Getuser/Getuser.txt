@@ -1,0 +1,3 @@
+SELECT "Users"."U_Id","E_id","E_name","Password","Email","Position" as user_position FROM public."Employee"
+inner join public."Users" on "Employee"."U_Id" = "Users"."U_Id"
+Where "E_id" = '{{appsmith.store.jwt.E_id}}'

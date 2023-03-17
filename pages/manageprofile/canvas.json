@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 76,
+          "version": 77,
           "minHeight": 830,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -56,7 +56,7 @@
                   "widgetName": "Canvas5Copy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 170,
+                  "bottomRow": 160,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -489,7 +489,7 @@
                               "originalTopRow": 45,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 50,
+                              "originalBottomRow": 49,
                               "fontSize": "1rem",
                               "minDynamicHeight": 4
                             },
@@ -1008,7 +1008,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "IconButton2",
-                              "onClick": "{{navigateTo('Workshift', {}, 'SAME_WINDOW')}}",
+                              "onClick": "{{checkpositon.checkworkshift()}}",
                               "buttonColor": "#fef08a",
                               "dynamicPropertyPathList": [
                                 {
@@ -1518,7 +1518,7 @@
                   "widgetName": "Canvas5",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 240,
+                  "bottomRow": 230,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,

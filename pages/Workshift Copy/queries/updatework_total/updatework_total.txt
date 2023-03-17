@@ -1,0 +1,1 @@
+update public."Workshift" set "staff_total" = "staff_total"+1 where "date" = '{{Text4.text}}' and "Schedules_id" = '{{Select1.selectedOptionValue}}'

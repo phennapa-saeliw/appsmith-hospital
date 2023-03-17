@@ -1,0 +1,3 @@
+Select "E"."E_name","W"."date" From public."Workshift_detail" as "WD"
+INNER JOIN Public."Workshift" as "W" ON "WD"."work_id" = "W"."work_id"
+INNER JOIN Public."Employee" as "E" ON "WD"."E_id" = "E"."E_id"

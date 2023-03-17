@@ -1,0 +1,1 @@
+DELETE FROM Public."Users" WHERE "U_Id" = 5;

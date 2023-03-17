@@ -1,0 +1,2 @@
+select * from public."Workshift"
+where "Schedules_id" = '{{Select1.selectedOptionValue}}' and "date" = '{{Text4.text}}'

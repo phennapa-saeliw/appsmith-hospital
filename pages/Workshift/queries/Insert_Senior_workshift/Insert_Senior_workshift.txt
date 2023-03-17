@@ -1,0 +1,4 @@
+INSERT INTO public."Workshift"
+("E_id","staff_total","Schedules_id")
+values
+('{{appsmith.store.senior_id}}',{{appsmith.store.stafftotal}},{{appsmith.store.aa}});

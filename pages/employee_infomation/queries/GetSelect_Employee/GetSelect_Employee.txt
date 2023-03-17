@@ -1,0 +1,4 @@
+SELECT "E"."E_id","E"."E_name","U"."Position" from "Employee" as "E"
+INNER JOIN Public."Users" as "U" 
+On "E"."U_Id" = "U"."U_Id"
+Order by "U"."Position" DESC;

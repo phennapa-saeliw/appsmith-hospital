@@ -31,6 +31,10 @@
     {
       "id": "Test",
       "isDefault": false
+    },
+    {
+      "id": "Workshift Copy",
+      "isDefault": false
     }
   ],
   "viewMode": false,
@@ -51,7 +55,7 @@
   "embedSetting": {
     "height": "720px",
     "width": "1024px",
-    "showNavigationBar": false
+    "showNavigationBar": true
   },
   "isManualUpdate": false,
   "deleted": false

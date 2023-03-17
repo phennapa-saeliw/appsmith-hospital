@@ -1,0 +1,3 @@
+update public."Employee"
+set "E_name" = '{{ename.text}}'
+where "E_id" = '{{appsmith.store.jwt.E_id}}'

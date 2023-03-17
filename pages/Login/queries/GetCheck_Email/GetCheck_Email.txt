@@ -1,0 +1,4 @@
+select "U"."U_Id","E"."E_id","E"."E_name","U"."Email","U"."Password","U"."Position" as user_position
+from "Employee" as "E"
+inner join "Users" as "U" on "E"."U_Id" = "U"."U_Id"
+where "U"."Email" ILIKE '{{"%" + Input1.text + "%"}}'

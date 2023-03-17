@@ -1,0 +1,5 @@
+SELECT "Workshift_detail"."workdetail_id","Employee"."E_name","Workshift"."date","Schedules"."S_shiftname" FROM public."Workshift_detail"
+inner join public."Schedules" on "Workshift_detail"."Schedules_id" = "Schedules"."Schedules_id"
+inner join public."Employee" on "Workshift_detail"."E_id" = "Employee"."E_id"
+inner join public."Workshift" on "Workshift_detail"."work_id" = "Workshift"."work_id"
+where TO_CHAR(DATE, 'mm-yyyy') = {{moment(first_date.text).add(7 - parseInt(first_day.text), "days").format("MM-YYYY")}} and "Employee"."E_name" ILIKE '{{"%" + inputwork_employee.text + "%"}}' order by "Workshift"."date" asc

@@ -1,0 +1,1 @@
+update public."Workshift_detail" set "Schedules_id" = '{{Select1.selectedOptionValue}}',"work_id" = '{{appsmith.store.getworkid}}' where "E_id" = '{{appsmith.store.jwt.E_id}}' and "workdetail_id" = '{{appsmith.store.update_staff_work[0].workdetail_id}}'

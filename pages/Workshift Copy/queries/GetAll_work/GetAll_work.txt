@@ -1,0 +1,3 @@
+Select * From public."Workshift" 
+inner join public."Workshift_detail" on "Workshift"."work_id" = "Workshift_detail"."work_id"
+WHERE "Workshift_detail"."E_id" = '{{appsmith.store.jwt.E_id}}' AND TO_CHAR(DATE, 'mm-yyyy') = {{moment(first_date.text).add(7 - parseInt(first_day.text), "days").format("MM-YYYY")}} order by date

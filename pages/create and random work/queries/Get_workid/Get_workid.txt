@@ -1,0 +1,3 @@
+SELECT "work_id" FROM public."Workshift"
+WHERE date between '{{DatePicker1.selectedDate}}' and '{{DatePicker2.selectedDate}}'
+and "E_id" = '{{appsmith.store.jwt.E_id}}' and "Schedules_id" = '{{appsmith.store.idschedules}}'

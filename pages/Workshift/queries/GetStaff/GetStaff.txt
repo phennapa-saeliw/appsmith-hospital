@@ -1,0 +1,2 @@
+SELECT * FROM "Workshift_detail"
+right join "Workshift" on "Workshift_detail"."work_id"="Workshift"."work_id" 

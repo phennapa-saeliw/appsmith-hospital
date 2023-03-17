@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 76,
+          "version": 77,
           "minHeight": 830,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -56,7 +56,7 @@
                   "widgetName": "Canvas6Copy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 340,
+                  "bottomRow": 330,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -1102,6 +1102,7 @@
                                 }
                               },
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "columnUpdatedAt": 1678245421071,
                               "primaryColumnId": "E_id",
                               "defaultSelectedRowIndices": "[0,1,2,3,4,5,6,7,8,9]",
                               "widgetName": "Table1",
@@ -1154,7 +1155,8 @@
                                   "isDiscardVisible": true,
                                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"E_id\"]))}}",
                                   "validation": {},
-                                  "cellBackground": ""
+                                  "cellBackground": "",
+                                  "sticky": ""
                                 },
                                 "E_name": {
                                   "allowCellWrapping": false,
@@ -1182,10 +1184,12 @@
                                   "isDiscardVisible": true,
                                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"E_name\"]))}}",
                                   "validation": {},
-                                  "cellBackground": ""
+                                  "cellBackground": "",
+                                  "sticky": ""
                                 }
                               },
                               "key": "ve9utdmdnp",
+                              "canFreezeColumn": false,
                               "isDeprecated": false,
                               "rightColumn": 52,
                               "textSize": "0.875rem",
@@ -1442,7 +1446,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "IconButton2",
-                              "onClick": "{{navigateTo('Workshift', {}, 'SAME_WINDOW')}}",
+                              "onClick": "{{checkpositon.checkworkshift()}}",
                               "buttonColor": "#fef08a",
                               "dynamicPropertyPathList": [
                                 {

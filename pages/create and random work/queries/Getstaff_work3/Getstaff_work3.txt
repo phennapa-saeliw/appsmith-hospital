@@ -1,0 +1,8 @@
+SELECT "Employee"."E_id","E_name" FROM "Workshift_detail"
+right join "Employee" on "Workshift_detail"."E_id"="Employee"."E_id" 
+inner join "Users" on "Employee"."U_Id" = "Users"."U_Id"
+where "Position" = 'Junior Staff'
+and
+"Workshift_detail"."Schedules_id" is null or "Workshift_detail"."Schedules_id" = '2' or "Workshift_detail"."Schedules_id" = '3'
+group by "Employee"."E_id"
+order by "Employee"."E_id" asc;

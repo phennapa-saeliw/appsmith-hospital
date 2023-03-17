@@ -1,0 +1,4 @@
+Insert into public."Workshift"
+("E_id","staff_total","date","Schedules_id")
+values
+('{{appsmith.store.jwt.E_id}}','{{appsmith.store.ramdomlist.length}}','{{appsmith.store.date}}','{{appsmith.store.idschedules}}')
