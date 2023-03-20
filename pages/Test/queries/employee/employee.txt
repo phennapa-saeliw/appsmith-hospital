@@ -1,1 +1,0 @@
-SELECT "E_id","E_name" FROM public."Employee"

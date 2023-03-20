@@ -1,6 +1,0 @@
-SELECT "Employee"."E_id","E_name" FROM "Workshift_detail"
-right join "Employee" on "Workshift_detail"."E_id"="Employee"."E_id" 
-inner join "Users" on "Employee"."U_Id" = "Users"."U_Id"
-where "Position" = 'Junior Staff'
-and
-schedules_id is null or schedules_id = 1 or schedules_id = 2

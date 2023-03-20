@@ -1,2 +1,0 @@
-SELECT "Em"."E_name","U"."Position" FROM public."Employee" as "Em"
-INNER JOIN public."Users" as "U" on "Em"."U_Id" = "U"."U_Id" where "U"."Position" = 'Junior Staff'

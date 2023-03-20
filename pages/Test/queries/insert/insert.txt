@@ -1,4 +1,0 @@
-Insert into public."Workshift"
-("date")
-values
-('{{appsmith.store.date}}')

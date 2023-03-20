@@ -1,4 +1,0 @@
-insert into public."Workshift"
-("E_id","staff_total","date","Schedules_id")
-values
-('1','9','2023-02-10','1')

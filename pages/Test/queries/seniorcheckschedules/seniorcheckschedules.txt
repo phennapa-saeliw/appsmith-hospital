@@ -1,5 +1,0 @@
-SELECT "E"."E_id" FROM Public."Workshift" as "W"
-INNER join Public."Employee" as "E" ON "W"."E_id" = "E"."E_id"
-INNER join Public."Users" as "U" ON "E"."U_Id" = "U"."U_Id"
-Group by "E"."E_id"
- 
