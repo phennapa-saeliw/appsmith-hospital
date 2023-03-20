@@ -1,6 +1,6 @@
 export default {
 	onLoadPage: async () => {
-		storeValue("boxall", undefined);
+		//storeValue("boxall", undefined);
 		await showModal('waitprocess_workshift');
      await GetAll_work.run(
             () => {
@@ -33,10 +33,10 @@ export default {
                     }
                 }
 								storeValue("boxall", all);
-							console.log(appsmith.store.boxall.box23);
+							//console.log(appsmith.store.boxall.box23);
             }
             
-        );
+        )
 						closeModal('waitprocess_workshift')
 	}
 	
