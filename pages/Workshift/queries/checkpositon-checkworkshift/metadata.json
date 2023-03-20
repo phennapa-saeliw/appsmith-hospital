@@ -16,7 +16,7 @@
     "pageId": "Workshift",
     "collectionId": "Workshift_checkpositon",
     "actionConfiguration": {
-      "timeoutInMillisecond": 0,
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
@@ -29,8 +29,10 @@
         "key": "body"
       }
     ],
-    "isValid": true,
-    "invalids": [],
+    "isValid": false,
+    "invalids": [
+      "Unable to find plugin 613a26d921750e4b557a9241"
+    ],
     "messages": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

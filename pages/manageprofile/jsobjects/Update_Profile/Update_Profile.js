@@ -6,6 +6,7 @@ export default {
 		await Getuser.run();
 		storeValue('jwt',Getuser.data[0])
 		closeModal('editname')
+		showAlert('เปลี่ยนชื่อสำเร็จ','success')
 		console.log(Getuser.data[0])
 	},
 	change: async () => {
