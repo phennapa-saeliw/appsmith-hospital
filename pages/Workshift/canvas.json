@@ -14897,7 +14897,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Workshift_initObj.onLoadPage",
+              "id": "63e5bc603ae5ac321b837ea6",
               "name": "initObj.onLoadPage",
               "collectionId": "Workshift_initObj",
               "clientSideExecution": true,
