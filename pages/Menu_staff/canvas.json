@@ -87,7 +87,7 @@
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
-                      "shouldScrollContents": false,
+                      "shouldScrollContents": true,
                       "animateLoading": true,
                       "parentColumnSpace": 14.7255859375,
                       "dynamicTriggerPathList": [],
@@ -108,6 +108,114 @@
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
                           "children": [
+                            {
+                              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                              "widgetName": "Chart1",
+                              "allowScroll": false,
+                              "displayName": "Chart",
+                              "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+                              "searchTags": [
+                                "graph",
+                                "visuals",
+                                "visualisations"
+                              ],
+                              "topRow": 18,
+                              "bottomRow": 57,
+                              "parentRowSpace": 10,
+                              "type": "CHART_WIDGET",
+                              "hideCard": false,
+                              "chartData": {
+                                "iq0f8fblq5": {
+                                  "seriesName": "",
+                                  "data": "[\n  {\n    \"x\": \"เช้า\",\n    \"y\": '{{get_work_today.data[0].staff_total}}'\n  },\n  {\n    \"x\": \"บ่าย\",\n    \"y\": '{{get_work_today.data[0].staff_total}}'\n  },\n  {\n    \"x\": \"ดึก\",\n    \"y\": '{{get_work_today.data[0].staff_total}}'\n  }\n]"
+                                }
+                              },
+                              "animateLoading": true,
+                              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                              "parentColumnSpace": 14.885528564453125,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "boxShadow"
+                                },
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "fontFamily"
+                                },
+                                {
+                                  "key": "chartData.iq0f8fblq5.data"
+                                }
+                              ],
+                              "customFusionChartConfig": {
+                                "type": "column2d",
+                                "dataSource": {
+                                  "data": [
+                                    {
+                                      "label": "Product1",
+                                      "value": 20000
+                                    },
+                                    {
+                                      "label": "Product2",
+                                      "value": 22000
+                                    },
+                                    {
+                                      "label": "Product3",
+                                      "value": 32000
+                                    }
+                                  ],
+                                  "chart": {
+                                    "caption": "Sales Report",
+                                    "xAxisName": "Product Line",
+                                    "yAxisName": "Revenue($)",
+                                    "theme": "fusion",
+                                    "alignCaptionWithCanvas": 1,
+                                    "captionFontSize": "24",
+                                    "captionAlignment": "center",
+                                    "captionPadding": "20",
+                                    "captionFontColor": "#231F20",
+                                    "legendIconSides": "4",
+                                    "legendIconBgAlpha": "100",
+                                    "legendIconAlpha": "100",
+                                    "legendPosition": "top",
+                                    "canvasPadding": "0",
+                                    "chartLeftMargin": "20",
+                                    "chartTopMargin": "10",
+                                    "chartRightMargin": "40",
+                                    "chartBottomMargin": "10",
+                                    "xAxisNameFontSize": "14",
+                                    "labelFontSize": "12",
+                                    "labelFontColor": "#716e6e",
+                                    "xAxisNameFontColor": "#716e6e",
+                                    "yAxisNameFontSize": "14",
+                                    "yAxisValueFontSize": "12",
+                                    "yAxisValueFontColor": "#716e6e",
+                                    "yAxisNameFontColor": "#716e6e"
+                                  }
+                                }
+                              },
+                              "key": "bqpvg1v693",
+                              "isDeprecated": false,
+                              "rightColumn": 63,
+                              "widgetId": "syc6dyr1qi",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "la8grc50dl",
+                              "labelOrientation": "auto",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "yAxisName": "จำนวนวันที่เข้างาน (วัน)",
+                              "chartName": "",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "xAxisName": "ช่วงเวลาทำงาน",
+                              "chartType": "COLUMN_CHART"
+                            },
                             {
                               "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
                               "widgetName": "Container5Copy",
@@ -771,7 +879,11 @@
                               "widgetName": "IconButton2Copy1CopyCopy1",
                               "onClick": "{{navigateTo('employee_infomation', {}, 'SAME_WINDOW')}}",
                               "buttonColor": "#fef08a",
-                              "dynamicPropertyPathList": [],
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
                               "displayName": "Icon Button",
                               "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
                               "searchTags": [
@@ -794,6 +906,9 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
+                                },
+                                {
+                                  "key": "isVisible"
                                 }
                               ],
                               "isDisabled": false,
@@ -802,7 +917,7 @@
                               "rightColumn": 59,
                               "iconName": "mugshot",
                               "widgetId": "1whrv29io6",
-                              "isVisible": true,
+                              "isVisible": "{{(appsmith.store.jwt.user_position !== 'Junior Staff'? true:false)}}",
                               "version": 1,
                               "parentId": "k5tid2eems",
                               "renderMode": "CANVAS",

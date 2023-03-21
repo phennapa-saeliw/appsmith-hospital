@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 870,
+          "bottomRow": 790,
           "containerStyle": "none",
           "snapRows": 82,
           "parentRowSpace": 1,
@@ -6189,7 +6189,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3Copy7Copy12",
-                                              "onClick": "{{Clickshowliststaff.getlist('2',moment(first_date.text).add(20 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxn20}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -6317,7 +6317,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy3Copy14",
-                                              "onClick": "{{Clickshowliststaff.getlist('1',moment(first_date.text).add(20 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.box20}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -6467,7 +6467,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3Copy7Copy11",
-                                              "onClick": "{{Clickshowliststaff.getlist('2',moment(first_date.text).add(19 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxn19}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -6595,7 +6595,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy3Copy13",
-                                              "onClick": "{{Clickshowliststaff.getlist('1',moment(first_date.text).add(19 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.box19}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -7014,7 +7014,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3Copy7Copy9",
-                                              "onClick": "{{Clickshowliststaff.getlist('2',moment(first_date.text).add(17 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxn17}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -7142,7 +7142,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy3Copy11",
-                                              "onClick": "{{Clickshowliststaff.getlist('1',moment(first_date.text).add(17 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.box17}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -7292,7 +7292,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3Copy7Copy8",
-                                              "onClick": "{{Clickshowliststaff.getlist('2',moment(first_date.text).add(16 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxn16}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -7420,7 +7420,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy3Copy10",
-                                              "onClick": "{{Clickshowliststaff.getlist('1',moment(first_date.text).add(16 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.box16}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -7570,7 +7570,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3Copy7Copy7",
-                                              "onClick": "{{Clickshowliststaff.getlist('2',moment(first_date.text).add(15 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxn15}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -7634,7 +7634,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3CopyCopy6Copy7",
-                                              "onClick": "{{Clickshowliststaff.getlist('3',moment(first_date.text).add(15 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxnn15}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -7698,7 +7698,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy3Copy9",
-                                              "onClick": "{{Clickshowliststaff.getlist('1',moment(first_date.text).add(15 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.box15}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -7848,7 +7848,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3Copy7Copy6",
-                                              "onClick": "{{Clickshowliststaff.getlist('2',moment(first_date.text).add(14 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxn14}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -7912,7 +7912,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3CopyCopy6Copy6",
-                                              "onClick": "{{Clickshowliststaff.getlist('3',moment(first_date.text).add(14 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxnn14}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -7976,7 +7976,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy3Copy8",
-                                              "onClick": "{{Clickshowliststaff.getlist('1',moment(first_date.text).add(14 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.box14}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -8126,7 +8126,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3Copy7Copy5",
-                                              "onClick": "{{Clickshowliststaff.getlist('2',moment(first_date.text).add(13 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxn13}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -8190,7 +8190,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3CopyCopy6Copy5",
-                                              "onClick": "{{Clickshowliststaff.getlist('3',moment(first_date.text).add(13 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxnn13}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -8254,7 +8254,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy3Copy7",
-                                              "onClick": "{{Clickshowliststaff.getlist('1',moment(first_date.text).add(13 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.box13}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -8404,7 +8404,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3Copy7Copy4",
-                                              "onClick": "{{Clickshowliststaff.getlist('2',moment(first_date.text).add(12 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxn12}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -8468,7 +8468,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3CopyCopy6Copy4",
-                                              "onClick": "{{Clickshowliststaff.getlist('3',moment(first_date.text).add(12 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxnn12}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -8532,7 +8532,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy3Copy6",
-                                              "onClick": "{{Clickshowliststaff.getlist('1',moment(first_date.text).add(12 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.box12}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -8682,7 +8682,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3Copy7Copy3",
-                                              "onClick": "{{Clickshowliststaff.getlist('2',moment(first_date.text).add(11 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxn11}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -8746,7 +8746,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3CopyCopy6Copy3",
-                                              "onClick": "{{Clickshowliststaff.getlist('3',moment(first_date.text).add(11 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxnn11}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -8810,7 +8810,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy3Copy5",
-                                              "onClick": "{{Clickshowliststaff.getlist('1',moment(first_date.text).add(11 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.box11}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -8951,7 +8951,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3Copy7Copy2",
-                                              "onClick": "{{Clickshowliststaff.getlist('2',moment(first_date.text).add(10 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxn10}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -9015,7 +9015,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3CopyCopy6Copy2",
-                                              "onClick": "{{Clickshowliststaff.getlist('3',moment(first_date.text).add(10 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxnn10}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -9079,7 +9079,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy3Copy4",
-                                              "onClick": "{{Clickshowliststaff.getlist('1',moment(first_date.text).add(10 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.box10}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -9240,7 +9240,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3Copy7Copy1",
-                                              "onClick": "{{Clickshowliststaff.getlist('2',moment(first_date.text).add(9 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxn9}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -9304,7 +9304,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3CopyCopy6Copy1",
-                                              "onClick": "{{Clickshowliststaff.getlist('3',moment(first_date.text).add(9 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxnn9}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -9368,7 +9368,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy3Copy3",
-                                              "onClick": "{{Clickshowliststaff.getlist('1',moment(first_date.text).add(9 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.box9}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -9518,7 +9518,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3Copy7Copy",
-                                              "onClick": "{{Clickshowliststaff.getlist('2',moment(first_date.text).add(8 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxn8}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -9582,7 +9582,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3CopyCopy6Copy",
-                                              "onClick": "{{Clickshowliststaff.getlist('3',moment(first_date.text).add(8 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxnn8}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -9646,7 +9646,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy3Copy2",
-                                              "onClick": "{{Clickshowliststaff.getlist('1',moment(first_date.text).add(8 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.box8}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -9796,7 +9796,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3Copy7",
-                                              "onClick": "{{Clickshowliststaff.getlist('2',moment(first_date.text).add(7 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxn7}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -9860,7 +9860,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3CopyCopy6",
-                                              "onClick": "{{Clickshowliststaff.getlist('3',moment(first_date.text).add(7 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxnn7}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -9924,7 +9924,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy3Copy1",
-                                              "onClick": "{{Clickshowliststaff.getlist('1',moment(first_date.text).add(7 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.box7}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -10073,7 +10073,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3Copy6",
-                                              "onClick": "{{Clickshowliststaff.getlist('2',moment(first_date.text).add(6 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxn6}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -10137,7 +10137,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3CopyCopy5",
-                                              "onClick": "{{Clickshowliststaff.getlist('3',moment(first_date.text).add(6 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxnn6}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -10201,7 +10201,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy3Copy",
-                                              "onClick": "{{Clickshowliststaff.getlist('1',moment(first_date.text).add(6 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.box6}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -10361,7 +10361,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3Copy5",
-                                              "onClick": "{{Clickshowliststaff.getlist('2',moment(first_date.text).add(5 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxn5}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -10425,7 +10425,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3CopyCopy4",
-                                              "onClick": "{{Clickshowliststaff.getlist('3',moment(first_date.text).add(5 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxnn5}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -10489,7 +10489,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy3",
-                                              "onClick": "{{Clickshowliststaff.getlist('1',moment(first_date.text).add(5 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.box5}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -10649,7 +10649,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3Copy4",
-                                              "onClick": "{{Clickshowliststaff.getlist('2',moment(first_date.text).add(4 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxn4}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -10713,7 +10713,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3CopyCopy3",
-                                              "onClick": "{{Clickshowliststaff.getlist('3',moment(first_date.text).add(4 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxnn4}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -10777,7 +10777,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy2",
-                                              "onClick": "{{Clickshowliststaff.getlist('1',moment(first_date.text).add(4 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.box4}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -10937,7 +10937,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3Copy3",
-                                              "onClick": "{{Clickshowliststaff.getlist('2',moment(first_date.text).add(3 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxn3}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -11001,7 +11001,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3CopyCopy2",
-                                              "onClick": "{{Clickshowliststaff.getlist('3',moment(first_date.text).add(3 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxnn3}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -11222,7 +11222,7 @@
                                               "resetFormOnClick": false,
                                               "boxShadow": "none",
                                               "widgetName": "Buttonwork1Copy4Copy3Copy",
-                                              "onClick": "{{Clickshowliststaff.getlist('3',moment(first_date.text).add(2 - parseInt(first_day.text), \"days\").format(\"YYYY-MM-DD\"))}}",
+                                              "onClick": "",
                                               "buttonColor": "{{appsmith.store.boxall.boxnn2}}",
                                               "dynamicPropertyPathList": [
                                                 {
@@ -12822,7 +12822,11 @@
                               "widgetName": "IconButton2Copy1CopyCopy1",
                               "onClick": "{{navigateTo('employee_infomation', {}, 'SAME_WINDOW')}}",
                               "buttonColor": "#fef08a",
-                              "dynamicPropertyPathList": [],
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
                               "displayName": "Icon Button",
                               "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
                               "searchTags": [
@@ -12845,6 +12849,9 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
+                                },
+                                {
+                                  "key": "isVisible"
                                 }
                               ],
                               "isDisabled": false,
@@ -12853,7 +12860,7 @@
                               "rightColumn": 59,
                               "iconName": "mugshot",
                               "widgetId": "1lbqc3v8fr",
-                              "isVisible": true,
+                              "isVisible": "{{(appsmith.store.jwt.user_position !== 'Junior Staff'? true:false)}}",
                               "version": 1,
                               "parentId": "ig198j4lyt",
                               "renderMode": "CANVAS",
@@ -14833,7 +14840,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  await showModal('waitprocess_workshift');\n  await GetAll_work.run(() => {\n    let all = {};\n    let shiftBox = moment(first_date.text).weekday() - 1;\n    let result = GetAll_work.data;\n    let total = GetAll_work.data.length;\n    for (let i = 0; i < total; i++) {\n      let day = Number(moment(result[i].date).format(\"D\")) + Number(shiftBox);\n      console.log(day);\n      if (result[i].Schedules_id == 1) {\n        if (result[i].staff_total >= 9) {\n          all[\"box\" + day] = '#bbf7d0';\n        } else {\n          all[\"box\" + day] = '#fef08a';\n        }\n      } else if (result[i].Schedules_id == 2) {\n        if (result[i].staff_total >= 9) {\n          all[\"boxn\" + day] = '#bbf7d0';\n        } else {\n          all[\"boxn\" + day] = '#fef08a';\n        }\n      } else if (result[i].Schedules_id == 3) {\n        if (result[i].staff_total >= 9) {\n          all[\"boxnn\" + day] = '#bbf7d0';\n        } else {\n          all[\"boxnn\" + day] = '#fef08a';\n        }\n      }\n    }\n    storeValue(\"boxall\", all);\n  });\n  closeModal('waitprocess_workshift');\n}"
+                "async () => {\n  showModal('waitprocess_workshift');\n  await GetAll_work.run(() => {\n    let all = {};\n    let shiftBox = moment(first_date.text).weekday() - 1;\n    let result = GetAll_work.data;\n    let total = GetAll_work.data.length;\n    for (let i = 0; i < total; i++) {\n      let day = Number(moment(result[i].date).format(\"D\")) + Number(shiftBox);\n      console.log(day);\n      if (result[i].Schedules_id == 1) {\n        if (result[i].staff_total >= 9) {\n          all[\"box\" + day] = '#bbf7d0';\n        } else {\n          all[\"box\" + day] = '#fef08a';\n        }\n      } else if (result[i].Schedules_id == 2) {\n        if (result[i].staff_total >= 9) {\n          all[\"boxn\" + day] = '#bbf7d0';\n        } else {\n          all[\"boxn\" + day] = '#fef08a';\n        }\n      } else if (result[i].Schedules_id == 3) {\n        if (result[i].staff_total >= 9) {\n          all[\"boxnn\" + day] = '#bbf7d0';\n        } else {\n          all[\"boxnn\" + day] = '#fef08a';\n        }\n      }\n    }\n    storeValue(\"boxall\", all);\n  });\n  closeModal('waitprocess_workshift');\n}"
               ],
               "timeoutInMillisecond": 10000
             }

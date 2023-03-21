@@ -8,22 +8,28 @@ export default {
 			storeValue('input_date', date)
 		//console.log(Schedules_id + " "+ date)
 			await Show_Senior.run().then(()=>{
-			//console.log(senior.data)
+			console.log(Show_Senior.data)
 			storeValue('input_work_id', Show_Senior.data[0].work_id)
-			Show_Junior.run().then(()=>{
-				
-				let staffsArr = []
-				staffsArr = Show_Junior.data
-				staffsArr.unshift(Show_Senior.data[0])
-				storeValue('staffs_table', staffsArr)
-				console.log(staffsArr)
-				Show_j_update.run().then(()=>{
-					let changeworksttaff = []
-					changeworksttaff = Show_j_update.data
-					storeValue('update_staff_work',changeworksttaff)
-					console.log(Show_j_update.data)
+				Show_SeniorAndJunior.run().then(()=>{
+					let staffsArr = []
+					staffsArr = Show_SeniorAndJunior.data
+					storeValue('staffs_table', staffsArr)
+					console.log(appsmith.store.staffs_table)
 				})
-			})
+			// Show_Junior.run().then(()=>{
+				// 
+				// let staffsArr = []
+				// staffsArr = Show_Junior.data
+				// staffsArr.unshift(Show_Senior.data[0])
+				// storeValue('staffs_table', staffsArr)
+				// console.log(staffsArr)
+				// Show_j_update.run().then(()=>{
+					// let changeworksttaff = []
+					// changeworksttaff = Show_j_update.data
+					// storeValue('update_staff_work',changeworksttaff)
+					// console.log(Show_j_update.data)
+				// })
+			// })
 		})
 		//closeModal('Modal2')
 		await showModal('Modal1');

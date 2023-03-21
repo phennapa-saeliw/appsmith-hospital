@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "Show_Senior",
+    "name": "Show_SeniorAndJunior",
     "datasource": {
       "name": "work",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT w.work_id FROM public.\"Workshift\" w join public.\"Employee\" e on w.\"E_id\" = e.\"E_id\" \njoin public.\"Users\" u on e.\"U_Id\" = u.\"U_Id\" \nwhere w.\"Schedules_id\" = {{appsmith.store.input_sid}} and w.date ='{{appsmith.store.input_date}}'\n\n;",
+      "body": "SELECT w.work_id,  w.\"E_id\", w.\"Schedules_id\", emp.\"E_name\", emp.\"Position\" from\n(SELECT w.work_id,  w.\"E_id\", w.\"Schedules_id\"\nFROM public.\"Workshift\" w\nUNION\nSELECT wd.\"work_id\" , wd.\"E_id\", wd.\"Schedules_id\"\nfrom public.\"Workshift_detail\" wd) w\njoin \n(SELECT e.\"E_id\", e.\"E_name\", u.\"Position\"\nFROM public.\"Employee\" e join public.\"Users\" u on e.\"U_Id\" = u.\"U_Id\" ) as emp on w.\"E_id\" = emp.\"E_id\"\nwhere w.work_id = {{appsmith.store.input_work_id}}\norder by emp.\"Position\" desc",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -38,15 +38,14 @@
     ],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.input_date",
-      "appsmith.store.input_sid"
+      "appsmith.store.input_work_id"
     ],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Workshift_Show_Senior",
+  "id": "Workshift_Show_SeniorAndJunior",
   "deleted": false,
-  "gitSyncId": "63cf62f247460b73912584b3_63d76ec7b637062d22bafb18"
+  "gitSyncId": "63e5bc5a3ae5ac321b837e6f_64180a0871d5213f118d47f3"
 }

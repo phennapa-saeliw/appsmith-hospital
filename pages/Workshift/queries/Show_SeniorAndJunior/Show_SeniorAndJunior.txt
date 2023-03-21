@@ -1,0 +1,11 @@
+SELECT w.work_id,  w."E_id", w."Schedules_id", emp."E_name", emp."Position" from
+(SELECT w.work_id,  w."E_id", w."Schedules_id"
+FROM public."Workshift" w
+UNION
+SELECT wd."work_id" , wd."E_id", wd."Schedules_id"
+from public."Workshift_detail" wd) w
+join 
+(SELECT e."E_id", e."E_name", u."Position"
+FROM public."Employee" e join public."Users" u on e."U_Id" = u."U_Id" ) as emp on w."E_id" = emp."E_id"
+where w.work_id = {{appsmith.store.input_work_id}}
+order by emp."Position" desc

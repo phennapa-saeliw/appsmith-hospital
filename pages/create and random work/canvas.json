@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 860,
+          "bottomRow": 780,
           "containerStyle": "none",
           "snapRows": 82,
           "parentRowSpace": 1,
@@ -1635,7 +1635,11 @@
                               "widgetName": "IconButton2Copy1CopyCopy1",
                               "onClick": "{{navigateTo('employee_infomation', {}, 'SAME_WINDOW')}}",
                               "buttonColor": "#fef08a",
-                              "dynamicPropertyPathList": [],
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
                               "displayName": "Icon Button",
                               "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
                               "searchTags": [
@@ -1658,6 +1662,9 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
+                                },
+                                {
+                                  "key": "isVisible"
                                 }
                               ],
                               "isDisabled": false,
@@ -1666,7 +1673,7 @@
                               "rightColumn": 59,
                               "iconName": "mugshot",
                               "widgetId": "ljge9ek2zh",
-                              "isVisible": true,
+                              "isVisible": "{{(appsmith.store.jwt.user_position !== 'Junior Staff'? true:false)}}",
                               "version": 1,
                               "parentId": "oe9bedse2c",
                               "renderMode": "CANVAS",
